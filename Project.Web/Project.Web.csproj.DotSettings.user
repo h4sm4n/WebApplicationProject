@@ -1,0 +1,7 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/CodeInspection/WebPathMapping/IgnoredPaths/=DASHBOARD_005CAUTH_002DLOCK_002DSCREEN_002EHTML/@EntryIndexedValue">Dashboard\auth-lock-screen.html</s:String>
+	<s:String x:Key="/Default/CodeInspection/WebPathMapping/IgnoredPaths/=DASHBOARD_005CEMAIL_002DINBOX_002EHTML/@EntryIndexedValue">Dashboard\email-inbox.html</s:String>
+	<s:String x:Key="/Default/CodeInspection/WebPathMapping/IgnoredPaths/=DASHBOARD_005CUSER_002DPROFILE_002EHTML/@EntryIndexedValue">Dashboard\user-profile.html</s:String>
+	<s:String x:Key="/Default/CodeInspection/WebPathMapping/PathsInCorrectCasing/=DASHBOARD_005CAUTH_002DLOCK_002DSCREEN_002EHTML/@EntryIndexedValue">Dashboard\auth-lock-screen.html</s:String>
+	<s:String x:Key="/Default/CodeInspection/WebPathMapping/PathsInCorrectCasing/=DASHBOARD_005CEMAIL_002DINBOX_002EHTML/@EntryIndexedValue">Dashboard\email-inbox.html</s:String>
+	<s:String x:Key="/Default/CodeInspection/WebPathMapping/PathsInCorrectCasing/=DASHBOARD_005CUSER_002DPROFILE_002EHTML/@EntryIndexedValue">Dashboard\user-profile.html</s:String></wpf:ResourceDictionary>

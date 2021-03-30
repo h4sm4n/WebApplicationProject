@@ -1,0 +1,785 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6EBEE7ED-7B67-4249-AE8F-3C9B0DFF6285}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Project.Web</RootNamespace>
+    <AssemblyName>Project.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44309</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dashboard\accordion.aspx" />
+    <Content Include="Dashboard\auth-normal-sign-in.aspx" />
+    <Content Include="Dashboard\auth-sign-up.aspx" />
+    <Content Include="Dashboard\breadcrumb.aspx" />
+    <Content Include="Dashboard\bs-basic-table.aspx" />
+    <Content Include="Dashboard\button.aspx" />
+    <Content Include="Dashboard\chart-morris.aspx" />
+    <Content Include="Dashboard\color.aspx" />
+    <Content Include="Dashboard\form-elements-component.aspx" />
+    <Content Include="Dashboard\label-badge.aspx" />
+    <Content Include="Dashboard\map-google.aspx" />
+    <Content Include="Dashboard\notification.aspx" />
+    <Content Include="Dashboard\sample-page.aspx" />
+    <Content Include="Dashboard\tabs.aspx" />
+    <Content Include="Dashboard\tooltip.aspx" />
+    <Content Include="Dashboard\typography.aspx" />
+    <Content Include="Main Theme\About.aspx" />
+    <Content Include="Dashboard\assets\css\animate.css\css\animate.css" />
+    <Content Include="Dashboard\assets\css\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Dashboard\assets\css\chartist\chartist.css" />
+    <Content Include="Dashboard\assets\css\component.css" />
+    <Content Include="Dashboard\assets\css\font-awesome-n.min.css" />
+    <Content Include="Dashboard\assets\css\font-awesome.min.css" />
+    <Content Include="Dashboard\assets\css\ionicons.css" />
+    <Content Include="Dashboard\assets\css\jquery.mCustomScrollbar.css" />
+    <Content Include="Dashboard\assets\css\linearicons.css" />
+    <Content Include="Dashboard\assets\css\morris.js\css\morris.css" />
+    <Content Include="Dashboard\assets\css\simple-line-icons.css" />
+    <Content Include="Dashboard\assets\css\style.css" />
+    <Content Include="Dashboard\assets\css\style.min.css" />
+    <Content Include="Dashboard\assets\icon\fa-brands-400.svg" />
+    <Content Include="Dashboard\assets\icon\fa-regular-400.svg" />
+    <Content Include="Dashboard\assets\icon\fa-solid-900.svg" />
+    <Content Include="Dashboard\assets\icon\feather\css\feather.css" />
+    <Content Include="Dashboard\assets\icon\feather\fonts\feather.svg" />
+    <Content Include="Dashboard\assets\icon\font-awesome\css\font-awesome.css" />
+    <Content Include="Dashboard\assets\icon\font-awesome\css\font-awesome.min.css" />
+    <Content Include="Dashboard\assets\icon\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Dashboard\assets\icon\fontawesome-webfont.svg" />
+    <Content Include="Dashboard\assets\icon\icofont\css\icofont.css" />
+    <Content Include="Dashboard\assets\icon\ionicons.svg" />
+    <Content Include="Dashboard\assets\icon\Linearicons-Free.svg" />
+    <Content Include="Dashboard\assets\icon\Simple-Line-Icons.svg" />
+    <Content Include="Dashboard\assets\icon\themify-icons\fonts\themify.svg" />
+    <Content Include="Dashboard\assets\icon\themify-icons\themify-icons.css" />
+    <Content Include="Dashboard\assets\images\auth\logo-dark.png" />
+    <Content Include="Dashboard\assets\images\auth\Logo-small-bottom.png" />
+    <Content Include="Dashboard\assets\images\auth\logo.png" />
+    <Content Include="Dashboard\assets\images\avatar-1.jpg" />
+    <Content Include="Dashboard\assets\images\avatar-2.jpg" />
+    <Content Include="Dashboard\assets\images\avatar-3.jpg" />
+    <Content Include="Dashboard\assets\images\avatar-4.jpg" />
+    <Content Include="Dashboard\assets\images\avatar-5.jpg" />
+    <Content Include="Dashboard\assets\images\breadcrumb-bg.jpg" />
+    <Content Include="Dashboard\assets\images\browser\chrome.png" />
+    <Content Include="Dashboard\assets\images\browser\firefox.png" />
+    <Content Include="Dashboard\assets\images\browser\ie.png" />
+    <Content Include="Dashboard\assets\images\browser\opera.png" />
+    <Content Include="Dashboard\assets\images\browser\safari.png" />
+    <Content Include="Dashboard\assets\images\favicon.ico" />
+    <Content Include="Dashboard\assets\images\logo-blue.png" />
+    <Content Include="Dashboard\assets\images\logo.png" />
+    <Content Include="Dashboard\assets\images\mega-menu\01.jpg" />
+    <Content Include="Dashboard\assets\images\mega-menu\02.jpg" />
+    <Content Include="Dashboard\assets\images\mega-menu\03.jpg" />
+    <Content Include="Dashboard\assets\images\select-arrow.png" />
+    <Content Include="Dashboard\assets\images\user-bg.jpg" />
+    <Content Include="Dashboard\assets\images\widget\AUSTRALIA.jpg" />
+    <Content Include="Dashboard\assets\images\widget\BRAZIL.jpg" />
+    <Content Include="Dashboard\assets\images\widget\DIGITALPEN.jpg" />
+    <Content Include="Dashboard\assets\images\widget\GERMANY.jpg" />
+    <Content Include="Dashboard\assets\images\widget\IPAD.jpg" />
+    <Content Include="Dashboard\assets\images\widget\PHONE1.jpg" />
+    <Content Include="Dashboard\assets\images\widget\PHONE2.jpg" />
+    <Content Include="Dashboard\assets\images\widget\PHONE3.jpg" />
+    <Content Include="Dashboard\assets\images\widget\PHONE4.jpg" />
+    <Content Include="Dashboard\assets\images\widget\prod1.jpg" />
+    <Content Include="Dashboard\assets\images\widget\prod2.jpg" />
+    <Content Include="Dashboard\assets\images\widget\prod3.jpg" />
+    <Content Include="Dashboard\assets\images\widget\prod4.jpg" />
+    <Content Include="Dashboard\assets\images\widget\TABLET.jpg" />
+    <Content Include="Dashboard\assets\images\widget\UK.jpg" />
+    <Content Include="Dashboard\assets\images\widget\USA.jpg" />
+    <Content Include="Dashboard\assets\images\widget\wather2bottom.png" />
+    <Content Include="Dashboard\assets\images\widget\wather2m.png" />
+    <Content Include="Dashboard\assets\images\widget\wather2star1.png" />
+    <Content Include="Dashboard\assets\images\widget\wather2star2.png" />
+    <Content Include="Dashboard\assets\images\widget\watherbottom.png" />
+    <Content Include="Dashboard\assets\images\widget\wathernature.png" />
+    <Content Include="Dashboard\assets\images\widget\watherstar1.png" />
+    <Content Include="Dashboard\assets\images\widget\watherstar2.png" />
+    <Content Include="Dashboard\assets\images\widget\wsm-3-star-1.png" />
+    <Content Include="Dashboard\assets\images\widget\wsm-3-star-2.png" />
+    <Content Include="Dashboard\assets\js\animation.js" />
+    <Content Include="Dashboard\assets\js\bootstrap-growl.min.js" />
+    <Content Include="Dashboard\assets\js\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Dashboard\assets\js\classie.js" />
+    <Content Include="Dashboard\assets\js\color-json-common-page.js" />
+    <Content Include="Dashboard\assets\js\common-pages.js" />
+    <Content Include="Dashboard\assets\js\common-pages.min.js" />
+    <Content Include="Dashboard\assets\js\counter.js" />
+    <Content Include="Dashboard\assets\js\float\curvedLines.js" />
+    <Content Include="Dashboard\assets\js\float\jquery.flot.categories.js" />
+    <Content Include="Dashboard\assets\js\float\jquery.flot.js" />
+    <Content Include="Dashboard\assets\js\float\jquery.flot.pie.js" />
+    <Content Include="Dashboard\assets\js\float\jquery.flot.tooltip.min.js" />
+    <Content Include="Dashboard\assets\js\jquery-slimscroll\jquery.slimscroll.js" />
+    <Content Include="Dashboard\assets\js\jquery-ui\jquery-ui.min.js" />
+    <Content Include="Dashboard\assets\js\jquery.easypiechart.min.js" />
+    <Content Include="Dashboard\assets\js\jquery.mCustomScrollbar.concat.min.js" />
+    <Content Include="Dashboard\assets\js\jquery.mousewheel.min.js" />
+    <Content Include="Dashboard\assets\js\jquery.quicksearch.js" />
+    <Content Include="Dashboard\assets\js\jquery\jquery.min.js" />
+    <Content Include="Dashboard\assets\js\modal.js" />
+    <Content Include="Dashboard\assets\js\modalEffects.js" />
+    <Content Include="Dashboard\assets\js\modernizr\css-scrollbars.js" />
+    <Content Include="Dashboard\assets\js\modernizr\modernizr.js" />
+    <Content Include="Dashboard\assets\js\morris.js\morris.js" />
+    <Content Include="Dashboard\assets\js\owl-custom.js" />
+    <Content Include="Dashboard\assets\js\pcoded.min.js" />
+    <Content Include="Dashboard\assets\js\popper.js\popper.min.js" />
+    <Content Include="Dashboard\assets\js\raphael\raphael.min.js" />
+    <Content Include="Dashboard\assets\js\rating.js" />
+    <Content Include="Dashboard\assets\js\script.js" />
+    <Content Include="Dashboard\assets\js\script.min.js" />
+    <Content Include="Dashboard\assets\js\SmoothScroll.js" />
+    <Content Include="Dashboard\assets\js\swiper-custom.js" />
+    <Content Include="Dashboard\assets\js\vertical\horizontal-layout.min.js" />
+    <Content Include="Dashboard\assets\js\vertical\menu\box-layout.js" />
+    <Content Include="Dashboard\assets\js\vertical\menu\menu-compact.js" />
+    <Content Include="Dashboard\assets\js\vertical\menu\menu-header-fixed.js" />
+    <Content Include="Dashboard\assets\js\vertical\menu\menu-hori-fixed.js" />
+    <Content Include="Dashboard\assets\js\vertical\menu\menu-rtl.js" />
+    <Content Include="Dashboard\assets\js\vertical\menu\menu-sidebar-fixed.js" />
+    <Content Include="Dashboard\assets\js\vertical\menu\menu-static.js" />
+    <Content Include="Dashboard\assets\js\vertical\vertical-layout.js" />
+    <Content Include="Dashboard\assets\js\vertical\vertical-layout.min.js" />
+    <Content Include="Dashboard\assets\pages\accordion\accordion.js" />
+    <Content Include="Dashboard\assets\pages\accordion\accordion.min.js" />
+    <Content Include="Dashboard\assets\pages\chart\morris\morris-custom-chart.js" />
+    <Content Include="Dashboard\assets\pages\dashboard\amchart\css\amchart.css" />
+    <Content Include="Dashboard\assets\pages\dashboard\amchart\css\export.css" />
+    <Content Include="Dashboard\assets\pages\dashboard\amchart\js\amcharts.js" />
+    <Content Include="Dashboard\assets\pages\dashboard\amchart\js\custom-amchart.js" />
+    <Content Include="Dashboard\assets\pages\dashboard\amchart\js\export.min.js" />
+    <Content Include="Dashboard\assets\pages\dashboard\amchart\js\images\dragIconRoundBig.svg" />
+    <Content Include="Dashboard\assets\pages\dashboard\amchart\js\images\dragIconRoundBigH.svg" />
+    <Content Include="Dashboard\assets\pages\dashboard\amchart\js\light.js" />
+    <Content Include="Dashboard\assets\pages\dashboard\amchart\js\serial.js" />
+    <Content Include="Dashboard\assets\pages\dashboard\custom-dashboard.js" />
+    <Content Include="Dashboard\assets\pages\dashboard\custom-dashboard.min.js" />
+    <Content Include="Dashboard\assets\pages\google-maps\gmaps.js" />
+    <Content Include="Dashboard\assets\pages\google-maps\google-maps.js" />
+    <Content Include="Dashboard\assets\pages\icon-modal.js" />
+    <Content Include="Dashboard\assets\pages\notification\notification.css" />
+    <Content Include="Dashboard\assets\pages\notification\notification.js" />
+    <Content Include="Dashboard\assets\pages\todo\todo.js" />
+    <Content Include="Dashboard\assets\pages\waves\css\waves.min.css" />
+    <Content Include="Dashboard\assets\pages\waves\js\waves.min.js" />
+    <Content Include="Dashboard\assets\pages\widget\amchart\amcharts.js" />
+    <Content Include="Dashboard\assets\pages\widget\amchart\amcharts.min.js" />
+    <Content Include="Dashboard\assets\pages\widget\amchart\ammap.js" />
+    <Content Include="Dashboard\assets\pages\widget\amchart\ammap.min.js" />
+    <Content Include="Dashboard\assets\pages\widget\amchart\continentsLow.js" />
+    <Content Include="Dashboard\assets\pages\widget\amchart\continentsLow.min.js" />
+    <Content Include="Dashboard\assets\pages\widget\amchart\export.min.js" />
+    <Content Include="Dashboard\assets\pages\widget\amchart\gauge.js" />
+    <Content Include="Dashboard\assets\pages\widget\amchart\gauge.min.js" />
+    <Content Include="Dashboard\assets\pages\widget\amchart\images\dragIconRoundBig.svg" />
+    <Content Include="Dashboard\assets\pages\widget\amchart\images\lens.svg" />
+    <Content Include="Dashboard\assets\pages\widget\amchart\light.js" />
+    <Content Include="Dashboard\assets\pages\widget\amchart\light.min.js" />
+    <Content Include="Dashboard\assets\pages\widget\amchart\pie.js" />
+    <Content Include="Dashboard\assets\pages\widget\amchart\pie.min.js" />
+    <Content Include="Dashboard\assets\pages\widget\amchart\serial.js" />
+    <Content Include="Dashboard\assets\pages\widget\amchart\serial.min.js" />
+    <Content Include="Dashboard\assets\pages\widget\amchart\usaLow.js" />
+    <Content Include="Dashboard\assets\pages\widget\amchart\worldLow.js" />
+    <Content Include="Dashboard\assets\pages\widget\amchart\worldLow.min.js" />
+    <Content Include="Dashboard\assets\pages\widget\excanvas.js" />
+    <Content Include="Main Theme\Blog.aspx" />
+    <Content Include="Main Theme\Blog_Details.aspx" />
+    <Content Include="Main Theme\Contact.aspx" />
+    <Content Include="Main Theme\Contact_Process.php" />
+    <Content Include="Dashboard\index.aspx" />
+    <Content Include="Main Theme\Default.aspx" />
+    <Content Include="Main Theme\Doc\css\font-awesome.min.css" />
+    <Content Include="Main Theme\Doc\css\main.css" />
+    <Content Include="Main Theme\Doc\css\normalize.min.css" />
+    <Content Include="Main Theme\Doc\fonts\fontawesome-webfont.svg" />
+    <Content Include="Main Theme\Doc\img\logo.png" />
+    <Content Include="Main Theme\Doc\index.html" />
+    <Content Include="Main Theme\Doc\js\custom.js" />
+    <Content Include="Main Theme\Doc\js\jquery-1.11.0.min.js" />
+    <Content Include="Main Theme\Doc\js\jquery.nav.js" />
+    <Content Include="Main Theme\Doc\syntax-highlighter\scripts\shAutoloader.js" />
+    <Content Include="Main Theme\Doc\syntax-highlighter\scripts\shBrushAppleScript.js" />
+    <Content Include="Main Theme\Doc\syntax-highlighter\scripts\shBrushAS3.js" />
+    <Content Include="Main Theme\Doc\syntax-highlighter\scripts\shBrushBash.js" />
+    <Content Include="Main Theme\Doc\syntax-highlighter\scripts\shBrushColdFusion.js" />
+    <Content Include="Main Theme\Doc\syntax-highlighter\scripts\shBrushCpp.js" />
+    <Content Include="Main Theme\Doc\syntax-highlighter\scripts\shBrushCSharp.js" />
+    <Content Include="Main Theme\Doc\syntax-highlighter\scripts\shBrushCss.js" />
+    <Content Include="Main Theme\Doc\syntax-highlighter\scripts\shBrushDelphi.js" />
+    <Content Include="Main Theme\Doc\syntax-highlighter\scripts\shBrushDiff.js" />
+    <Content Include="Main Theme\Doc\syntax-highlighter\scripts\shBrushErlang.js" />
+    <Content Include="Main Theme\Doc\syntax-highlighter\scripts\shBrushGroovy.js" />
+    <Content Include="Main Theme\Doc\syntax-highlighter\scripts\shBrushJava.js" />
+    <Content Include="Main Theme\Doc\syntax-highlighter\scripts\shBrushJavaFX.js" />
+    <Content Include="Main Theme\Doc\syntax-highlighter\scripts\shBrushJScript.js" />
+    <Content Include="Main Theme\Doc\syntax-highlighter\scripts\shBrushPerl.js" />
+    <Content Include="Main Theme\Doc\syntax-highlighter\scripts\shBrushPhp.js" />
+    <Content Include="Main Theme\Doc\syntax-highlighter\scripts\shBrushPlain.js" />
+    <Content Include="Main Theme\Doc\syntax-highlighter\scripts\shBrushPowerShell.js" />
+    <Content Include="Main Theme\Doc\syntax-highlighter\scripts\shBrushPython.js" />
+    <Content Include="Main Theme\Doc\syntax-highlighter\scripts\shBrushRuby.js" />
+    <Content Include="Main Theme\Doc\syntax-highlighter\scripts\shBrushSass.js" />
+    <Content Include="Main Theme\Doc\syntax-highlighter\scripts\shBrushScala.js" />
+    <Content Include="Main Theme\Doc\syntax-highlighter\scripts\shBrushSql.js" />
+    <Content Include="Main Theme\Doc\syntax-highlighter\scripts\shBrushVb.js" />
+    <Content Include="Main Theme\Doc\syntax-highlighter\scripts\shBrushXml.js" />
+    <Content Include="Main Theme\Doc\syntax-highlighter\scripts\shCore.js" />
+    <Content Include="Main Theme\Doc\syntax-highlighter\scripts\shLegacy.js" />
+    <Content Include="Main Theme\Doc\syntax-highlighter\styles\shCore.css" />
+    <Content Include="Main Theme\Doc\syntax-highlighter\styles\shCoreDefault.css" />
+    <Content Include="Main Theme\Doc\syntax-highlighter\styles\shCoreDjango.css" />
+    <Content Include="Main Theme\Doc\syntax-highlighter\styles\shCoreEclipse.css" />
+    <Content Include="Main Theme\Doc\syntax-highlighter\styles\shCoreEmacs.css" />
+    <Content Include="Main Theme\Doc\syntax-highlighter\styles\shCoreFadeToGrey.css" />
+    <Content Include="Main Theme\Doc\syntax-highlighter\styles\shCoreMDUltra.css" />
+    <Content Include="Main Theme\Doc\syntax-highlighter\styles\shCoreMidnight.css" />
+    <Content Include="Main Theme\Doc\syntax-highlighter\styles\shCoreRDark.css" />
+    <Content Include="Main Theme\Doc\syntax-highlighter\styles\shThemeDefault.css" />
+    <Content Include="Main Theme\Doc\syntax-highlighter\styles\shThemeDjango.css" />
+    <Content Include="Main Theme\Doc\syntax-highlighter\styles\shThemeEclipse.css" />
+    <Content Include="Main Theme\Doc\syntax-highlighter\styles\shThemeEmacs.css" />
+    <Content Include="Main Theme\Doc\syntax-highlighter\styles\shThemeFadeToGrey.css" />
+    <Content Include="Main Theme\Doc\syntax-highlighter\styles\shThemeMDUltra.css" />
+    <Content Include="Main Theme\Doc\syntax-highlighter\styles\shThemeMidnight.css" />
+    <Content Include="Main Theme\Doc\syntax-highlighter\styles\shThemeRDark.css" />
+    <Content Include="Main Theme\Elements.aspx" />
+    <Content Include="Main Theme\Resources\css\animate.min.css" />
+    <Content Include="Main Theme\Resources\css\bootstrap.min.css" />
+    <Content Include="Main Theme\Resources\css\flaticon.css" />
+    <Content Include="Main Theme\Resources\css\fontawesome-all.min.css" />
+    <Content Include="Main Theme\Resources\css\magnific-popup.css" />
+    <Content Include="Main Theme\Resources\css\main.css" />
+    <Content Include="Main Theme\Resources\css\nice-select.css" />
+    <Content Include="Main Theme\Resources\css\owl.carousel.min.css" />
+    <Content Include="Main Theme\Resources\css\price_rangs.css" />
+    <Content Include="Main Theme\Resources\css\responsive.css" />
+    <Content Include="Main Theme\Resources\css\slick.css" />
+    <Content Include="Main Theme\Resources\css\slicknav.css" />
+    <Content Include="Main Theme\Resources\css\style.css" />
+    <Content Include="Main Theme\Resources\css\themify-icons.css" />
+    <Content Include="Main Theme\Resources\fonts\fa-brands-400.svg" />
+    <Content Include="Main Theme\Resources\fonts\fa-regular-400.svg" />
+    <Content Include="Main Theme\Resources\fonts\fa-solid-900.svg" />
+    <Content Include="Main Theme\Resources\fonts\flaticon.html" />
+    <Content Include="Main Theme\Resources\fonts\Flaticon.svg" />
+    <Content Include="Main Theme\Resources\fonts\themify.svg" />
+    <Content Include="Main Theme\Resources\img\about\about_lft.png" />
+    <Content Include="Main Theme\Resources\img\about\about_right.png" />
+    <Content Include="Main Theme\Resources\img\about\pet_care.png" />
+    <Content Include="Main Theme\Resources\img\adapt_icon\1.png" />
+    <Content Include="Main Theme\Resources\img\adapt_icon\1.svg" />
+    <Content Include="Main Theme\Resources\img\adapt_icon\2.png" />
+    <Content Include="Main Theme\Resources\img\adapt_icon\3.png" />
+    <Content Include="Main Theme\Resources\img\banner\dog.png" />
+    <Content Include="Main Theme\Resources\img\banner\img.png" />
+    <Content Include="Main Theme\Resources\img\blog\author.png" />
+    <Content Include="Main Theme\Resources\img\blog\learn_about_bg.png" />
+    <Content Include="Main Theme\Resources\img\blog\single_blog_1.png" />
+    <Content Include="Main Theme\Resources\img\blog\single_blog_2.png" />
+    <Content Include="Main Theme\Resources\img\blog\single_blog_3.png" />
+    <Content Include="Main Theme\Resources\img\blog\single_blog_4.png" />
+    <Content Include="Main Theme\Resources\img\blog\single_blog_5.png" />
+    <Content Include="Main Theme\Resources\img\blog\slide_thumb_1.png" />
+    <Content Include="Main Theme\Resources\img\comment\comment_1.png" />
+    <Content Include="Main Theme\Resources\img\comment\comment_2.png" />
+    <Content Include="Main Theme\Resources\img\comment\comment_3.png" />
+    <Content Include="Main Theme\Resources\img\elements\a.jpg" />
+    <Content Include="Main Theme\Resources\img\elements\a2.jpg" />
+    <Content Include="Main Theme\Resources\img\elements\d.jpg" />
+    <Content Include="Main Theme\Resources\img\elements\disabled-check.png" />
+    <Content Include="Main Theme\Resources\img\elements\disabled-radio.png" />
+    <Content Include="Main Theme\Resources\img\elements\f1.jpg" />
+    <Content Include="Main Theme\Resources\img\elements\f2.jpg" />
+    <Content Include="Main Theme\Resources\img\elements\f3.jpg" />
+    <Content Include="Main Theme\Resources\img\elements\f4.jpg" />
+    <Content Include="Main Theme\Resources\img\elements\f5.jpg" />
+    <Content Include="Main Theme\Resources\img\elements\f6.jpg" />
+    <Content Include="Main Theme\Resources\img\elements\f7.jpg" />
+    <Content Include="Main Theme\Resources\img\elements\f8.jpg" />
+    <Content Include="Main Theme\Resources\img\elements\g1.jpg" />
+    <Content Include="Main Theme\Resources\img\elements\g2.jpg" />
+    <Content Include="Main Theme\Resources\img\elements\g3.jpg" />
+    <Content Include="Main Theme\Resources\img\elements\g4.jpg" />
+    <Content Include="Main Theme\Resources\img\elements\g5.jpg" />
+    <Content Include="Main Theme\Resources\img\elements\g6.jpg" />
+    <Content Include="Main Theme\Resources\img\elements\g7.jpg" />
+    <Content Include="Main Theme\Resources\img\elements\g8.jpg" />
+    <Content Include="Main Theme\Resources\img\elements\primary-check.png" />
+    <Content Include="Main Theme\Resources\img\elements\primary-radio.png" />
+    <Content Include="Main Theme\Resources\img\elements\success-check.png" />
+    <Content Include="Main Theme\Resources\img\elements\success-radio.png" />
+    <Content Include="Main Theme\Resources\img\favicon.ico" />
+    <Content Include="Main Theme\Resources\img\gallery\1.png" />
+    <Content Include="Main Theme\Resources\img\gallery\2.png" />
+    <Content Include="Main Theme\Resources\img\gallery\3.png" />
+    <Content Include="Main Theme\Resources\img\gallery\about2.png" />
+    <Content Include="Main Theme\Resources\img\gallery\blog01.png" />
+    <Content Include="Main Theme\Resources\img\gallery\blog02.png" />
+    <Content Include="Main Theme\Resources\img\gallery\blog1.png" />
+    <Content Include="Main Theme\Resources\img\gallery\footer_bg.jpg" />
+    <Content Include="Main Theme\Resources\img\gallery\Homepage_testi.png" />
+    <Content Include="Main Theme\Resources\img\gallery\section_bg02.jpg" />
+    <Content Include="Main Theme\Resources\img\gallery\section_bg04.jpg" />
+    <Content Include="Main Theme\Resources\img\gallery\shape1.png" />
+    <Content Include="Main Theme\Resources\img\gallery\t1.png" />
+    <Content Include="Main Theme\Resources\img\gallery\team1.png" />
+    <Content Include="Main Theme\Resources\img\gallery\team2.png" />
+    <Content Include="Main Theme\Resources\img\gallery\team3.png" />
+    <Content Include="Main Theme\Resources\img\hero\about.jpg" />
+    <Content Include="Main Theme\Resources\img\hero\h1_hero.jpg" />
+    <Content Include="Main Theme\Resources\img\logo\loder.jpg" />
+    <Content Include="Main Theme\Resources\img\logo\logo.png" />
+    <Content Include="Main Theme\Resources\img\logo\logo2_footer.png" />
+    <Content Include="Main Theme\Resources\img\logo\select-items-icon.jpg" />
+    <Content Include="Main Theme\Resources\img\our_blog\blog-img1.jpg" />
+    <Content Include="Main Theme\Resources\img\post\next.png" />
+    <Content Include="Main Theme\Resources\img\post\post_1.png" />
+    <Content Include="Main Theme\Resources\img\post\post_10.png" />
+    <Content Include="Main Theme\Resources\img\post\post_2.png" />
+    <Content Include="Main Theme\Resources\img\post\post_3.png" />
+    <Content Include="Main Theme\Resources\img\post\post_4.png" />
+    <Content Include="Main Theme\Resources\img\post\post_5.png" />
+    <Content Include="Main Theme\Resources\img\post\post_6.png" />
+    <Content Include="Main Theme\Resources\img\post\post_7.png" />
+    <Content Include="Main Theme\Resources\img\post\post_8.png" />
+    <Content Include="Main Theme\Resources\img\post\post_9.png" />
+    <Content Include="Main Theme\Resources\img\post\preview.png" />
+    <Content Include="Main Theme\Resources\img\prising\1.png" />
+    <Content Include="Main Theme\Resources\img\prising\10.png" />
+    <Content Include="Main Theme\Resources\img\prising\2.png" />
+    <Content Include="Main Theme\Resources\img\prising\3.png" />
+    <Content Include="Main Theme\Resources\img\prising\4.png" />
+    <Content Include="Main Theme\Resources\img\prising\5.png" />
+    <Content Include="Main Theme\Resources\img\prising\6.png" />
+    <Content Include="Main Theme\Resources\img\prising\7.png" />
+    <Content Include="Main Theme\Resources\img\prising\8.png" />
+    <Content Include="Main Theme\Resources\img\prising\9.png" />
+    <Content Include="Main Theme\Resources\img\service\1.png" />
+    <Content Include="Main Theme\Resources\img\service\2.png" />
+    <Content Include="Main Theme\Resources\img\service\3.png" />
+    <Content Include="Main Theme\Resources\img\service\service_icon_1.png" />
+    <Content Include="Main Theme\Resources\img\service\service_icon_2.png" />
+    <Content Include="Main Theme\Resources\img\service\service_icon_3.png" />
+    <Content Include="Main Theme\Resources\img\service\service_icon_bg_1.png" />
+    <Content Include="Main Theme\Resources\img\team\1.png" />
+    <Content Include="Main Theme\Resources\img\team\2.png" />
+    <Content Include="Main Theme\Resources\img\team\3.png" />
+    <Content Include="Main Theme\Resources\js\animated.headline.js" />
+    <Content Include="Main Theme\Resources\js\bootstrap.min.js" />
+    <Content Include="Main Theme\Resources\js\contact.js" />
+    <Content Include="Main Theme\Resources\js\jquery.ajaxchimp.min.js" />
+    <Content Include="Main Theme\Resources\js\jquery.form.js" />
+    <Content Include="Main Theme\Resources\js\jquery.magnific-popup.js" />
+    <Content Include="Main Theme\Resources\js\jquery.nice-select.min.js" />
+    <Content Include="Main Theme\Resources\js\jquery.paroller.min.js" />
+    <Content Include="Main Theme\Resources\js\jquery.slicknav.min.js" />
+    <Content Include="Main Theme\Resources\js\jquery.sticky.js" />
+    <Content Include="Main Theme\Resources\js\jquery.validate.min.js" />
+    <Content Include="Main Theme\Resources\js\mail-script.js" />
+    <Content Include="Main Theme\Resources\js\main.js" />
+    <Content Include="Main Theme\Resources\js\one-page-nav-min.js" />
+    <Content Include="Main Theme\Resources\js\owl.carousel.min.js" />
+    <Content Include="Main Theme\Resources\js\plugins.js" />
+    <Content Include="Main Theme\Resources\js\popper.min.js" />
+    <Content Include="Main Theme\Resources\js\price-range.js" />
+    <Content Include="Main Theme\Resources\js\slick.min.js" />
+    <Content Include="Main Theme\Resources\js\vendor\jquery-1.12.4.min.js" />
+    <Content Include="Main Theme\Resources\js\vendor\modernizr-3.5.0.min.js" />
+    <Content Include="Main Theme\Resources\js\wow.min.js" />
+    <Content Include="TODO.txt" />
+    <Content Include="Web.config" />
+    <Content Include="Main Theme\Main.aspx" />
+    <Content Include="Main Theme\Services.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dashboard\accordion.aspx.cs">
+      <DependentUpon>accordion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\accordion.aspx.designer.cs">
+      <DependentUpon>accordion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\auth-normal-sign-in.aspx.cs">
+      <DependentUpon>auth-normal-sign-in.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\auth-normal-sign-in.aspx.designer.cs">
+      <DependentUpon>auth-normal-sign-in.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\auth-sign-up.aspx.cs">
+      <DependentUpon>auth-sign-up.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\auth-sign-up.aspx.designer.cs">
+      <DependentUpon>auth-sign-up.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\breadcrumb.aspx.cs">
+      <DependentUpon>breadcrumb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\breadcrumb.aspx.designer.cs">
+      <DependentUpon>breadcrumb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\bs-basic-table.aspx.cs">
+      <DependentUpon>bs-basic-table.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\bs-basic-table.aspx.designer.cs">
+      <DependentUpon>bs-basic-table.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\button.aspx.cs">
+      <DependentUpon>button.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\button.aspx.designer.cs">
+      <DependentUpon>button.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\chart-morris.aspx.cs">
+      <DependentUpon>chart-morris.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\chart-morris.aspx.designer.cs">
+      <DependentUpon>chart-morris.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\color.aspx.cs">
+      <DependentUpon>color.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\color.aspx.designer.cs">
+      <DependentUpon>color.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\form-elements-component.aspx.cs">
+      <DependentUpon>form-elements-component.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\form-elements-component.aspx.designer.cs">
+      <DependentUpon>form-elements-component.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\label-badge.aspx.cs">
+      <DependentUpon>label-badge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\label-badge.aspx.designer.cs">
+      <DependentUpon>label-badge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\map-google.aspx.cs">
+      <DependentUpon>map-google.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\map-google.aspx.designer.cs">
+      <DependentUpon>map-google.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\notification.aspx.cs">
+      <DependentUpon>notification.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\notification.aspx.designer.cs">
+      <DependentUpon>notification.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\sample-page.aspx.cs">
+      <DependentUpon>sample-page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\sample-page.aspx.designer.cs">
+      <DependentUpon>sample-page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\tabs.aspx.cs">
+      <DependentUpon>tabs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\tabs.aspx.designer.cs">
+      <DependentUpon>tabs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\tooltip.aspx.cs">
+      <DependentUpon>tooltip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\tooltip.aspx.designer.cs">
+      <DependentUpon>tooltip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\typography.aspx.cs">
+      <DependentUpon>typography.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\typography.aspx.designer.cs">
+      <DependentUpon>typography.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main Theme\About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main Theme\About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main Theme\Blog.aspx.cs">
+      <DependentUpon>Blog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main Theme\Blog.aspx.designer.cs">
+      <DependentUpon>Blog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main Theme\Blog_Details.aspx.cs">
+      <DependentUpon>Blog_Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main Theme\Blog_Details.aspx.designer.cs">
+      <DependentUpon>Blog_Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main Theme\Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main Theme\Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main Theme\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main Theme\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main Theme\Elements.aspx.cs">
+      <DependentUpon>Elements.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main Theme\Elements.aspx.designer.cs">
+      <DependentUpon>Elements.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Main Theme\Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main Theme\Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main Theme\Services.aspx.cs">
+      <DependentUpon>Services.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main Theme\Services.aspx.designer.cs">
+      <DependentUpon>Services.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Main Theme\Doc\fonts\fontawesome-webfont.eot" />
+    <Content Include="Main Theme\Doc\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Main Theme\Doc\fonts\fontawesome-webfont.woff" />
+    <Content Include="Main Theme\Doc\fonts\FontAwesome.otf" />
+    <Content Include="Main Theme\Doc\img\Thumbs.db" />
+    <Content Include="Dashboard\assets\icon\CAW.TTF" />
+    <Content Include="Dashboard\assets\icon\fa-brands-400.eot" />
+    <Content Include="Dashboard\assets\icon\fa-brands-400.ttf" />
+    <Content Include="Dashboard\assets\icon\fa-brands-400.woff" />
+    <Content Include="Dashboard\assets\icon\fa-brands-400.woff2" />
+    <Content Include="Dashboard\assets\icon\fa-regular-400.eot" />
+    <Content Include="Dashboard\assets\icon\fa-regular-400.ttf" />
+    <Content Include="Dashboard\assets\icon\fa-regular-400.woff" />
+    <Content Include="Dashboard\assets\icon\fa-regular-400.woff2" />
+    <Content Include="Dashboard\assets\icon\fa-solid-900.eot" />
+    <Content Include="Dashboard\assets\icon\fa-solid-900.ttf" />
+    <Content Include="Dashboard\assets\icon\fa-solid-900.woff" />
+    <Content Include="Dashboard\assets\icon\fa-solid-900.woff2" />
+    <Content Include="Dashboard\assets\icon\feather\fonts\feather.eot" />
+    <Content Include="Dashboard\assets\icon\feather\fonts\feather.ttf" />
+    <Content Include="Dashboard\assets\icon\feather\fonts\feather.woff" />
+    <Content Include="Dashboard\assets\icon\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Dashboard\assets\icon\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Dashboard\assets\icon\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Dashboard\assets\icon\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Dashboard\assets\icon\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="Dashboard\assets\icon\fontawesome-webfont.eot" />
+    <Content Include="Dashboard\assets\icon\fontawesome-webfont.ttf" />
+    <Content Include="Dashboard\assets\icon\fontawesome-webfont.woff" />
+    <Content Include="Dashboard\assets\icon\fontawesome-webfont.woff2" />
+    <Content Include="Dashboard\assets\icon\FontAwesome.otf" />
+    <Content Include="Dashboard\assets\icon\icofont\fonts\icofont.eot" />
+    <Content Include="Dashboard\assets\icon\icofont\fonts\icofont.ttf" />
+    <Content Include="Dashboard\assets\icon\icofont\fonts\icofont.woff" />
+    <Content Include="Dashboard\assets\icon\ionicons.eot" />
+    <Content Include="Dashboard\assets\icon\ionicons.ttf" />
+    <Content Include="Dashboard\assets\icon\ionicons.woff" />
+    <Content Include="Dashboard\assets\icon\Linearicons-Free.eot" />
+    <Content Include="Dashboard\assets\icon\Linearicons-Free.ttf" />
+    <Content Include="Dashboard\assets\icon\Linearicons-Free.woff" />
+    <Content Include="Dashboard\assets\icon\Linearicons-Free.woff2" />
+    <Content Include="Dashboard\assets\icon\SEGOEUI.ttf" />
+    <Content Include="Dashboard\assets\icon\SEGOEUIB.TTF" />
+    <Content Include="Dashboard\assets\icon\segoeuii.ttf" />
+    <Content Include="Dashboard\assets\icon\SEGOEUIZ.TTF" />
+    <Content Include="Dashboard\assets\icon\Simple-Line-Icons.eot" />
+    <Content Include="Dashboard\assets\icon\Simple-Line-Icons.ttf" />
+    <Content Include="Dashboard\assets\icon\Simple-Line-Icons.woff" />
+    <Content Include="Dashboard\assets\icon\Simple-Line-Icons.woff2" />
+    <Content Include="Dashboard\assets\icon\themify-icons\fonts\themify.eot" />
+    <Content Include="Dashboard\assets\icon\themify-icons\fonts\themify.ttf" />
+    <Content Include="Dashboard\assets\icon\themify-icons\fonts\themify.woff" />
+    <Content Include="Dashboard\assets\images\auth\Thumbs.db" />
+    <Content Include="Dashboard\assets\images\Thumbs.db" />
+    <None Include="packages.config" />
+    <Content Include="Main Theme\Resources\css\style.map" />
+    <Content Include="Main Theme\Resources\fonts\_flaticon.scss" />
+    <Content Include="Main Theme\Resources\fonts\fa-brands-400.eot" />
+    <Content Include="Main Theme\Resources\fonts\fa-brands-400.woff" />
+    <Content Include="Main Theme\Resources\fonts\fa-brands-400.ttf" />
+    <Content Include="Main Theme\Resources\fonts\fa-brands-400.woff2" />
+    <Content Include="Main Theme\Resources\fonts\fa-regular-400.eot" />
+    <Content Include="Main Theme\Resources\fonts\fa-regular-400.ttf" />
+    <Content Include="Main Theme\Resources\fonts\fa-regular-400.woff" />
+    <Content Include="Main Theme\Resources\fonts\fa-regular-400.woff2" />
+    <Content Include="Main Theme\Resources\fonts\fa-solid-900.eot" />
+    <Content Include="Main Theme\Resources\fonts\fa-solid-900.ttf" />
+    <Content Include="Main Theme\Resources\fonts\fa-solid-900.woff" />
+    <Content Include="Main Theme\Resources\fonts\fa-solid-900.woff2" />
+    <Content Include="Main Theme\Resources\fonts\Flaticon.eot" />
+    <Content Include="Main Theme\Resources\fonts\Flaticon.ttf" />
+    <Content Include="Main Theme\Resources\fonts\Flaticon.woff" />
+    <Content Include="Main Theme\Resources\fonts\Flaticon.woff2" />
+    <Content Include="Main Theme\Resources\fonts\themify.eot" />
+    <Content Include="Main Theme\Resources\fonts\themify.ttf" />
+    <Content Include="Main Theme\Resources\fonts\themify.woff" />
+    <Content Include="Main Theme\Resources\scss\_about.scss" />
+    <Content Include="Main Theme\Resources\scss\_blog_page.scss" />
+    <Content Include="Main Theme\Resources\scss\_bradcam.scss" />
+    <Content Include="Main Theme\Resources\scss\_categories.scss" />
+    <Content Include="Main Theme\Resources\scss\_color.scss" />
+    <Content Include="Main Theme\Resources\scss\_common.scss" />
+    <Content Include="Main Theme\Resources\scss\_contact-form.scss" />
+    <Content Include="Main Theme\Resources\scss\_contact.scss" />
+    <Content Include="Main Theme\Resources\scss\_elements.scss" />
+    <Content Include="Main Theme\Resources\scss\_extend.scss" />
+    <Content Include="Main Theme\Resources\scss\_footer.scss" />
+    <Content Include="Main Theme\Resources\scss\_h1-hero.scss" />
+    <Content Include="Main Theme\Resources\scss\_headerMenu.scss" />
+    <Content Include="Main Theme\Resources\scss\_mixins.scss" />
+    <Content Include="Main Theme\Resources\scss\_our-info.scss" />
+    <Content Include="Main Theme\Resources\scss\_overlay.scss" />
+    <Content Include="Main Theme\Resources\scss\_pagination.scss" />
+    <Content Include="Main Theme\Resources\scss\_services.scss" />
+    <Content Include="Main Theme\Resources\scss\_services_section.scss" />
+    <Content Include="Main Theme\Resources\scss\_team.scss" />
+    <Content Include="Main Theme\Resources\scss\_testimonial.scss" />
+    <Content Include="Main Theme\Resources\scss\_variables.scss" />
+    <Content Include="Main Theme\Resources\scss\style.scss" />
+    <Content Include="Main Theme\site.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>59728</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44309/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Bu proje bu bilgisayarda olmayan NuGet paketlerine başvuru yapıyor. Bunları indirmek için NuGet Paket Geri Yükleme'yi kullanın. Daha fazla bilgi için, bkz. http://go.microsoft.com/fwlink/?LinkID=322105. Eksik dosya: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
