@@ -1,0 +1,3 @@
+Web sayfasına ilk girildiğinde "template main" olarak belirttiğim bootsrap temasını kullanmayı planlıyorum, misafir kullanıcılar için sadece bu tema görüntülenebilir durumda olacak.
+
+Kullanıcı girişi yapıldığında ise "template dashboard" olarak belirttiğim bootstrap temasını kullanacağım ve ilgili giriş alanından 3 farklı kullanıcı tipi giriş yaparak işlemleri gerçekleştirebilecekleri dashboard yapısındaki siteye ulaşabileceklerdir.

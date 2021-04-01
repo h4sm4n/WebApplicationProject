@@ -1,0 +1,12 @@
+C:\Users\tnc\Desktop\Proje\WebAppProject\Project.Business\bin\Debug\Project.Business.dll
+C:\Users\tnc\Desktop\Proje\WebAppProject\Project.Business\bin\Debug\Project.Business.pdb
+C:\Users\tnc\Desktop\Proje\WebAppProject\Project.Business\obj\Debug\Project.Business.csprojAssemblyReference.cache
+C:\Users\tnc\Desktop\Proje\WebAppProject\Project.Business\obj\Debug\Project.Business.csproj.CoreCompileInputs.cache
+C:\Users\tnc\Desktop\Proje\WebAppProject\Project.Business\obj\Debug\Project.Business.dll
+C:\Users\tnc\Desktop\Proje\WebAppProject\Project.Business\obj\Debug\Project.Business.pdb
+C:\Users\tnc\Desktop\Proje\WebAppProject\Project.Business\bin\Debug\Project.Business.dll.config
+C:\Users\tnc\Desktop\Proje\WebAppProject\Project.Business\bin\Debug\EntityFramework.dll
+C:\Users\tnc\Desktop\Proje\WebAppProject\Project.Business\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\tnc\Desktop\Proje\WebAppProject\Project.Business\bin\Debug\EntityFramework.xml
+C:\Users\tnc\Desktop\Proje\WebAppProject\Project.Business\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\tnc\Desktop\Proje\WebAppProject\Project.Business\obj\Debug\Project.Business.csproj.CopyComplete

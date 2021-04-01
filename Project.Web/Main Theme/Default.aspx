@@ -47,16 +47,16 @@
                         <div class="row d-flex justify-content-between align-items-center">
                             <div class="header-info-left">
                                 <ul>     
-                                    <li>Phone: +99 (0) 101 0000 888</li>
-                                    <li>Email: noreply@yourdomain.com</li>
+                                    <li>Telefon: +9 (0) 256 313 9154</li>
+                                    <li>Email: noreply@pamukinsaat.com</li>
                                 </ul>
                             </div>
                             <div class="header-info-right">
                                 <ul class="header-social">    
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                    <li> <a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                    <li><a href="https://www.facebook.com"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://www.twitter.com"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="https://www.linked.in"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li> <a href="https://www.google.com"><i class="fab fa-google-plus-g"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -78,23 +78,23 @@
                                 <div class="main-menu d-none d-lg-block">
                                     <nav> 
                                         <ul id="navigation">                                                                                          
-                                            <li><a href="Default.aspx">Home</a></li>
-                                            <li><a href="About.aspx">About</a></li>
-                                            <li><a href="Services.aspx">Services</a></li>
+                                            <li><a href="Default.aspx">Ana Sayfa</a></li>
+                                            <li><a href="About.aspx">Hakkında</a></li>
+                                            <li><a href="Services.aspx">Servisler</a></li>
                                             <li><a href="Blog.aspx">Blog</a>
                                                 <ul class="submenu">
                                                     <li><a href="Blog.aspx">Blog</a></li>
-                                                    <li><a href="Blog_Details.aspx">Blog Details</a></li>
-                                                    <li><a href="Elements.aspx">Element</a></li>
+                                                    <li><a href="Blog_Details.aspx">Blog Detayları</a></li>
+                                                    <li><a href="Elements.aspx">Elementler</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="Contact.aspx">Contact</a></li>
+                                            <li><a href="Contact.aspx">İletişim</a></li>
                                         </ul>
                                     </nav>
                                 </div>
                                 <!-- Header-btn -->
                                 <div class="header-right-btn d-none d-lg-block ml-20">
-                                    <a href="../Dashboard/index.aspx" target="_blank" class="btn header-btn">Dashboard</a>
+                                    <a href="../Dashboard/index.aspx" target="_blank" class="btn header-btn">Online İşlemler</a>
                                 </div>
                             </div>
                         </div> 
@@ -119,20 +119,20 @@
                     <div class="row">
                         <div class="col-xl-9 col-lg-9">
                             <div class="hero__caption">
-                                <h1 >Safe & Reliable <span>Logistic</span> Solutions!</h1>
+                                <h1 >Pamuk <span>Yapı Tasarım</span>İnşaat </h1>
                             </div>
                             <!--Hero form -->
                             <form action="#" class="search-box">
                                 <div class="input-form">
-                                    <input type="text" placeholder="Your Tracking ID">
+                                    <input type="text" placeholder="Takip Numarası">
                                 </div>
                                 <div class="search-form">
-                                    <a href="#">Track & Trace</a>
+                                    <a href="https://www.google.com" target="_blank">Takip Et </a>
                                 </div>	
                             </form>	
                             <!-- Hero Pera -->
                             <div class="hero-pera">
-                                <p>For order status inquiry</p>
+                                <p>Takip için.</p>
                             </div>
                         </div>
                     </div>
@@ -151,8 +151,8 @@
                             <span class="flaticon-support"></span>
                         </div>
                         <div class="info-caption">
-                            <p>Call Us Anytime</p>
-                            <span>+ (123) 1800-567-8990</span>
+                            <p>Bizi her zaman arayabilirsiniz.</p>
+                            <span>+9 (0) 256 313 9154</span>
                         </div>
                     </div>
                 </div>
@@ -162,8 +162,8 @@
                             <span class="flaticon-clock"></span>
                         </div>
                         <div class="info-caption">
-                            <p>Sunday CLOSED</p>
-                            <span>Mon - Sat 8.00 - 18.00</span>
+                            <p>Pazar KAPALI</p>
+                            <span>Pzt-Cmt 8.00 - 18.00</span>
                         </div>
                     </div>
                 </div>
@@ -173,8 +173,8 @@
                             <span class="flaticon-place"></span>
                         </div>
                         <div class="info-caption">
-                            <p>Columbia, SC 29201</p>
-                            <span>USA, New York - 10620</span>
+                            <p>Türkiye</p>
+                            <span>Aydın Nazilli - 09800</span>
                         </div>
                     </div>
                 </div>
@@ -189,8 +189,8 @@
                 <div class="col-lg-12">
                     <!-- Section Tittle -->
                     <div class="section-tittle text-center mb-80">
-                        <span>Our Services</span>
-                        <h2>What We Can Do For You</h2>
+                        <span>Hizmetlerimiz</span>
+                        <h2>Sizler İçin Neler Yapabiliriz</h2>
                     </div>
                 </div>
             </div>
@@ -201,8 +201,8 @@
                             <span class="flaticon-shipped"></span>
                         </div>
                         <div class="cat-cap">
-                            <h5><a href="Services.aspx">Land Transport</a></h5>
-                            <p>The sea freight service has grown conside rably in recent years. We spend timetting to know your processes to.</p>
+                            <h5><a href="Services.aspx">İnşaat</a></h5>
+                            <p>Becerikli ustalarımız ile birlikte her türlü inşaat işinde sizlerin hizmetindeyiz.</p>
                         </div>
                     </div>
                 </div>
@@ -212,8 +212,8 @@
                             <span class="flaticon-ship"></span>
                         </div>
                         <div class="cat-cap">
-                            <h5><a href="Services.aspx">Ship Transport</a></h5>
-                            <p>The sea freight service has grown conside rably in recent years. We spend timetting to know your processes to.</p>
+                            <h5><a href="Services.aspx">Proje Çizimi</a></h5>
+                            <p>Tecrübeli mimar kadromuz ile her türlü yapı için çizimlerinizi gerçekleştirebiliriz.</p>
                         </div>
                     </div>
                 </div>
@@ -223,8 +223,8 @@
                             <span class="flaticon-plane"></span>
                         </div>
                         <div class="cat-cap">
-                            <h5><a href="Services.aspx">Air Transport</a></h5>
-                            <p>The sea freight service has grown conside rably in recent years. We spend timetting to know your processes to.</p>
+                            <h5><a href="Services.aspx">Yapı ve Dekorasyon</a></h5>
+                            <p>İç Mimar ve Peyzaj Mimarı kadromuz ile dekorasyonda Ege Bölgesinin bir numarasıyız.</p>
                         </div>
                     </div>
                 </div>
@@ -240,12 +240,12 @@
                     <div class="about-caption mb-50">
                         <!-- Section Tittle -->
                         <div class="section-tittle mb-35">
-                            <span>About Our Company</span>
-                            <h2>Safe Logistic & Transport  Solutions That Saves our Valuable Time!</h2>
+                            <span>Hakkımızda</span>
+                            <h2>İnşaat sektöründe Ege Bölgesinin bir numaralı firması olmakla gurur duyuyoruz.</h2>
                         </div>
                         <p>Brook presents your services with flexible, convenient and cdpose layouts. You can select your favorite layouts & elements for cular ts with unlimited ustomization possibilities. Pixel-perfect replication of the designers is intended.</p>
                         <p>Brook presents your services with flexible, convefnient and chient anipurpose layouts. You can select your favorite layouts.</p>
-                        <a href="About.aspx" class="btn">More About Us</a>
+                        <a href="About.aspx" class="btn" id="btn1">Daha Fazla Göster</a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12">
