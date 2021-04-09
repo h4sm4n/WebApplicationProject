@@ -4,7 +4,7 @@
 <html lang="en">
 
 <head>
-    <title>Material Able bootstrap admin template by Codedthemes</title>
+    <title>Online İşlemler- Kaydol</title>
     <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 10]>
@@ -105,32 +105,32 @@
                             <div class="card-block">
                                 <div class="row m-b-20">
                                     <div class="col-md-12">
-                                        <h3 class="text-center txt-primary">Sign up</h3>
+                                        <h3 class="text-center txt-primary">Kaydol</h3>
                                     </div>
                                 </div>
                                 <div class="form-group form-primary">
                                     <input type="text" name="user-name" class="form-control">
                                     <span class="form-bar"></span>
-                                    <label class="float-label">Choose Username</label>
+                                    <label class="float-label">Kullanıcı Adı</label>
                                 </div>
                                 <div class="form-group form-primary">
                                     <input type="text" name="email" class="form-control">
                                     <span class="form-bar"></span>
-                                    <label class="float-label">Your Email Address</label>
+                                    <label class="float-label">Email</label>
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="form-group form-primary">
                                             <input type="password" name="password" class="form-control">
                                             <span class="form-bar"></span>
-                                            <label class="float-label">Password</label>
+                                            <label class="float-label">Şifre</label>
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group form-primary">
                                             <input type="password" name="confirm-password" class="form-control">
                                             <span class="form-bar"></span>
-                                            <label class="float-label">Confirm Password</label>
+                                            <label class="float-label">Şifreyi Onayla</label>
                                         </div>
                                     </div>
                                 </div>
@@ -140,7 +140,7 @@
                                             <label>
                                                 <input type="checkbox" value="">
                                                 <span class="cr"><i class="cr-icon icofont icofont-ui-check txt-primary"></i></span>
-                                                <span class="text-inverse">I read and accept <a href="#">Terms &amp; Conditions.</a></span>
+                                                <span class="text-inverse"><a href="#">Kullanıcı sözleşmesini</a> okudum ve onaylıyorum.</span>
                                             </label>
                                         </div>
                                     </div>
@@ -149,21 +149,21 @@
                                             <label>
                                                 <input type="checkbox" value="">
                                                 <span class="cr"><i class="cr-icon icofont icofont-ui-check txt-primary"></i></span>
-                                                <span class="text-inverse">Send me the <a href="#!">Newsletter</a> weekly.</span>
+                                                <span class="text-inverse">Bana haftalık <a href="#!">Haberleri</a> gönder.</span>
                                             </label>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row m-t-30">
                                     <div class="col-md-12">
-                                        <button type="button" class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20">Sign up now</button>
+                                        <button type="button" class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20">Şimdi Kaydol</button>
                                     </div>
                                 </div>
                                 <hr/>
                                 <div class="row">
                                     <div class="col-md-10">
-                                        <p class="text-inverse text-left m-b-0">Thank you.</p>
-                                        <p class="text-inverse text-left"><a href="index.aspx"><b>Back to website</b></a></p>
+                                        <p class="text-inverse text-left m-b-0">Teşekkürler.</p>
+                                        <p class="text-inverse text-left"><a href="index.aspx"><b>Ana Sayfaya Geri Dön</b></a></p>
                                     </div>
                                     <div class="col-md-2">
                                         <img src="assets/images/auth/Logo-small-bottom.png" alt="small-logo.png">
@@ -179,7 +179,7 @@
         </div>
         <!-- end of container-fluid -->
     </section>
-    <!-- Warning Section Starts -->
+    <%--<!-- Warning Section Starts -->
     <!-- Older IE warning message -->
     <!--[if lt IE 10]>
 <div class="ie-warning">
@@ -222,7 +222,7 @@
     <p>Sorry for the inconvenience!</p>
 </div>
 <![endif]-->
-<!-- Warning Section Ends -->
+<!-- Warning Section Ends -->--%>
 <!-- Required Jquery -->
 <script type="text/javascript" src="assets/js/jquery/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery-ui/jquery-ui.min.js"></script>

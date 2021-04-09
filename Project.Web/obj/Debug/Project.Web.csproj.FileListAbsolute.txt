@@ -42,3 +42,9 @@ C:\Users\tnc\Desktop\Proje\WebAppProject\Project.Web\bin\EntityFramework.SqlServ
 C:\Users\tnc\Desktop\Proje\WebAppProject\Project.Web\bin\EntityFramework.xml
 C:\Users\tnc\Desktop\Proje\WebAppProject\Project.Web\bin\EntityFramework.SqlServer.xml
 C:\Users\tnc\Desktop\Proje\WebAppProject\Project.Web\obj\Debug\Project.Web.csprojAssemblyReference.cache
+C:\Users\tnc\Desktop\Proje\WebAppProject\Project.Web\bin\Project.Business.dll
+C:\Users\tnc\Desktop\Proje\WebAppProject\Project.Web\bin\Project.DataAccess.dll
+C:\Users\tnc\Desktop\Proje\WebAppProject\Project.Web\bin\Project.Business.pdb
+C:\Users\tnc\Desktop\Proje\WebAppProject\Project.Web\bin\Project.Business.dll.config
+C:\Users\tnc\Desktop\Proje\WebAppProject\Project.Web\bin\Project.DataAccess.pdb
+C:\Users\tnc\Desktop\Proje\WebAppProject\Project.Web\bin\Project.DataAccess.dll.config

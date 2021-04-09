@@ -432,88 +432,9 @@
                             <!-- Main-body start -->
                             <div class="main-body">
                                 <div class="page-wrapper">
-                                    <div class="page-body">
-                                        <div class="row">
-                                            <!-- SITE VISIT CHART start -->
-                                            <div class="col-md-12 col-lg-6">
-                                                <div class="card">
-                                                    <div class="card-header">
-                                                        <h5>Site Visit Chart</h5>
-                                                        <span>lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
-                                                    </div>
-                                                    <div class="card-block">
-                                                        <div id="morris-site-visit"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- SITE VISIT CHART Ends -->
-                                            <!-- Bar Chart start -->
-                                            <div class="col-md-12 col-lg-6">
-                                                <div class="card">
-                                                    <div class="card-header">
-                                                        <h5>Bar Chart</h5>
-                                                        <span>lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
-                                                    </div>
-                                                    <div class="card-block">
-                                                        <div id="morris-bar-chart"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Bar Chart Ends -->
-                                            <!-- EXTRA AREA CHART start -->
-                                            <div class="col-lg-12">
-                                                <div class="card">
-                                                    <div class="card-header">
-                                                        <h5>Extra Area Chart</h5>
-                                                        <span>lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
-                                                    </div>
-                                                    <div class="card-block">
-                                                        <div id="morris-extra-area"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- EXTRA AREA CHART Ends -->
-                                            <!-- Area Chart start -->
-                                            <div class="col-lg-12">
-                                                <div class="card">
-                                                    <div class="card-header">
-                                                        <h5>Area Chart</h5>
-                                                        <span>lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
-                                                    </div>
-                                                    <div class="card-block">
-                                                        <div id="area-example"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Area Chart Ends -->
-                                            <!-- LINE CHART start -->
-                                            <div class="col-md-12 col-lg-6">
-                                                <div class="card">
-                                                    <div class="card-header">
-                                                        <h5>Line Chart</h5>
-                                                        <span>lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
-                                                    </div>
-                                                    <div class="card-block">
-                                                        <div id="line-example"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- LINE CHART Ends -->
-                                            <!-- Donut chart start -->
-                                            <div class="col-md-12 col-lg-6">
-                                                <div class="card">
-                                                    <div class="card-header">
-                                                        <h5>Donut Chart</h5>
-                                                        <span>lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
-                                                    </div>
-                                                    <div class="card-block">
-                                                        <div id="donut-example"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Donut chart Ends -->
-                                        </div>
-                                    </div>
+                                    <!-- Page-body start -->
+                                    
+                                    <!-- Page-body end -->
                                 </div>
                             </div>
                             <div id="styleSelector">
@@ -528,7 +449,7 @@
 
 
 
-    <!-- Warning Section Starts -->
+    <%--<!-- Warning Section Starts -->
     <!-- Older IE warning message -->
     <!--[if lt IE 10]>
 <div class="ie-warning">
@@ -571,7 +492,7 @@
     <p>Sorry for the inconvenience!</p>
 </div>
 <![endif]-->
-    <!-- Warning Section Ends -->
+    <!-- Warning Section Ends -->--%>
     <!-- Required Jquery -->
     <script type="text/javascript" src="assets/js/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/jquery-ui/jquery-ui.min.js"></script>

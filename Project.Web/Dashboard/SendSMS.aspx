@@ -1,8 +1,8 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="Project.Web.Dashboard.index" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SendSMS.aspx.cs" Inherits="Project.Web.Dashboard.WebForm1" %>
 
 <!DOCTYPE html>
-<html lang="en">
 
+<html lang="en">
 <head>
     <title>Pamuk İnşaat Online İşlemler</title>
     <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
@@ -38,7 +38,6 @@
     <!-- Style.css -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
-
 <body>
     <!-- Pre-loader start -->
     <div class="theme-loader">
@@ -140,30 +139,71 @@
                                 </a>
                                 <ul class="show-notification">
                                     <li>
-                                        <h6>Bildirimler</h6>
-                                        <label class="label label-danger">0</label>
+                                        <h6>Notifications</h6>
+                                        <label class="label label-danger">New</label>
+                                    </li>
+                                    <li class="waves-effect waves-light">
+                                        <div class="media">
+                                            <img class="d-flex align-self-center img-radius" src="assets/images/avatar-2.jpg" alt="Generic placeholder image">
+                                            <div class="media-body">
+                                                <h5 class="notification-user">John Doe</h5>
+                                                <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                                <span class="notification-time">30 minutes ago</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="waves-effect waves-light">
+                                        <div class="media">
+                                            <img class="d-flex align-self-center img-radius" src="assets/images/avatar-4.jpg" alt="Generic placeholder image">
+                                            <div class="media-body">
+                                                <h5 class="notification-user">Joseph William</h5>
+                                                <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                                <span class="notification-time">30 minutes ago</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="waves-effect waves-light">
+                                        <div class="media">
+                                            <img class="d-flex align-self-center img-radius" src="assets/images/avatar-3.jpg" alt="Generic placeholder image">
+                                            <div class="media-body">
+                                                <h5 class="notification-user">Sara Soudein</h5>
+                                                <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                                <span class="notification-time">30 minutes ago</span>
+                                            </div>
+                                        </div>
+                                    </li>
                                 </ul>
                             </li>
                             <li class="user-profile header-notification">
                                 <a href="#!" class="waves-effect waves-light">
                                     <img src="assets/images/avatar-4.jpg" class="img-radius" alt="User-Profile-Image">
-                                    <span>Hüseyin Çetin</span>
+                                    <span>John Doe</span>
                                     <i class="ti-angle-down"></i>
                                 </a>
                                 <ul class="show-notification profile-notification">
                                     <li class="waves-effect waves-light">
                                         <a href="#!">
-                                            <i class="ti-settings"></i> Ayarlar
+                                            <i class="ti-settings"></i> Settings
                                         </a>
                                     </li>
                                     <li class="waves-effect waves-light">
                                         <a href="user-profile.html">
-                                            <i class="ti-user"></i> Profil
+                                            <i class="ti-user"></i> Profile
+                                        </a>
+                                    </li>
+                                    <li class="waves-effect waves-light">
+                                        <a href="email-inbox.html">
+                                            <i class="ti-email"></i> My Messages
+                                        </a>
+                                    </li>
+                                    <li class="waves-effect waves-light">
+                                        <a href="auth-lock-screen.html">
+                                            <i class="ti-lock"></i> Lock Screen
                                         </a>
                                     </li>
                                     <li class="waves-effect waves-light">
                                         <a href="auth-normal-sign-in.aspx">
-                                            <i class="ti-layout-sidebar-left"></i> Çıkış Yap
+                                            <i class="ti-layout-sidebar-left"></i> Logout
                                         </a>
                                     </li>
                                 </ul>
@@ -188,9 +228,9 @@
                                 <div class="main-menu-content">
                                     <ul>
                                         <li class="more-details">
-                                            <a href="user-profile.html"><i class="ti-user"></i>Profili Görüntüle</a>
-                                            <a href="#!"><i class="ti-settings"></i>Ayarlar</a>
-                                            <a href="auth-normal-sign-in.aspx"><i class="ti-layout-sidebar-left"></i>Çıkış Yap</a>
+                                            <a href="user-profile.html"><i class="ti-user"></i>View Profile</a>
+                                            <a href="#!"><i class="ti-settings"></i>Settings</a>
+                                            <a href="auth-normal-sign-in.aspx"><i class="ti-layout-sidebar-left"></i>Logout</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -200,200 +240,160 @@
                                     <div class="form-group form-primary">
                                         <input type="text" name="footer-email" class="form-control">
                                         <span class="form-bar"></span>
-                                        <label class="float-label"><i class="fa fa-search m-r-10"></i>Ara</label>
+                                        <label class="float-label"><i class="fa fa-search m-r-10"></i>Search Friend</label>
                                     </div>
                                 </form>
                             </div>
-                            <div class="pcoded-navigation-label">Ana Sayfa</div>
+                            <div class="pcoded-navigation-label">Navigation</div>
                             <ul class="pcoded-item pcoded-left-item">
                                 <li class="active">
                                     <a href="index.aspx" class="waves-effect waves-dark">
                                         <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
-                                        <span class="pcoded-mtext">Online İşlemler</span>
+                                        <span class="pcoded-mtext">Dashboard</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
                             </ul>
-                            <div class="pcoded-navigation-label">İşlemler</div>
+                            <div class="pcoded-navigation-label">UI Element</div>
                             <ul class="pcoded-item pcoded-left-item">
-                                <li class=" ">
-                                    <a href="notification.aspx" class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class="ti-user"></i></span>
-                                        <span class="pcoded-mtext">Müşteriler</span>
-                                        <span class="pcoded-mcaret"></span>
-                                    </a>
-                                </li>
-                                <li class="">
-                                    <a href="form-elements-component.aspx" class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class="ti-direction-alt"></i><b>FC</b></span>
-                                        <span class="pcoded-mtext">Randevular</span>
-                                        <span class="pcoded-mcaret"></span>
-                                    </a>
-                                </li>
                                 <li class="pcoded-hasmenu">
                                     <a href="javascript:void(0)" class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class="ti-pie-chart"></i><b>BC</b></span>
-                                        <span class="pcoded-mtext">Firma Gelirleri</span>
-                                        <span class="pcoded-mcaret"></span>
-                                    </a>
-                                    <ul class="pcoded-submenu">
-                                    <li class=" ">
-                                        <a href="breadcrumb.aspx" class="waves-effect waves-dark">
-                                            <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                            <span class="pcoded-mtext">Firma Gelirlerini Gör</span>
-                                            <span class="pcoded-mcaret"></span>
-                                        </a>
-                                    </li>
-                                    <li class=" ">
-                                        <a href="button.aspx" class="waves-effect waves-dark">
-                                            <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                            <span class="pcoded-mtext">Gelir Ekle</span>
-                                            <span class="pcoded-mcaret"></span>
-                                        </a>
-                                    </li>
-                                    </ul>
-                                </li>
-                                <li class="pcoded-hasmenu">
-                                    <a href="javascript:void(0)" class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class="ti-pie-chart"></i><b>BC</b></span>
-                                        <span class="pcoded-mtext">Firma Giderleri</span>
-                                        <span class="pcoded-mcaret"></span>
-                                    </a>
-                                    <ul class="pcoded-submenu">
-                                    <li class="">
-                                        <a href="accordion.aspx" class="waves-effect waves-dark">
-                                            <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                            <span class="pcoded-mtext">Firma Giderlerini Gör</span>
-                                            <span class="pcoded-mcaret"></span>
-                                        </a>
-                                    </li>
-                                    <li class=" ">
-                                        <a href="tabs.aspx" class="waves-effect waves-dark">
-                                            <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                            <span class="pcoded-mtext">Gider Ekle</span>
-                                            <span class="pcoded-mcaret"></span>
-                                        </a>
-                                    </li>
-                                    </ul>
-                                </li>
-                                <li class="pcoded-hasmenu">
-                                    <a href="javascript:void(0)" class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class="ti-money"></i><b>BC</b></span>
-                                        <span class="pcoded-mtext">Bankalar</span>
+                                        <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i><b>BC</b></span>
+                                        <span class="pcoded-mtext">Basic</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                     <ul class="pcoded-submenu">
                                         <li class=" ">
+                                            <a href="breadcrumb.aspx" class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">Breadcrumbs</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class=" ">
+                                            <a href="button.aspx" class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">Button</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="accordion.aspx" class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">Accordion</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class=" ">
+                                            <a href="tabs.aspx" class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">Tabs</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class=" ">
                                             <a href="color.aspx" class="waves-effect waves-dark">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext">Kayıtlı Bankaları Gör</span>
+                                                <span class="pcoded-mtext">Color</span>
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
                                         <li class=" ">
                                             <a href="label-badge.aspx" class="waves-effect waves-dark">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext">Firma Banka Bilgisi Ekle</span>
+                                                <span class="pcoded-mtext">Label Badge</span>
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
-                                    </ul>
-                                </li>
-                                <li class="pcoded-hasmenu">
-                                    <a href="javascript:void(0)" class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class="ti-hummer"></i><b>BC</b></span>
-                                        <span class="pcoded-mtext">Personeller</span>
-                                        <span class="pcoded-mcaret"></span>
-                                    </a>
-                                    <ul class="pcoded-submenu">
                                         <li class=" ">
                                             <a href="tooltip.aspx" class="waves-effect waves-dark">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext">Personelleri Görüntüle</span>
+                                                <span class="pcoded-mtext">Tooltip And Popover</span>
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
                                         <li class=" ">
                                             <a href="typography.aspx" class="waves-effect waves-dark">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext">Personel Girişi</span>
+                                                <span class="pcoded-mtext">Typography</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class=" ">
+                                            <a href="notification.aspx" class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">Notifications</span>
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="pcoded-hasmenu">
-                                    <a href="javascript:void(0)" class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class="ti-notepad"></i><b>BC</b></span>
-                                        <span class="pcoded-mtext">Notlar</span>
+                            </ul>
+                            <div class="pcoded-navigation-label">Forms</div>
+                            <ul class="pcoded-item pcoded-left-item">
+                                <li class="">
+                                    <a href="form-elements-component.aspx" class="waves-effect waves-dark">
+                                        <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
+                                        <span class="pcoded-mtext">Form</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
-                                    <ul class="pcoded-submenu">
-                                        <li class="">
-                                            <a href="bs-basic-table.aspx" class="waves-effect waves-dark">
-                                                <span class="pcoded-micon"><i class="ti-receipt"></i><b>B</b></span>
-                                                <span class="pcoded-mtext">Notları Görüntüle</span>
-                                                <span class="pcoded-mcaret"></span>
-                                            </a>
-                                        </li>
-                                        <li class="">
-                                            <a href="chart-morris.aspx" class="waves-effect waves-dark">
-                                                <span class="pcoded-micon"><i class="ti-bar-chart-alt"></i><b>C</b></span>
-                                                <span class="pcoded-mtext">Not Ekle</span>
-                                                <span class="pcoded-mcaret"></span>
-                                            </a>
-                                        </li>
-                                    </ul>
                                 </li>
-                                <li class="pcoded-hasmenu">
+                            </ul>
+                            <div class="pcoded-navigation-label">Tables</div>
+                            <ul class="pcoded-item pcoded-left-item">
+                                <li class="">
+                                    <a href="bs-basic-table.aspx" class="waves-effect waves-dark">
+                                        <span class="pcoded-micon"><i class="ti-receipt"></i><b>B</b></span>
+                                        <span class="pcoded-mtext">Table</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="pcoded-navigation-label">Chart And Maps</div>
+                            <ul class="pcoded-item pcoded-left-item">
+                                <li class="">
+                                    <a href="chart-morris.aspx" class="waves-effect waves-dark">
+                                        <span class="pcoded-micon"><i class="ti-bar-chart-alt"></i><b>C</b></span>
+                                        <span class="pcoded-mtext">Charts</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="map-google.aspx" class="waves-effect waves-dark">
+                                        <span class="pcoded-micon"><i class="ti-map-alt"></i><b>M</b></span>
+                                        <span class="pcoded-mtext">Maps</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="pcoded-navigation-label">Pages</div>
+                            <ul class="pcoded-item pcoded-left-item">
+                                <li class="pcoded-hasmenu ">
                                     <a href="javascript:void(0)" class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class="ti-agenda"></i><b>BC</b></span>
-                                        <span class="pcoded-mtext">İşler</span>
+                                        <span class="pcoded-micon"><i class="ti-id-badge"></i><b>A</b></span>
+                                        <span class="pcoded-mtext">Pages</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                     <ul class="pcoded-submenu">
-                                        <li class="">
-                                            <a href="map-google.aspx" class="waves-effect waves-dark">
-                                                <span class="pcoded-micon"><i class="ti-map-alt"></i><b>M</b></span>
-                                                <span class="pcoded-mtext">Devam Eden İşleri Göster</span>
-                                                <span class="pcoded-mcaret"></span>
-                                            </a>
-                                        </li>
                                         <li class="">
                                             <a href="auth-normal-sign-in.aspx" class="waves-effect waves-dark">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext">Bitmiş İşleri Göster</span>
+                                                <span class="pcoded-mtext">Login</span>
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
-                                    </ul>
-                                </li>
-                                <li class="pcoded-hasmenu">
-                                    <a href="javascript:void(0)" class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class="ti-email"></i><b>BC</b></span>
-                                        <span class="pcoded-mtext">SMS ve Mail</span>
-                                        <span class="pcoded-mcaret"></span>
-                                    </a>
-                                    <ul class="pcoded-submenu">
                                         <li class="">
                                             <a href="auth-sign-up.aspx" class="waves-effect waves-dark">
-                                            <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                            <span class="pcoded-mtext">Mail Gönder</span>
-                                            <span class="pcoded-mcaret"></span>
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">Registration</span>
+                                                <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
                                         <li class="">
                                             <a href="sample-page.aspx" class="waves-effect waves-dark">
-                                            <span class="pcoded-micon"><i class="ti-layout-sidebar-left"></i><b>S</b></span>
-                                            <span class="pcoded-mtext">Toplu Mail Gönder</span>
-                                            <span class="pcoded-mcaret"></span>
-                                            </a>
-                                        </li>
-                                        <li class="">
-                                            <a href="SendSMS.aspx" class="waves-effect waves-dark">
-                                            <span class="pcoded-micon"><i class="ti-layout-sidebar-left"></i><b>S</b></span>
-                                            <span class="pcoded-mtext">SMS Gönder</span>
-                                            <span class="pcoded-mcaret"></span>
+                                                <span class="pcoded-micon"><i class="ti-layout-sidebar-left"></i><b>S</b></span>
+                                                <span class="pcoded-mtext">Sample Page</span>
+                                                <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
                                     </ul>
@@ -408,8 +408,8 @@
                                 <div class="row align-items-center">
                                     <div class="col-md-8">
                                         <div class="page-header-title">
-                                            <h5 class="m-b-10">Ana Sayfa</h5>
-                                            <p class="m-b-0">Online İşlemlere Hoşgeldiniz</p>
+                                            <h5 class="m-b-10">Dashboard</h5>
+                                            <p class="m-b-0">Welcome to Material Able</p>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
@@ -417,7 +417,7 @@
                                             <li class="breadcrumb-item">
                                                 <a href="index.aspx"> <i class="fa fa-home"></i> </a>
                                             </li>
-                                            <li class="breadcrumb-item"><a href="#!">Ana Sayfa</a>
+                                            <li class="breadcrumb-item"><a href="#!">Dashboard</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -504,5 +504,5 @@
     <script src="assets/js/vertical/vertical-layout.min.js"></script>
 
     <script type="text/javascript" src="assets/js/script.js"></script>
-    </body>
-    </html>
+</body>
+</html>

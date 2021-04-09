@@ -429,129 +429,8 @@
                             <div class="main-body">
                                 <div class="page-wrapper">
                                     <!-- Page body start -->
-                                    <div class="page-body">
-                                        <div class="row">
-                                            <div class="col-lg-12 col-xl-6">
-                                                <!-- Basic map start -->
-                                                <div class="card">
-                                                    <div class="card-header">
-                                                        <h5>Basic</h5>
-                                                        <span>Map shows places around the world</span>
-                                                    </div>
-                                                    <div class="card-block">
-                                                        <div id="basic-map" class="set-map"></div>
-                                                    </div>
-                                                </div>
-                                                <!-- Basic map end -->
-                                            </div>
-                                            <div class="col-lg-12 col-xl-6">
-                                                <!-- Markers map start -->
-                                                <div class="card">
-                                                    <div class="card-header">
-                                                        <h5>Markers</h5>
-                                                        <span>Maps shows <code>location</code> of the place</span>
-                                                    </div>
-                                                    <div class="card-block">
-                                                        <div id="markers-map" class="set-map"></div>
-                                                    </div>
-                                                </div>
-                                                <!-- Markers map end -->
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-12 col-xl-6">
-                                                <!-- Overlay map start -->
-                                                <div class="card">
-                                                    <div class="card-header">
-                                                        <h5>Overlay</h5>
-                                                        <span>Map shows places around the world</span>
-                                                    </div>
-                                                    <div class="card-block">
-                                                        <div id="mapOverlay" class="set-map"></div>
-                                                    </div>
-                                                </div>
-                                                <!-- Overlay map start -->
-                                            </div>
-                                            <div class="col-lg-12 col-xl-6">
-                                                <!-- Geo-Coding map start -->
-                                                <div class="card">
-                                                    <div class="card-header">
-                                                        <h5>Geo-Coding</h5>
-                                                        <span>Search your location</span>
-                                                    </div>
-                                                    <div class="card-block">
-                                                        <form method="post" id="geocoding_form">
-                                                            <div class="input-group input-group-button">
-                                                                <input type="text" id="address" class="form-control" placeholder="Write your place">
-                                                                <span class="input-group-addon" id="basic-addon1">
-                                                                   <button class="btn btn-primary">Search Location</button>
-                                                               </span>
-                                                           </div>
-                                                       </form>
-                                                       <div id="mapGeo" class="set-map"></div>
-                                                   </div>
-                                               </div>
-                                               <!-- Geo-Coding map end -->
-                                           </div>
-                                       </div>
-                                       <div class="row">
-                                        <div class="col-lg-12 col-xl-6">
-                                            <!-- Street View map start -->
-                                            <div class="card">
-                                                <div class="card-header">
-                                                    <h5>Street View</h5>
-                                                    <span>Map shows view of street</span>
-                                                </div>
-                                                <div class="card-block">
-                                                    <div id="mapStreet" class="set-map"></div>
-                                                </div>
-                                            </div>
-                                            <!-- Street View map end -->
-                                        </div>
-                                        <div class="col-lg-12 col-xl-6">
-                                            <!-- Map Types card start -->
-                                            <div class="card">
-                                                <div class="card-header">
-                                                    <h5>Map Types</h5>
-                                                    <span>Select your <code>map-types</code> to see differant views</span>
-                                                </div>
-                                                <div class="card-block">
-                                                    <div id="mapTypes" class="set-map"></div>
-                                                </div>
-                                            </div>
-                                            <!-- Map Types card end -->
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-lg-12 col-xl-6">
-                                            <!-- GeoRSS Layers map start -->
-                                            <div class="card">
-                                                <div class="card-header">
-                                                    <h5>GeoRSS Layers</h5>
-                                                    <span>Shows <code>RSS</code> location</span>
-                                                </div>
-                                                <div class="card-block">
-                                                    <div id="georssmap" class="set-map"></div>
-                                                </div>
-                                            </div>
-                                            <!-- GeoRSS Layers map end -->
-                                        </div>
-                                        <div class="col-lg-12 col-xl-6">
-                                            <!-- Marker Clustering map start -->
-                                            <div class="card">
-                                                <div class="card-header">
-                                                    <h5>Marker Clustering</h5>
-                                                    <span>Multiple markers show differant location</span>
-                                                </div>
-                                                <div class="card-block">
-                                                    <div id="map" class="set-map"></div>
-                                                </div>
-                                            </div>
-                                            <!-- Marker Clustering map end -->
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Page body end -->
+                                    
+                                    <!-- Page body end -->
                             </div>
                         </div>
                     </div>
@@ -566,7 +445,7 @@
     </div>
 </div>
 
-  <!-- Warning Section Starts -->
+<%--  <!-- Warning Section Starts -->
 <!-- Older IE warning message -->
     <!--[if lt IE 10]>
 <div class="ie-warning">
@@ -609,7 +488,7 @@
     <p>Sorry for the inconvenience!</p>
 </div>
 <![endif]-->
-<!-- Warning Section Ends -->
+<!-- Warning Section Ends -->--%>
 <!-- Required Jquery -->
 <!-- Required Jquery -->
 <script type="text/javascript" src="assets/js/jquery/jquery.min.js"></script>

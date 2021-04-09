@@ -431,86 +431,7 @@
                             <div class="main-body">
                                 <div class="page-wrapper">
                                     <!-- Page-body start -->
-                                    <div class="page-body">
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <!-- Tooltip on button card start -->
-                                                <div class="card button-page o-visible">
-                                                    <div class="card-header">
-                                                        <h5>Tooltip</h5>
-                                                    </div>
-                                                    <div class="card-block">
-                                                        <ul>
-                                                            <li>
-                                                                <button type="button" class="btn btn-default waves-effect" data-toggle="tooltip" data-placement="top" title="tooltip on top">Top
-                                                                </button>
-                                                            </li>
-                                                            <li>
-                                                                <button type="button" class="btn btn-primary waves-effect waves-light" data-toggle="tooltip" data-placement="left" title="tooltip on left">Left
-                                                                </button>
-                                                            </li>
-                                                            <li>
-                                                                <button type="button" class="btn btn-success waves-effect waves-light" data-toggle="tooltip" data-placement="right" title="tooltip on right">right
-                                                                </button>
-                                                            </li>
-                                                            <li>
-                                                                <button type="button" class="btn btn-warning waves-effect waves-light" data-toggle="tooltip" data-placement="bottom" title="tooltip on bottom">bottom
-                                                                </button>
-                                                            </li>
-                                                            <li>
-                                                                <button type="button" class="btn btn-info waves-effect waves-light" data-toggle="tooltip" data-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">Html Tooltip
-                                                                </button>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <!-- Tooltip on button card end -->
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <!-- Tooltip on popover card start -->
-                                                <div class="card o-visible">
-                                                    <div class="card-header">
-                                                        <h5>Popover</h5>
-                                                    </div>
-                                                    <div class="card-block tooltip-pop button-list">
-                                                        <button type="button" class="btn btn-default waves-effect" data-toggle="popover" data-placement="top" title="" data-content="top by popover" data-original-title="tooltip on top">Top
-                                                        </button>
-                                                        <button type="button" class="btn btn-primary waves-effect waves-light" data-toggle="popover" data-placement="left" title="tooltip on left" data-content="left by popover">Left
-                                                        </button>
-                                                        <button type="button" class="btn btn-success waves-effect waves-light" data-toggle="popover" data-placement="right" title="tooltip on right" data-content="right by popover">right
-                                                        </button>
-                                                        <button type="button" class="btn btn-warning waves-effect waves-light" data-toggle="popover" data-placement="bottom" title="tooltip on bottom" data-content="bottom by popover">bottom
-                                                        </button>
-                                                        <button type="button" class="btn btn-info waves-effect waves-light" data-toggle="popover" data-html="true" data-placement="top" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>"
-                                                            data-content="tooltip by aspx">Html Tooltip
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                                <!-- Tooltip on popover card end -->
-                                            </div>
-                                            <div class="col-sm-12">
-                                                <!-- Tooltips on textbox card start -->
-                                                <div class="card o-visible">
-                                                    <div class="card-header">
-                                                        <h5>Tooltips On Textbox</h5>
-                                                    </div>
-                                                    <div class="card-block tooltip-icon button-list">
-                                                        <div class="input-group">
-                                                            <span class="input-group-prepend" id="name"><label class="input-group-text"><i class="icofont icofont-user-alt-3"></i></label></span>
-                                                            <input type="text" class="form-control" placeholder="Enter your name" title="Enter your name" data-toggle="tooltip">
-                                                        </div>
-                                                        <div class="input-group">
-                                                            <span class="input-group-prepend" id="name"><label class="input-group-text"><i class="icofont icofont-ui-email"></i></label></span>
-                                                            <input type="text" class="form-control" placeholder="Enter email" title="Enter email" data-toggle="tooltip">
-                                                        </div>
-                                                        <button type="button" class="btn btn-primary waves-effect waves-light m-r-20" data-toggle="tooltip" data-placement="right" title="submit">Submit
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                                <!-- Tooltips on textbox card end -->
-                                            </div>
-                                        </div>
-                                    </div>
+                                    
                                     <!-- Page-body end -->
                                 </div>
                             </div>
@@ -527,7 +448,7 @@
 
 
 
-    <!-- Warning Section Starts -->
+<%--    <!-- Warning Section Starts -->
     <!-- Older IE warning message -->
     <!--[if lt IE 10]>
 <div class="ie-warning">
@@ -570,7 +491,7 @@
     <p>Sorry for the inconvenience!</p>
 </div>
 <![endif]-->
-    <!-- Warning Section Ends -->
+    <!-- Warning Section Ends -->--%>
     <!-- Required Jquery -->
     <script type="text/javascript" src="assets/js/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/jquery-ui/jquery-ui.min.js"></script>

@@ -87,6 +87,7 @@
     <Content Include="Dashboard\tabs.aspx" />
     <Content Include="Dashboard\tooltip.aspx" />
     <Content Include="Dashboard\typography.aspx" />
+    <Content Include="Dashboard\SendSMS.aspx" />
     <Content Include="Main Theme\About.aspx" />
     <Content Include="Dashboard\assets\css\animate.css\css\animate.css" />
     <Content Include="Dashboard\assets\css\bootstrap\css\bootstrap.min.css" />
@@ -573,6 +574,13 @@
     <Compile Include="Dashboard\typography.aspx.designer.cs">
       <DependentUpon>typography.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Dashboard\SendSMS.aspx.cs">
+      <DependentUpon>SendSMS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\SendSMS.aspx.designer.cs">
+      <DependentUpon>SendSMS.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Main Theme\About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -746,7 +754,16 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Project.Business\Project.Business.csproj">
+      <Project>{20c4addd-d7da-4403-9a38-05d8abb8eb7e}</Project>
+      <Name>Project.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Project.DataAccess\Project.DataAccess.csproj">
+      <Project>{8e9b8106-0e90-4be3-b851-242b71aeb903}</Project>
+      <Name>Project.DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

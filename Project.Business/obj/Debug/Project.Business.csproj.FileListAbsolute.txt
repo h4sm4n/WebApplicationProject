@@ -10,3 +10,6 @@ C:\Users\tnc\Desktop\Proje\WebAppProject\Project.Business\bin\Debug\EntityFramew
 C:\Users\tnc\Desktop\Proje\WebAppProject\Project.Business\bin\Debug\EntityFramework.xml
 C:\Users\tnc\Desktop\Proje\WebAppProject\Project.Business\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\tnc\Desktop\Proje\WebAppProject\Project.Business\obj\Debug\Project.Business.csproj.CopyComplete
+C:\Users\tnc\Desktop\Proje\WebAppProject\Project.Business\bin\Debug\Project.DataAccess.dll
+C:\Users\tnc\Desktop\Proje\WebAppProject\Project.Business\bin\Debug\Project.DataAccess.pdb
+C:\Users\tnc\Desktop\Proje\WebAppProject\Project.Business\bin\Debug\Project.DataAccess.dll.config
