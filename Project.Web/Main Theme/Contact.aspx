@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Transportation HTML-5 Template </title>
+    <title>Pamuk İnşaat-İletişim</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="Resources/img/favicon.ico">
@@ -39,77 +39,70 @@
     </div>
     <!-- Preloader Start -->
     <header>
-        <!-- Header Start -->
-        <div class="header-area">
-                <div class="main-header ">
-                    <div class="header-top d-none d-lg-block">
-                    <div class="container">
-                        <div class="col-xl-12">
-                                <div class="row d-flex justify-content-between align-items-center">
-                                    <div class="header-info-left">
-                                        <ul>     
-                                            <li>Phone: +99 (0) 101 0000 888</li>
-                                            <li>Email: noreply@yourdomain.com</li>
-                                        </ul>
-                                    </div>
-                                    <div class="header-info-right">
-                                        <ul class="header-social">    
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                        <li> <a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                        </div>
-                    </div>
-                    </div>
-                <div class="header-bottom  header-sticky">
-                        <div class="container">
-                            <div class="row align-items-center">
-                                <!-- Logo -->
-                                <div class="col-xl-2 col-lg-2">
-                                    <div class="logo">
-                                        <a href="Default.aspx"><img src="Resources/img/logo/logo.png" alt=""></a>
-                                    </div>
-                                </div>
-                                <div class="col-xl-10 col-lg-10">
-                                    <div class="menu-wrapper  d-flex align-items-center justify-content-end">
-                                        <!-- Main-menu -->
-                                        <div class="main-menu d-none d-lg-block">
-                                            <nav> 
-                                                <ul id="navigation">                                                                                          
-                                                    <li><a href="Default.aspx">Home</a></li>
-                                                    <li><a href="About.aspx">About</a></li>
-                                                    <li><a href="Services.aspx">Services</a></li>
-                                                    <li><a href="Blog.aspx">Blog</a>
-                                                        <ul class="submenu">
-                                                            <li><a href="Blog.aspx">Blog</a></li>
-                                                           <li><a href="Blog_Details.aspx">Blog Details</a></li>
-                                                            <li><a href="Elements.aspx">Element</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li><a href="Contact.aspx">Contact</a></li>
-                                                </ul>
-                                            </nav>
-                                        </div>
-                                        <!-- Header-btn -->
-                                        <div class="header-right-btn d-none d-lg-block ml-20">
-                                            <a href="../Dashboard/index.aspx" class="btn header-btn">Dashboard</a>
-                                        </div>
-                                    </div>
-                                </div> 
-                                <!-- Mobile Menu -->
-                                <div class="col-12">
-                                    <div class="mobile_menu d-block d-lg-none"></div>
-                                </div>
+    <!-- Header Start -->
+    <div class="header-area">
+        <div class="main-header ">
+            <div class="header-top d-none d-lg-block">
+                <div class="container">
+                    <div class="col-xl-12">
+                        <div class="row d-flex justify-content-between align-items-center">
+                            <div class="header-info-left">
+                                <ul>     
+                                    <li>Telefon: +9 (0) 256 313 9154</li>
+                                    <li>Email: noreply@pamukinsaat.com</li>
+                                </ul>
+                            </div>
+                            <div class="header-info-right">
+                                <ul class="header-social">    
+                                    <li><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="https://www.linked.in"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li> <a href="https://www.google.com"><i class="fab fa-google-plus-g"></i></a></li>
+                                </ul>
                             </div>
                         </div>
+                    </div>
                 </div>
+            </div>
+            <div class="header-bottom  header-sticky">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <!-- Logo -->
+                        <div class="col-xl-2 col-lg-2">
+                            <div class="logo">
+                                <a href="Default.aspx"><img src="Resources/img/logo/logo.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-10 col-lg-10">
+                            <div class="menu-wrapper  d-flex align-items-center justify-content-end">
+                                <!-- Main-menu -->
+                                <div class="main-menu d-none d-lg-block">
+                                    <nav> 
+                                        <ul id="navigation">                                                                                          
+                                            <li><a href="Default.aspx">Ana Sayfa</a></li>
+                                            <li><a href="About.aspx">Hakkında</a></li>
+                                            <li><a href="Services.aspx">Hizmetler</a></li>
+                                            <li><a href="Contact.aspx">İletişim</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <!-- Header-btn -->
+                                <div class="header-right-btn d-none d-lg-block ml-20">
+                                    <a href="../Dashboard/Anasayfa.aspx" target="_blank" class="btn header-btn">Online İşlemler</a>
+                                </div>
+                            </div>
+                        </div> 
+                        <!-- Mobile Menu -->
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
                 </div>
+            </div>
         </div>
-        <!-- Header End -->
-    </header>
+    </div>
+    <!-- Header End -->
+</header>
     <main>
         <!--? slider Area Start-->
         <div class="slider-area ">
@@ -118,11 +111,11 @@
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="hero-cap">
-                                <h2>Contact Us</h2>
+                                <h2>Bize Ulaşın</h2>
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
-                                        <li class="breadcrumb-item"><a href="Default.aspx">Home</a></li>
-                                        <li class="breadcrumb-item"><a href="#">Contact</a></li> 
+                                        <li class="breadcrumb-item"><a href="Default.aspx">Ana Sayfa</a></li>
+                                        <li class="breadcrumb-item"><a href="#">İletişim</a></li> 
                                     </ol>
                                 </nav>
                             </div>
@@ -162,8 +155,8 @@
                             ];
                             var map = new window.google.maps.Map(document.getElementById('map'), {
                                 center: {
-                                    lat: -31.197,
-                                    lng: 150.744
+                                    lat: 37.91658,
+                                    lng: 28.31912
                                 },
                                 zoom: 9,
                                 styles: grayStyles,
@@ -177,57 +170,30 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <h2 class="contact-title">Get in Touch</h2>
+                        <h2 class="contact-title">Bize Ulaşın</h2>
                     </div>
                     <div class="col-lg-8">
-                        <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'" placeholder=" Enter Message"></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <input class="form-control valid" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder="Enter your name">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <input class="form-control valid" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" placeholder="Email">
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        <input class="form-control" name="subject" id="subject" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'" placeholder="Enter Subject">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group mt-3">
-                                <button type="submit" class="button button-contactForm boxed-btn">Send</button>
-                            </div>
-                        </form>
+                        
                     </div>
-                    <div class="col-lg-3 offset-lg-1">
+                    <div class="col-lg-8 offset-lg-1">
                         <div class="media contact-info">
                             <span class="contact-info__icon"><i class="ti-home"></i></span>
                             <div class="media-body">
-                                <h3>Buttonwood, California.</h3>
-                                <p>Rosemead, CA 91770</p>
+                                <h3>Ordu Caddesi No:107</h3>
+                                <p>Aydın/Nazilli, 09800</p>
                             </div>
                         </div>
                         <div class="media contact-info">
                             <span class="contact-info__icon"><i class="ti-tablet"></i></span>
                             <div class="media-body">
-                                <h3>+1 253 565 2365</h3>
-                                <p>Mon to Fri 9am to 6pm</p>
+                                <h3>+90 256 313 9154</h3>
                             </div>
                         </div>
                         <div class="media contact-info">
                             <span class="contact-info__icon"><i class="ti-email"></i></span>
                             <div class="media-body">
-                                <h3>support@colorlib.com</h3>
-                                <p>Send us your query anytime!</p>
+                                <h3>noreply@pamukinsaat.com</h3>
+                                <p>Bize her zaman ulaşabilirsiniz.</p>
                             </div>
                         </div>
                     </div>
@@ -237,103 +203,88 @@
         <!-- ================ contact section end ================= -->
     </main>
     <footer>
-        <!--? Footer Start-->
-        <div class="footer-area footer-bg">
-           <div class="container">
-                <div class="footer-top footer-padding">
-                    <!-- footer Heading -->
-                    <div class="footer-heading">
-                        <div class="row justify-content-between">
-                            <div class="col-xl-6 col-lg-8 col-md-8">
-                                <div class="wantToWork-caption wantToWork-caption2">
-                                    <h2>We Understand The Importance Approaching Each Work!</h2>
-                                </div>
+    <!--? Footer Start-->
+    <div class="footer-area footer-bg">
+        <div class="container">
+            <div class="footer-top footer-padding">
+                <!-- footer Heading -->
+                <div class="footer-heading">
+                    <div class="row justify-content-between">
+                        <div class="col-xl-6 col-lg-8 col-md-8">
+                            <div class="wantToWork-caption wantToWork-caption2">
+                                <h2>Kaliteli binalarda yaşamanız gerektiğini savunuyoruz.</h2>
                             </div>
-                            <div class="col-xl-3 col-lg-4">
-                                <span class="contact-number f-right">+ 1 212-683-9756</span>
+                        </div>
+                        <div class="col-xl-3 col-lg-4">
+                            <span class="contact-number f-right">+90 256 313 9154</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer Menu -->
+                <div class="row d-flex justify-content-between">
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Pamuk İnşaat</h4>
+                                <ul>
+                                    <li><a href="About.aspx">Hakkımızda</a></li>
+                                    <li><a href="#">Şirket</a></li>
+                                    <li><a href="#"> Güvenlik Sözleşmesi</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                    <!-- Footer Menu -->
-                    <div class="row d-flex justify-content-between">
-                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
-                            <div class="single-footer-caption mb-50">
-                                <div class="footer-tittle">
-                                    <h4>COMPANY</h4>
-                                    <ul>
-                                        <li><a href="#">About Us</a></li>
-                                        <li><a href="#">Company</a></li>
-                                        <li><a href="#"> Press & Blog</a></li>
-                                        <li><a href="#"> Privacy Policy</a></li>
-                                    </ul>
-                                </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Open hour</h4>
+                                <ul>
+                                    <li><a href="#">Pazartesi 11.00-19.00</a></li>
+                                    <li><a href="#"> Salı-Cuma 11.00-20.00</a></li>
+                                    <li><a href="#"> Cumartesi 10.00-18.00</a></li>
+                                    <li><a href="#"> Pazar 11.00-18.00</a></li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-                            <div class="single-footer-caption mb-50">
-                                <div class="footer-tittle">
-                                    <h4>Open hour</h4>
-                                    <ul>
-                                        <li><a href="#">Monday 11am-7pm</a></li>
-                                        <li><a href="#"> Tuesday-Friday 11am-8pm</a></li>
-                                        <li><a href="#"> Saturday 10am-6pm</a></li>
-                                        <li><a href="#"> Sunday 11am-6pm</a></li>
-                                    </ul>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-5 col-sm-6">
+                        <div class="single-footer-caption mb-50">
+                            <!-- logo -->
+                            <div class="footer-logo">
+                                <a href="Default.aspx"><img src="Resources/img/logo/logo2_footer.png" alt=""></a>
+                            </div>
+                            <div class="footer-tittle">
+                                <div class="footer-pera">
+                                    <p class="info1">PAMUK İNŞAAT VE YAPI TASARIM</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
-                            <div class="single-footer-caption mb-50">
-                                <div class="footer-tittle">
-                                    <h4>RESOURCES</h4>
-                                    <ul>
-                                        <li><a href="#">Home Insurance</a></li>
-                                        <li><a href="#">Travel Insurance</a></li>
-                                        <li><a href="#"> Car Insurance</a></li>
-                                        <li><a href="#"> Business Insurance</a></li>
-                                        <li><a href="#"> Heal Insurance</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-4 col-md-5 col-sm-6">
-                            <div class="single-footer-caption mb-50">
-                                <!-- logo -->
-                                <div class="footer-logo">
-                                    <a href="Default.aspx"><img src="Resources/img/logo/logo2_footer.png" alt=""></a>
-                                </div>
-                                <div class="footer-tittle">
-                                    <div class="footer-pera">
-                                        <p class="info1">GThe trade war currently ensuing between te US anfd several natxions around thdhe globe, most fiercely with.</p>
-                                    </div>
-                                </div>
-                                <!-- Footer Social -->
-                                <div class="footer-social ">
-                                    <a href="https://www.facebook.com/sai4ull"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fas fa-globe"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                </div>
+                            <!-- Footer Social -->
+                            <div class="footer-social ">
+                                <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.linked.in"><i class="fas fa-globe"></i></a>
+                                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Footer Bottom -->
-                <div class="footer-bottom">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-lg-12">
-                            <div class="footer-copy-right text-center">
-                                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+            </div>
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-12">
+                        <div class="footer-copy-right text-center">
+                            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved.
   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                            </div>
                         </div>
                     </div>
                 </div>
-           </div>
+            </div>
         </div>
-        <!-- Footer End-->
-    </footer>
+    </div>
+    <!-- Footer End-->
+</footer>
     <!-- Scroll Up -->
     <div id="back-top" >
         <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>

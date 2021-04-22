@@ -71,23 +71,26 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Dashboard\accordion.aspx" />
-    <Content Include="Dashboard\auth-normal-sign-in.aspx" />
-    <Content Include="Dashboard\auth-sign-up.aspx" />
-    <Content Include="Dashboard\breadcrumb.aspx" />
-    <Content Include="Dashboard\bs-basic-table.aspx" />
-    <Content Include="Dashboard\button.aspx" />
-    <Content Include="Dashboard\chart-morris.aspx" />
-    <Content Include="Dashboard\color.aspx" />
-    <Content Include="Dashboard\form-elements-component.aspx" />
-    <Content Include="Dashboard\label-badge.aspx" />
-    <Content Include="Dashboard\map-google.aspx" />
-    <Content Include="Dashboard\notification.aspx" />
-    <Content Include="Dashboard\sample-page.aspx" />
-    <Content Include="Dashboard\tabs.aspx" />
-    <Content Include="Dashboard\tooltip.aspx" />
-    <Content Include="Dashboard\typography.aspx" />
-    <Content Include="Dashboard\SendSMS.aspx" />
+    <Content Include="Dashboard\Anasayfa.aspx" />
+    <Content Include="Dashboard\Banka-Ekle.aspx" />
+    <Content Include="Dashboard\Bankalar.aspx" />
+    <Content Include="Dashboard\Gelir-Ekle.aspx" />
+    <Content Include="Dashboard\Gelir-Gor.aspx" />
+    <Content Include="Dashboard\Gider-Ekle.aspx" />
+    <Content Include="Dashboard\Gider-Gor.aspx" />
+    <Content Include="Dashboard\Giris.aspx" />
+    <Content Include="Dashboard\Isler-Done.aspx" />
+    <Content Include="Dashboard\Isler.aspx" />
+    <Content Include="Dashboard\Kaydol.aspx" />
+    <Content Include="Dashboard\Mail-Send.aspx" />
+    <Content Include="Dashboard\Mails-Send.aspx" />
+    <Content Include="Dashboard\Musteriler.aspx" />
+    <Content Include="Dashboard\Not-Ekle.aspx" />
+    <Content Include="Dashboard\Notlar.aspx" />
+    <Content Include="Dashboard\Personel-Ekle.aspx" />
+    <Content Include="Dashboard\Personeller.aspx" />
+    <Content Include="Dashboard\Randevular.aspx" />
+    <Content Include="Dashboard\Send-Sms.aspx" />
     <Content Include="Main Theme\About.aspx" />
     <Content Include="Dashboard\assets\css\animate.css\css\animate.css" />
     <Content Include="Dashboard\assets\css\bootstrap\css\bootstrap.min.css" />
@@ -252,11 +255,7 @@
     <Content Include="Dashboard\assets\pages\widget\amchart\worldLow.js" />
     <Content Include="Dashboard\assets\pages\widget\amchart\worldLow.min.js" />
     <Content Include="Dashboard\assets\pages\widget\excanvas.js" />
-    <Content Include="Main Theme\Blog.aspx" />
-    <Content Include="Main Theme\Blog_Details.aspx" />
     <Content Include="Main Theme\Contact.aspx" />
-    <Content Include="Main Theme\Contact_Process.php" />
-    <Content Include="Dashboard\index.aspx" />
     <Content Include="Main Theme\Default.aspx" />
     <Content Include="Main Theme\Doc\css\font-awesome.min.css" />
     <Content Include="Main Theme\Doc\css\main.css" />
@@ -312,7 +311,6 @@
     <Content Include="Main Theme\Doc\syntax-highlighter\styles\shThemeMDUltra.css" />
     <Content Include="Main Theme\Doc\syntax-highlighter\styles\shThemeMidnight.css" />
     <Content Include="Main Theme\Doc\syntax-highlighter\styles\shThemeRDark.css" />
-    <Content Include="Main Theme\Elements.aspx" />
     <Content Include="Main Theme\Resources\css\animate.min.css" />
     <Content Include="Main Theme\Resources\css\bootstrap.min.css" />
     <Content Include="Main Theme\Resources\css\flaticon.css" />
@@ -462,124 +460,152 @@
     <Content Include="Main Theme\Services.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Dashboard\accordion.aspx.cs">
-      <DependentUpon>accordion.aspx</DependentUpon>
+    <Compile Include="Dashboard\Banka-Ekle.aspx.cs">
+      <DependentUpon>Banka-Ekle.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Dashboard\accordion.aspx.designer.cs">
-      <DependentUpon>accordion.aspx</DependentUpon>
+    <Compile Include="Dashboard\Banka-Ekle.aspx.designer.cs">
+      <DependentUpon>Banka-Ekle.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Dashboard\auth-normal-sign-in.aspx.cs">
-      <DependentUpon>auth-normal-sign-in.aspx</DependentUpon>
+    <Compile Include="Dashboard\Bankalar.aspx.cs">
+      <DependentUpon>Bankalar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Dashboard\auth-normal-sign-in.aspx.designer.cs">
-      <DependentUpon>auth-normal-sign-in.aspx</DependentUpon>
+    <Compile Include="Dashboard\Bankalar.aspx.designer.cs">
+      <DependentUpon>Bankalar.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Dashboard\auth-sign-up.aspx.cs">
-      <DependentUpon>auth-sign-up.aspx</DependentUpon>
+    <Compile Include="Dashboard\Gelir-Ekle.aspx.cs">
+      <DependentUpon>Gelir-Ekle.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Dashboard\auth-sign-up.aspx.designer.cs">
-      <DependentUpon>auth-sign-up.aspx</DependentUpon>
+    <Compile Include="Dashboard\Gelir-Ekle.aspx.designer.cs">
+      <DependentUpon>Gelir-Ekle.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Dashboard\breadcrumb.aspx.cs">
-      <DependentUpon>breadcrumb.aspx</DependentUpon>
+    <Compile Include="Dashboard\Gelir-Gor.aspx.cs">
+      <DependentUpon>Gelir-Gor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Dashboard\breadcrumb.aspx.designer.cs">
-      <DependentUpon>breadcrumb.aspx</DependentUpon>
+    <Compile Include="Dashboard\Gelir-Gor.aspx.designer.cs">
+      <DependentUpon>Gelir-Gor.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Dashboard\bs-basic-table.aspx.cs">
-      <DependentUpon>bs-basic-table.aspx</DependentUpon>
+    <Compile Include="Dashboard\Gider-Ekle.aspx.cs">
+      <DependentUpon>Gider-Ekle.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Dashboard\bs-basic-table.aspx.designer.cs">
-      <DependentUpon>bs-basic-table.aspx</DependentUpon>
+    <Compile Include="Dashboard\Gider-Ekle.aspx.designer.cs">
+      <DependentUpon>Gider-Ekle.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Dashboard\button.aspx.cs">
-      <DependentUpon>button.aspx</DependentUpon>
+    <Compile Include="Dashboard\Gider-Gor.aspx.cs">
+      <DependentUpon>Gider-Gor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Dashboard\button.aspx.designer.cs">
-      <DependentUpon>button.aspx</DependentUpon>
+    <Compile Include="Dashboard\Gider-Gor.aspx.designer.cs">
+      <DependentUpon>Gider-Gor.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Dashboard\chart-morris.aspx.cs">
-      <DependentUpon>chart-morris.aspx</DependentUpon>
+    <Compile Include="Dashboard\Giris.aspx.cs">
+      <DependentUpon>Giris.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Dashboard\chart-morris.aspx.designer.cs">
-      <DependentUpon>chart-morris.aspx</DependentUpon>
+    <Compile Include="Dashboard\Giris.aspx.designer.cs">
+      <DependentUpon>Giris.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Dashboard\color.aspx.cs">
-      <DependentUpon>color.aspx</DependentUpon>
+    <Compile Include="Dashboard\Isler-Done.aspx.cs">
+      <DependentUpon>Isler-Done.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Dashboard\color.aspx.designer.cs">
-      <DependentUpon>color.aspx</DependentUpon>
+    <Compile Include="Dashboard\Isler-Done.aspx.designer.cs">
+      <DependentUpon>Isler-Done.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Dashboard\form-elements-component.aspx.cs">
-      <DependentUpon>form-elements-component.aspx</DependentUpon>
+    <Compile Include="Dashboard\Isler.aspx.cs">
+      <DependentUpon>Isler.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Dashboard\form-elements-component.aspx.designer.cs">
-      <DependentUpon>form-elements-component.aspx</DependentUpon>
+    <Compile Include="Dashboard\Isler.aspx.designer.cs">
+      <DependentUpon>Isler.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Dashboard\label-badge.aspx.cs">
-      <DependentUpon>label-badge.aspx</DependentUpon>
+    <Compile Include="Dashboard\Kaydol.aspx.cs">
+      <DependentUpon>Kaydol.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Dashboard\label-badge.aspx.designer.cs">
-      <DependentUpon>label-badge.aspx</DependentUpon>
+    <Compile Include="Dashboard\Kaydol.aspx.designer.cs">
+      <DependentUpon>Kaydol.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Dashboard\map-google.aspx.cs">
-      <DependentUpon>map-google.aspx</DependentUpon>
+    <Compile Include="Dashboard\Mail-Send.aspx.cs">
+      <DependentUpon>Mail-Send.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Dashboard\map-google.aspx.designer.cs">
-      <DependentUpon>map-google.aspx</DependentUpon>
+    <Compile Include="Dashboard\Mail-Send.aspx.designer.cs">
+      <DependentUpon>Mail-Send.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Dashboard\notification.aspx.cs">
-      <DependentUpon>notification.aspx</DependentUpon>
+    <Compile Include="Dashboard\Mails-Send.aspx.cs">
+      <DependentUpon>Mails-Send.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Dashboard\notification.aspx.designer.cs">
-      <DependentUpon>notification.aspx</DependentUpon>
+    <Compile Include="Dashboard\Mails-Send.aspx.designer.cs">
+      <DependentUpon>Mails-Send.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Dashboard\sample-page.aspx.cs">
-      <DependentUpon>sample-page.aspx</DependentUpon>
+    <Compile Include="Dashboard\Main.Master.cs">
+      <DependentUpon>Main.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Dashboard\sample-page.aspx.designer.cs">
-      <DependentUpon>sample-page.aspx</DependentUpon>
+    <Compile Include="Dashboard\Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
     </Compile>
-    <Compile Include="Dashboard\tabs.aspx.cs">
-      <DependentUpon>tabs.aspx</DependentUpon>
+    <Compile Include="Dashboard\Anasayfa.aspx.cs">
+      <DependentUpon>Anasayfa.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Dashboard\tabs.aspx.designer.cs">
-      <DependentUpon>tabs.aspx</DependentUpon>
+    <Compile Include="Dashboard\Anasayfa.aspx.designer.cs">
+      <DependentUpon>Anasayfa.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Dashboard\tooltip.aspx.cs">
-      <DependentUpon>tooltip.aspx</DependentUpon>
+    <Compile Include="Dashboard\Musteriler.aspx.cs">
+      <DependentUpon>Musteriler.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Dashboard\tooltip.aspx.designer.cs">
-      <DependentUpon>tooltip.aspx</DependentUpon>
+    <Compile Include="Dashboard\Musteriler.aspx.designer.cs">
+      <DependentUpon>Musteriler.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Dashboard\typography.aspx.cs">
-      <DependentUpon>typography.aspx</DependentUpon>
+    <Compile Include="Dashboard\Not-Ekle.aspx.cs">
+      <DependentUpon>Not-Ekle.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Dashboard\typography.aspx.designer.cs">
-      <DependentUpon>typography.aspx</DependentUpon>
+    <Compile Include="Dashboard\Not-Ekle.aspx.designer.cs">
+      <DependentUpon>Not-Ekle.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Dashboard\SendSMS.aspx.cs">
-      <DependentUpon>SendSMS.aspx</DependentUpon>
+    <Compile Include="Dashboard\Notlar.aspx.cs">
+      <DependentUpon>Notlar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Dashboard\SendSMS.aspx.designer.cs">
-      <DependentUpon>SendSMS.aspx</DependentUpon>
+    <Compile Include="Dashboard\Notlar.aspx.designer.cs">
+      <DependentUpon>Notlar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\Personel-Ekle.aspx.cs">
+      <DependentUpon>Personel-Ekle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Personel-Ekle.aspx.designer.cs">
+      <DependentUpon>Personel-Ekle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\Personeller.aspx.cs">
+      <DependentUpon>Personeller.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Personeller.aspx.designer.cs">
+      <DependentUpon>Personeller.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\Randevular.aspx.cs">
+      <DependentUpon>Randevular.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Randevular.aspx.designer.cs">
+      <DependentUpon>Randevular.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\Send-Sms.aspx.cs">
+      <DependentUpon>Send-Sms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Send-Sms.aspx.designer.cs">
+      <DependentUpon>Send-Sms.aspx</DependentUpon>
     </Compile>
     <Compile Include="Main Theme\About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -588,20 +614,6 @@
     <Compile Include="Main Theme\About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Main Theme\Blog.aspx.cs">
-      <DependentUpon>Blog.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Main Theme\Blog.aspx.designer.cs">
-      <DependentUpon>Blog.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Main Theme\Blog_Details.aspx.cs">
-      <DependentUpon>Blog_Details.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Main Theme\Blog_Details.aspx.designer.cs">
-      <DependentUpon>Blog_Details.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Main Theme\Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -609,26 +621,12 @@
     <Compile Include="Main Theme\Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Dashboard\index.aspx.cs">
-      <DependentUpon>index.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Dashboard\index.aspx.designer.cs">
-      <DependentUpon>index.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Main Theme\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Main Theme\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Main Theme\Elements.aspx.cs">
-      <DependentUpon>Elements.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Main Theme\Elements.aspx.designer.cs">
-      <DependentUpon>Elements.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Main Theme\Main.aspx.cs">
@@ -701,6 +699,7 @@
     <Content Include="Dashboard\assets\icon\themify-icons\fonts\themify.woff" />
     <Content Include="Dashboard\assets\images\auth\Thumbs.db" />
     <Content Include="Dashboard\assets\images\Thumbs.db" />
+    <Content Include="Dashboard\Main.Master" />
     <None Include="packages.config" />
     <Content Include="Main Theme\Resources\css\style.map" />
     <Content Include="Main Theme\Resources\fonts\_flaticon.scss" />

@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Transportation HTML-5 Template </title>
+    <title>Pamuk İnşaat-Ana Sayfa</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.config">
@@ -53,8 +53,8 @@
                             </div>
                             <div class="header-info-right">
                                 <ul class="header-social">    
-                                    <li><a href="https://www.facebook.com"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="https://www.twitter.com"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
                                     <li><a href="https://www.linked.in"><i class="fab fa-linkedin-in"></i></a></li>
                                     <li> <a href="https://www.google.com"><i class="fab fa-google-plus-g"></i></a></li>
                                 </ul>
@@ -80,21 +80,14 @@
                                         <ul id="navigation">                                                                                          
                                             <li><a href="Default.aspx">Ana Sayfa</a></li>
                                             <li><a href="About.aspx">Hakkında</a></li>
-                                            <li><a href="Services.aspx">Servisler</a></li>
-                                            <li><a href="Blog.aspx">Blog</a>
-                                                <ul class="submenu">
-                                                    <li><a href="Blog.aspx">Blog</a></li>
-                                                    <li><a href="Blog_Details.aspx">Blog Detayları</a></li>
-                                                    <li><a href="Elements.aspx">Elementler</a></li>
-                                                </ul>
-                                            </li>
+                                            <li><a href="Services.aspx">Hizmetler</a></li>
                                             <li><a href="Contact.aspx">İletişim</a></li>
                                         </ul>
                                     </nav>
                                 </div>
                                 <!-- Header-btn -->
                                 <div class="header-right-btn d-none d-lg-block ml-20">
-                                    <a href="../Dashboard/index.aspx" target="_blank" class="btn header-btn">Online İşlemler</a>
+                                    <a href="../Dashboard/Anasayfa.aspx" target="_blank" class="btn header-btn">Online İşlemler</a>
                                 </div>
                             </div>
                         </div> 
@@ -243,8 +236,6 @@
                             <span>Hakkımızda</span>
                             <h2>İnşaat sektöründe Ege Bölgesinin bir numaralı firması olmakla gurur duyuyoruz.</h2>
                         </div>
-                        <p>Brook presents your services with flexible, convenient and cdpose layouts. You can select your favorite layouts & elements for cular ts with unlimited ustomization possibilities. Pixel-perfect replication of the designers is intended.</p>
-                        <p>Brook presents your services with flexible, convefnient and chient anipurpose layouts. You can select your favorite layouts.</p>
                         <a href="About.aspx" class="btn" id="btn1">Daha Fazla Göster</a>
                     </div>
                 </div>
@@ -263,120 +254,7 @@
         </div>
     </div>
     <!-- About Area End -->
-    <!--? contact-form start -->
-    <section class="contact-form-area section-bg  pt-115 pb-120 fix" data-background="Resources/img/gallery/section_bg02.jpg">
-        <div class="container">
-            <div class="row justify-content-end">
-                <!-- Contact wrapper -->
-                <div class="col-xl-8 col-lg-9">
-                    <div class="contact-form-wrapper">
-                        <!-- From tittle -->
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <!-- Section Tittle -->
-                                <div class="section-tittle mb-50">
-                                    <span>Get a Qote For Free</span>
-                                    <h2>Request a Free Quote</h2>
-                                    <p>Brook presents your services with flexible, convenient and cdpose layouts. You can select your favorite layouts & elements for.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- form -->
-                        <form action="#" class="contact-form">
-                            <div class="row ">
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="input-form">
-                                        <input type="text" placeholder="Name">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="input-form">
-                                        <input type="text" placeholder="Email">
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="input-form">
-                                        <input type="text" placeholder="Contact Number">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="select-items">
-                                        <select name="select" id="select1">
-                                            <option value="">Freight Type</option>
-                                            <option value="">Catagories One</option>
-                                            <option value="">Catagories Two</option>
-                                            <option value="">Catagories Three</option>
-                                            <option value="">Catagories Four</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="input-form">
-                                        <input type="text" placeholder="City of Departure">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <div class="input-form">
-                                        <input type="text" placeholder="Incoterms">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <div class="input-form">
-                                        <input type="text" placeholder="Weight">
-                                    </div>
-                                </div>
-                                <!-- Height Width length -->
-                                <div class="col-lg-4 col-md-6 col-sm-6">
-                                    <div class="input-form">
-                                        <input type="text" placeholder="Height">
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-sm-6">
-                                    <div class="input-form">
-                                        <input type="text" placeholder="Width">
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-sm-6">
-                                    <div class="input-form">
-                                        <input type="text" placeholder="length">
-                                    </div>
-                                </div>
-                                <!-- Radio Button -->
-                                <div class="col-lg-12">
-                                    <div class="radio-wrapper mb-30 mt-15">
-                                        <label>Extra services:</label>
-                                        <div class="select-radio">
-                                            <div class="radio">
-                                                <input id="radio-1" name="radio" type="radio" checked="checked">
-                                                <label for="radio-1" class="radio-label">Freight</label>
-                                            </div>
-                                            <div class="radio">
-                                                <input id="radio-2" name="radio" type="radio">
-                                                <label for="radio-2" class="radio-label">Express Delivery</label>
-                                            </div>
-                                            <div class="radio">
-                                                <input id="radio-4" name="radio" type="radio">
-                                                <label for="radio-4" class="radio-label">Insurance</label>
-                                            </div>
-                                            <div class="radio">
-                                                <input id="radio-5" name="radio" type="radio">
-                                                <label for="radio-5" class="radio-label">Packaging</label>
-                                            </div>
-                                        </div>
-                                    </div> 
-                                </div>
-                                <!-- Button -->
-                                <div class="col-lg-12">
-                                    <button name="submit" class="submit-btn">Request a Quote</button>
-                                </div>
-                            </div>
-                        </form>	
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- contact-form end -->
+    
     <!--Team Ara Start -->
     <div class="team-area section-padding30">
         <div class="container">
@@ -384,8 +262,8 @@
                 <div class="cl-xl-7 col-lg-8 col-md-10">
                     <!-- Section Tittle -->
                     <div class="section-tittle text-center mb-70">
-                        <span>Our Team Mambers</span>
-                        <h2>What We Can Do For You</h2>
+                        <span>Takım Arkadaşlarımız</span>
+                        <h2>Sizin İçin Ne Yapabiliriz</h2>
                     </div> 
                 </div>
             </div>
@@ -395,8 +273,8 @@
                         <div class="team-img">
                             <img src="Resources/img/gallery/team1.png" alt="">
                             <div class="team-caption">
-                                <h3><a href="#">Mancherwan Kolin</a></h3>
-                                <p>Health agent</p>
+                                <h3><a href="#">Galip Derviş</a></h3>
+                                <p>Ustabaşı</p>
                                 <!-- Blog Social -->
                                 <div class="team-social">
                                     <ul>
@@ -415,8 +293,8 @@
                         <div class="team-img">
                             <img src="Resources/img/gallery/team2.png" alt="">
                             <div class="team-caption">
-                                <h3><a href="#">Mancherwan Kolin</a></h3>
-                                <p>Health agent</p>
+                                <h3><a href="#">Berk Kaymaz</a></h3>
+                                <p>Mimar</p>
                                 <!-- Blog Social -->
                                 <div class="team-social">
                                     <ul>
@@ -435,8 +313,8 @@
                         <div class="team-img">
                             <img src="Resources/img/gallery/team3.png" alt="">
                             <div class="team-caption">
-                                <h3><a href="#">Mancherwan Kolin</a></h3>
-                                <p>Health agent</p>
+                                <h3><a href="#">Yağız Şahin</a></h3>
+                                <p>İnşaat Mühendisi</p>
                                 <!-- Blog Social -->
                                 <div class="team-social">
                                     <ul>
@@ -461,8 +339,7 @@
                 <div class="col-xl-7 col-lg-7">
                     <!-- Section Tittle -->
                     <div class="section-tittle section-tittle2 mb-25">
-                        <span>Clients Testimonials</span>
-                        <h2>What Our Clients Say!</h2>
+                        <h2>Müşterilerimiz ne diyor?</h2>
                     </div> 
                     <div class="h1-testimonial-active mb-70">
                         <!-- Single Testimonial -->
@@ -470,7 +347,7 @@
                             <!-- Testimonial Content -->
                             <div class="testimonial-caption ">
                                 <div class="testimonial-top-cap">
-                                    <p>Srem ipsum adolor dfsit amet, consectetur adipiscing elit, sed dox beiusmod tempor incci didunt ut labore et dolore magna aliqua. Quis cipsucm suspendisse ultrices gravida. Risus commodo vivercra maecenas accumsan lac.</p>
+                                    <p>Bu şirketin yaptıkları inanılmaz, herkese tavsiye ediyorum, her isteğimi tam olarak istediğim şekilde yerine getirdiler, harika!</p>
                                 </div>
                                 <!-- founder -->
                                 <div class="testimonial-founder d-flex align-items-center">
@@ -478,8 +355,8 @@
                                         <img src="Resources/img/gallery/Homepage_testi.png" alt="">
                                     </div>
                                     <div class="founder-text">
-                                        <span>Jhaon smith</span>
-                                        <p>Creative designer</p>
+                                        <span>Kuveyt Erim</span>
+                                        <p>Doktor</p>
                                     </div>
                                 </div>
                             </div>
@@ -489,7 +366,7 @@
                             <!-- Testimonial Content -->
                             <div class="testimonial-caption ">
                                 <div class="testimonial-top-cap">
-                                    <p>Srem ipsum adolor dfsit amet, consectetur adipiscing elit, sed dox beiusmod tempor incci didunt ut labore et dolore magna aliqua. Quis cipsucm suspendisse ultrices gravida. Risus commodo vivercra maecenas accumsan lac.</p>
+                                    <p>Bu şirketin yaptıkları inanılmaz, herkese tavsiye ediyorum, her isteğimi tam olarak istediğim şekilde yerine getirdiler, harika!</p>
                                 </div>
                                 <!-- founder -->
                                 <div class="testimonial-founder d-flex align-items-center">
@@ -497,110 +374,19 @@
                                         <img src="Resources/img/gallery/Homepage_testi.png" alt="">
                                     </div>
                                     <div class="founder-text">
-                                        <span>Jhaon smith</span>
-                                        <p>Creative designer</p>
+                                        <span>Kuveyt Erim</span>
+                                        <p>Doktor</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Form Start -->
-                <div class="col-xl-4 col-lg-5 col-md-8">
-                    <div class="testimonial-form text-center">
-                        <h3>Always listening, always understanding.</h3>
-                        <input type="text" placeholder="Incoterms">
-                        <button name="submit" class="submit-btn">Request a Quote</button>
-                    </div>
-                </div>
-                <!-- Form End -->
             </div>
         </div>
     </div>
     <!-- Testimonial End -->
-    <!--? Blog Area Start -->
-    <div class="home-blog-area section-padding30">
-        <div class="container">
-            <!-- Section Tittle -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-tittle text-center mb-70">
-                        <span>Our Recent news</span>
-                        <h2>Tourist Blog</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="home-blog-single mb-30">
-                        <div class="blog-img-cap">
-                            <div class="blog-img">
-                                <img src="Resources/img/gallery/blog01.png" alt="">
-                            </div>
-                        </div>
-                        <div class="blog-caption">
-                            <div class="blog-date text-center">
-                                <span>27</span>
-                                <p>SEP</p>
-                            </div>
-                            <div class="blog-cap">
-                                <ul>
-                                    <li><a href="#"><i class="ti-user"></i> Jessica Temphers</a></li>
-                                    <li><a href="#"><i class="ti-comment-alt"></i> 12</a></li>
-                                </ul>
-                                <h3><a href="Blog_Details.aspx">Here’s what you should know before.</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="home-blog-single mb-30">
-                        <div class="blog-img-cap">
-                            <div class="blog-img">
-                                <img src="Resources/img/gallery/blog1.png" alt="">
-                            </div>
-                        </div>
-                        <div class="blog-caption">
-                            <div class="blog-date text-center">
-                                <span>27</span>
-                                <p>SEP</p>
-                            </div>
-                            <div class="blog-cap">
-                                <ul>
-                                    <li><a href="#"><i class="ti-user"></i> Jessica Temphers</a></li>
-                                    <li><a href="#"><i class="ti-comment-alt"></i> 12</a></li>
-                                </ul>
-                                <h3><a href="Blog_Details.aspx">Here’s what you should know before.</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="home-blog-single mb-30">
-                        <div class="blog-img-cap">
-                            <div class="blog-img">
-                                <img src="Resources/img/gallery/blog02.png" alt="">
-                            </div>
-                        </div>
-                        <div class="blog-caption">
-                            <div class="blog-date text-center">
-                                <span>27</span>
-                                <p>SEP</p>
-                            </div>
-                            <div class="blog-cap">
-                                <ul>
-                                    <li><a href="#"><i class="ti-user"></i> Jessica Temphers</a></li>
-                                    <li><a href="#"><i class="ti-comment-alt"></i> 12</a></li>
-                                </ul>
-                                <h3><a href="Blog_Details.aspx">Here’s what you should know before.</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Blog Area End -->
+
 </main>
 <footer>
     <!--? Footer Start-->
@@ -612,11 +398,11 @@
                     <div class="row justify-content-between">
                         <div class="col-xl-6 col-lg-8 col-md-8">
                             <div class="wantToWork-caption wantToWork-caption2">
-                                <h2>We Understand The Importance Approaching Each Work!</h2>
+                                <h2>Kaliteli binalarda yaşamanız gerektiğini savunuyoruz.</h2>
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-4">
-                            <span class="contact-number f-right">+ 1 212-683-9756</span>
+                            <span class="contact-number f-right">+90 256 313 9154</span>
                         </div>
                     </div>
                 </div>
@@ -625,12 +411,11 @@
                     <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
                         <div class="single-footer-caption mb-50">
                             <div class="footer-tittle">
-                                <h4>COMPANY</h4>
+                                <h4>Pamuk İnşaat</h4>
                                 <ul>
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Company</a></li>
-                                    <li><a href="#"> Press & Blog</a></li>
-                                    <li><a href="#"> Privacy Policy</a></li>
+                                    <li><a href="About.aspx">Hakkımızda</a></li>
+                                    <li><a href="#">Şirket</a></li>
+                                    <li><a href="#"> Güvenlik Sözleşmesi</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -640,24 +425,10 @@
                             <div class="footer-tittle">
                                 <h4>Open hour</h4>
                                 <ul>
-                                    <li><a href="#">Monday 11am-7pm</a></li>
-                                    <li><a href="#"> Tuesday-Friday 11am-8pm</a></li>
-                                    <li><a href="#"> Saturday 10am-6pm</a></li>
-                                    <li><a href="#"> Sunday 11am-6pm</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
-                        <div class="single-footer-caption mb-50">
-                            <div class="footer-tittle">
-                                <h4>RESOURCES</h4>
-                                <ul>
-                                    <li><a href="#">Home Insurance</a></li>
-                                    <li><a href="#">Travel Insurance</a></li>
-                                    <li><a href="#"> Car Insurance</a></li>
-                                    <li><a href="#"> Business Insurance</a></li>
-                                    <li><a href="#"> Heal Insurance</a></li>
+                                    <li><a href="#">Pazartesi 11.00-19.00</a></li>
+                                    <li><a href="#"> Salı-Cuma 11.00-20.00</a></li>
+                                    <li><a href="#"> Cumartesi 10.00-18.00</a></li>
+                                    <li><a href="#"> Pazar 11.00-18.00</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -670,15 +441,15 @@
                             </div>
                             <div class="footer-tittle">
                                 <div class="footer-pera">
-                                    <p class="info1">GThe trade war currently ensuing between te US anfd several natxions around thdhe globe, most fiercely with.</p>
+                                    <p class="info1">PAMUK İNŞAAT VE YAPI TASARIM</p>
                                 </div>
                             </div>
                             <!-- Footer Social -->
                             <div class="footer-social ">
-                                <a href="https://www.facebook.com/sai4ull"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fas fa-globe"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.linked.in"><i class="fas fa-globe"></i></a>
+                                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -690,7 +461,7 @@
                     <div class="col-lg-12">
                         <div class="footer-copy-right text-center">
                             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved.
   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                         </div>
                     </div>

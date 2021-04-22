@@ -1,11 +1,11 @@
-﻿rvice<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Services.aspx.cs" Inherits="Project.Web.Services" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Services.aspx.cs" Inherits="Project.Web.Services" %>
 
 <!doctype html>
-<html class="no-js" lang="zxx">
+<html class="no-js" lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Transportation HTML-5 Template </title>
+        <title>Pamuk İnşaat- Hizmetlerimiz</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="manifest" href="site.config">
@@ -48,16 +48,16 @@
                             <div class="row d-flex justify-content-between align-items-center">
                                 <div class="header-info-left">
                                     <ul>     
-                                        <li>Phone: +99 (0) 101 0000 888</li>
-                                        <li>Email: noreply@yourdomain.com</li>
+                                        <li>Telefon: +9 (0) 256 313 9154</li>
+                                        <li>Email: noreply@pamukinsaat.com</li>
                                     </ul>
                                 </div>
                                 <div class="header-info-right">
                                     <ul class="header-social">    
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                       <li> <a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                        <li><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="https://www.linked.in"><i class="fab fa-linkedin-in"></i></a></li>
+                                        <li> <a href="https://www.google.com"><i class="fab fa-google-plus-g"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -79,23 +79,16 @@
                                     <div class="main-menu d-none d-lg-block">
                                         <nav> 
                                             <ul id="navigation">                                                                                          
-                                                <li><a href="Default.aspx">Home</a></li>
-                                                <li><a href="About.aspx">About</a></li>
-                                                <li><a href="Services.aspx">Services</a></li>
-                                                <li><a href="Blog.aspx">Blog</a>
-                                                    <ul class="submenu">
-                                                        <li><a href="Blog.aspx">Blog</a></li>
-                                                       <li><a href="Blog_Details.aspx">Blog Details</a></li>
-                                                        <li><a href="Elements.aspx">Element</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="Contact.aspx">Contact</a></li>
+                                                <li><a href="Default.aspx">Ana Sayfa</a></li>
+                                                <li><a href="About.aspx">Hakkında</a></li>
+                                                <li><a href="Services.aspx">Hizmetler</a></li>
+                                                <li><a href="Contact.aspx">İletişim</a></li>
                                             </ul>
                                         </nav>
                                     </div>
                                     <!-- Header-btn -->
                                     <div class="header-right-btn d-none d-lg-block ml-20">
-                                        <a href="../Dashboard/index.aspx" class="btn header-btn">Dashboard</a>
+                                        <a href="../Dashboard/Anasayfa.aspx" class="btn header-btn">Dashboard</a>
                                     </div>
                                 </div>
                             </div> 
@@ -118,11 +111,11 @@
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="hero-cap">
-                                <h2>Our Services</h2>
+                                <h2>Hizmetlerimiz</h2>
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
-                                        <li class="breadcrumb-item"><a href="Default.aspx">Home</a></li>
-                                        <li class="breadcrumb-item"><a href="#">Our Services</a></li> 
+                                        <li class="breadcrumb-item"><a href="Default.aspx">Ana Sayfa</a></li>
+                                        <li class="breadcrumb-item"><a href="#">Hizmetlerimiz</a></li> 
                                     </ol>
                                 </nav>
                             </div>
@@ -139,8 +132,8 @@
                     <div class="col-lg-12">
                         <!-- Section Tittle -->
                         <div class="section-tittle text-center mb-80">
-                            <span>Our Services</span>
-                            <h2>What We Can Do For You</h2>
+                            <span>Hizmetlerimiz</span>
+                            <h2>Sizin İçin Ne Yapabiliriz</h2>
                         </div>
                     </div>
                 </div>
@@ -151,8 +144,7 @@
                                 <span class="flaticon-shipped"></span>
                             </div>
                             <div class="cat-cap">
-                                <h5><a href="Services.aspx">Land Transport</a></h5>
-                                <p>The sea freight service has grown conside rably in recent years. We spend timetting to know your processes to.</p>
+                                <h5><a href="Services.aspx">İç Yapı Tasarım</a></h5>
                             </div>
                         </div>
                     </div>
@@ -162,8 +154,7 @@
                                 <span class="flaticon-ship"></span>
                             </div>
                             <div class="cat-cap">
-                                <h5><a href="Services.aspx">Ship Transport</a></h5>
-                                <p>The sea freight service has grown conside rably in recent years. We spend timetting to know your processes to.</p>
+                                <h5><a href="Services.aspx">Temelden İnşaat</a></h5>
                             </div>
                         </div>
                     </div>
@@ -173,8 +164,7 @@
                                 <span class="flaticon-plane"></span>
                             </div>
                             <div class="cat-cap">
-                                <h5><a href="Services.aspx">Air Transport</a></h5>
-                                <p>The sea freight service has grown conside rably in recent years. We spend timetting to know your processes to.</p>
+                                <h5><a href="Services.aspx">Dış Cephe / Mantolama</a></h5>
                             </div>
                         </div>
                     </div>
@@ -184,8 +174,7 @@
                                 <span class="flaticon-plane"></span>
                             </div>
                             <div class="cat-cap">
-                                <h5><a href="Services.aspx">Air Transport</a></h5>
-                                <p>The sea freight service has grown conside rably in recent years. We spend timetting to know your processes to.</p>
+                                <h5><a href="Services.aspx">Peyzaj</a></h5>
                             </div>
                         </div>
                     </div>
@@ -195,8 +184,7 @@
                                 <span class="flaticon-shipped"></span>
                             </div>
                             <div class="cat-cap">
-                                <h5><a href="Services.aspx">Land Transport</a></h5>
-                                <p>The sea freight service has grown conside rably in recent years. We spend timetting to know your processes to.</p>
+                                <h5><a href="Services.aspx">Proje Çizimi</a></h5>
                             </div>
                         </div>
                     </div>
@@ -206,8 +194,7 @@
                                 <span class="flaticon-ship"></span>
                             </div>
                             <div class="cat-cap">
-                                <h5><a href="Services.aspx">Ship Transport</a></h5>
-                                <p>The sea freight service has grown conside rably in recent years. We spend timetting to know your processes to.</p>
+                                <h5><a href="Services.aspx">Dekorasyon</a></h5>
                             </div>
                         </div>
                     </div>
@@ -218,103 +205,88 @@
        
     </main>
     <footer>
-        <!--? Footer Start-->
-        <div class="footer-area footer-bg">
-           <div class="container">
-                <div class="footer-top footer-padding">
-                    <!-- footer Heading -->
-                    <div class="footer-heading">
-                        <div class="row justify-content-between">
-                            <div class="col-xl-6 col-lg-8 col-md-8">
-                                <div class="wantToWork-caption wantToWork-caption2">
-                                    <h2>We Understand The Importance Approaching Each Work!</h2>
-                                </div>
+    <!--? Footer Start-->
+    <div class="footer-area footer-bg">
+        <div class="container">
+            <div class="footer-top footer-padding">
+                <!-- footer Heading -->
+                <div class="footer-heading">
+                    <div class="row justify-content-between">
+                        <div class="col-xl-6 col-lg-8 col-md-8">
+                            <div class="wantToWork-caption wantToWork-caption2">
+                                <h2>Kaliteli binalarda yaşamanız gerektiğini savunuyoruz.</h2>
                             </div>
-                            <div class="col-xl-3 col-lg-4">
-                                <span class="contact-number f-right">+ 1 212-683-9756</span>
+                        </div>
+                        <div class="col-xl-3 col-lg-4">
+                            <span class="contact-number f-right">+90 256 313 9154</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer Menu -->
+                <div class="row d-flex justify-content-between">
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Pamuk İnşaat</h4>
+                                <ul>
+                                    <li><a href="About.aspx">Hakkımızda</a></li>
+                                    <li><a href="#">Şirket</a></li>
+                                    <li><a href="#"> Güvenlik Sözleşmesi</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                    <!-- Footer Menu -->
-                    <div class="row d-flex justify-content-between">
-                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
-                            <div class="single-footer-caption mb-50">
-                                <div class="footer-tittle">
-                                    <h4>COMPANY</h4>
-                                    <ul>
-                                        <li><a href="#">About Us</a></li>
-                                        <li><a href="#">Company</a></li>
-                                        <li><a href="#"> Press & Blog</a></li>
-                                        <li><a href="#"> Privacy Policy</a></li>
-                                    </ul>
-                                </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Open hour</h4>
+                                <ul>
+                                    <li><a href="#">Pazartesi 11.00-19.00</a></li>
+                                    <li><a href="#"> Salı-Cuma 11.00-20.00</a></li>
+                                    <li><a href="#"> Cumartesi 10.00-18.00</a></li>
+                                    <li><a href="#"> Pazar 11.00-18.00</a></li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-                            <div class="single-footer-caption mb-50">
-                                <div class="footer-tittle">
-                                    <h4>Open hour</h4>
-                                    <ul>
-                                        <li><a href="#">Monday 11am-7pm</a></li>
-                                        <li><a href="#"> Tuesday-Friday 11am-8pm</a></li>
-                                        <li><a href="#"> Saturday 10am-6pm</a></li>
-                                        <li><a href="#"> Sunday 11am-6pm</a></li>
-                                    </ul>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-5 col-sm-6">
+                        <div class="single-footer-caption mb-50">
+                            <!-- logo -->
+                            <div class="footer-logo">
+                                <a href="Default.aspx"><img src="Resources/img/logo/logo2_footer.png" alt=""></a>
+                            </div>
+                            <div class="footer-tittle">
+                                <div class="footer-pera">
+                                    <p class="info1">PAMUK İNŞAAT VE YAPI TASARIM</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
-                            <div class="single-footer-caption mb-50">
-                                <div class="footer-tittle">
-                                    <h4>RESOURCES</h4>
-                                    <ul>
-                                        <li><a href="#">Home Insurance</a></li>
-                                        <li><a href="#">Travel Insurance</a></li>
-                                        <li><a href="#"> Car Insurance</a></li>
-                                        <li><a href="#"> Business Insurance</a></li>
-                                        <li><a href="#"> Heal Insurance</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-4 col-md-5 col-sm-6">
-                            <div class="single-footer-caption mb-50">
-                                <!-- logo -->
-                                <div class="footer-logo">
-                                    <a href="Default.aspx"><img src="Resources/img/logo/logo2_footer.png" alt=""></a>
-                                </div>
-                                <div class="footer-tittle">
-                                    <div class="footer-pera">
-                                        <p class="info1">GThe trade war currently ensuing between te US anfd several natxions around thdhe globe, most fiercely with.</p>
-                                    </div>
-                                </div>
-                                <!-- Footer Social -->
-                                <div class="footer-social ">
-                                    <a href="https://www.facebook.com/sai4ull"><i class="fab fa-facebook-f"></i></a>
-                                    <a href=""><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fas fa-globe"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                </div>
+                            <!-- Footer Social -->
+                            <div class="footer-social ">
+                                <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.linked.in"><i class="fas fa-globe"></i></a>
+                                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Footer Bottom -->
-                <div class="footer-bottom">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-lg-12">
-                            <div class="footer-copy-right text-center">
-                                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+            </div>
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-12">
+                        <div class="footer-copy-right text-center">
+                            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved.
   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                            </div>
                         </div>
                     </div>
                 </div>
-           </div>
+            </div>
         </div>
-        <!-- Footer End-->
-    </footer>
+    </div>
+    <!-- Footer End-->
+</footer>
     <!-- Scroll Up -->
     <div id="back-top" >
         <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
