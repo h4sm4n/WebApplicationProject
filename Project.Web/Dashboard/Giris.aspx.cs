@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Project.DataAccess;
 
 namespace Project.Web.Dashboard
 {
@@ -11,7 +12,61 @@ namespace Project.Web.Dashboard
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            try
+            {
+                if (Session["role"] == null)
+                {
 
+                }
+
+                else if (Session["role"].Equals(1) || Session["role"].Equals(2))
+                {
+                    Session.Abandon();
+                    Session.Clear();
+                    Response.Cookies.Clear();
+                }
+            }
+
+            catch (Exception ex)
+            {
+                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('hata')", true);
+            }
+        }
+
+        protected void btnlogin_OnClick(object sender, EventArgs e)
+        {
+            if (txtemail.Text == "" || txtsifre.Text == "")
+            {
+                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Lütfen tüm alanları doldurun')", true);
+            }
+
+            try
+            {
+                int role = Business.Giris.getSessionRole(txtemail.Text, txtsifre.Text);
+
+                if (role == 00404)
+                {
+                    ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Kullanıcı adı ve/veya parola hatalı')", true);
+                }
+
+                else
+                {
+                    List<Kullanicilar> Credentials = Business.Giris.getCredentials(txtemail.Text, txtsifre.Text);
+
+                    Session["role"] = role;
+                    Session["email"] = Credentials[0].KullaniciAdi;
+                    Session["type"] = Credentials[0].KullaniciTip;
+                    Session["pozid"] = Credentials[0].SessionRoleId;
+
+                    Session["pozisyon"] = Business.Giris.getPozisyonAd(role);
+                    //Response.AddHeader("REFRESH", "10;URL=default.aspx");
+                    Response.Redirect("Anasayfa.aspx");
+                }
+            }
+            catch (Exception ex)
+            {
+                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('exception')", true);
+            }
         }
     }
 }

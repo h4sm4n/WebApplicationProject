@@ -53,6 +53,7 @@
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -81,6 +82,8 @@
     <Content Include="Dashboard\assets\css\ionicons.css" />
     <Content Include="Dashboard\assets\css\jquery.mCustomScrollbar.css" />
     <Content Include="Dashboard\assets\css\linearicons.css" />
+    <Content Include="Dashboard\assets\css\login.css" />
+    <Content Include="Dashboard\assets\css\main.css" />
     <Content Include="Dashboard\assets\css\morris.js\css\morris.css" />
     <Content Include="Dashboard\assets\css\simple-line-icons.css" />
     <Content Include="Dashboard\assets\css\style.css" />
@@ -115,8 +118,10 @@
     <Content Include="Dashboard\assets\images\browser\opera.png" />
     <Content Include="Dashboard\assets\images\browser\safari.png" />
     <Content Include="Dashboard\assets\images\favicon.ico" />
+    <Content Include="Dashboard\assets\images\login.jpg" />
     <Content Include="Dashboard\assets\images\logo-blue.png" />
     <Content Include="Dashboard\assets\images\logo.png" />
+    <Content Include="Dashboard\assets\images\logo.svg" />
     <Content Include="Dashboard\assets\images\mega-menu\01.jpg" />
     <Content Include="Dashboard\assets\images\mega-menu\02.jpg" />
     <Content Include="Dashboard\assets\images\mega-menu\03.jpg" />
@@ -161,6 +166,7 @@
     <Content Include="Dashboard\assets\js\float\jquery.flot.js" />
     <Content Include="Dashboard\assets\js\float\jquery.flot.pie.js" />
     <Content Include="Dashboard\assets\js\float\jquery.flot.tooltip.min.js" />
+    <Content Include="Dashboard\assets\js\global.js" />
     <Content Include="Dashboard\assets\js\jquery-slimscroll\jquery.slimscroll.js" />
     <Content Include="Dashboard\assets\js\jquery-ui\jquery-ui.min.js" />
     <Content Include="Dashboard\assets\js\jquery.easypiechart.min.js" />
@@ -235,6 +241,20 @@
     <Content Include="Dashboard\assets\pages\widget\amchart\worldLow.js" />
     <Content Include="Dashboard\assets\pages\widget\amchart\worldLow.min.js" />
     <Content Include="Dashboard\assets\pages\widget\excanvas.js" />
+    <Content Include="Dashboard\assets\vendor\datepicker\daterangepicker.css" />
+    <Content Include="Dashboard\assets\vendor\datepicker\daterangepicker.js" />
+    <Content Include="Dashboard\assets\vendor\datepicker\moment.min.js" />
+    <Content Include="Dashboard\assets\vendor\font-awesome-4.7\css\font-awesome.css" />
+    <Content Include="Dashboard\assets\vendor\font-awesome-4.7\css\font-awesome.min.css" />
+    <Content Include="Dashboard\assets\vendor\font-awesome-4.7\fonts\fontawesome-webfont.svg" />
+    <Content Include="Dashboard\assets\vendor\font-awesome-4.7\HELP-US-OUT.txt" />
+    <Content Include="Dashboard\assets\vendor\jquery\jquery.js" />
+    <Content Include="Dashboard\assets\vendor\jquery\jquery.min.js" />
+    <Content Include="Dashboard\assets\vendor\mdi-font\css\material-design-iconic-font.css" />
+    <Content Include="Dashboard\assets\vendor\mdi-font\css\material-design-iconic-font.min.css" />
+    <Content Include="Dashboard\assets\vendor\mdi-font\fonts\Material-Design-Iconic-Font.svg" />
+    <Content Include="Dashboard\assets\vendor\select2\select2.min.css" />
+    <Content Include="Dashboard\assets\vendor\select2\select2.min.js" />
     <Content Include="Dashboard\Banka-Ekle.aspx" />
     <Content Include="Dashboard\Bankalar.aspx" />
     <Content Include="Dashboard\Gelir-Ekle.aspx" />
@@ -643,6 +663,13 @@
     <Compile Include="Main Theme\Services.aspx.designer.cs">
       <DependentUpon>Services.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Unauthorized.Master.cs">
+      <DependentUpon>Unauthorized.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Unauthorized.Master.designer.cs">
+      <DependentUpon>Unauthorized.Master</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Main Theme\Doc\fonts\fontawesome-webfont.eot" />
@@ -700,6 +727,17 @@
     <Content Include="Dashboard\assets\icon\themify-icons\fonts\themify.woff" />
     <Content Include="Dashboard\assets\images\auth\Thumbs.db" />
     <Content Include="Dashboard\assets\images\Thumbs.db" />
+    <Content Include="Dashboard\assets\css\login.css.map" />
+    <Content Include="Dashboard\assets\scss\login.scss" />
+    <Content Include="Dashboard\assets\vendor\font-awesome-4.7\fonts\fontawesome-webfont.eot" />
+    <Content Include="Dashboard\assets\vendor\font-awesome-4.7\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Dashboard\assets\vendor\font-awesome-4.7\fonts\fontawesome-webfont.woff" />
+    <Content Include="Dashboard\assets\vendor\font-awesome-4.7\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Dashboard\assets\vendor\font-awesome-4.7\fonts\FontAwesome.otf" />
+    <Content Include="Dashboard\assets\vendor\mdi-font\fonts\Material-Design-Iconic-Font.eot" />
+    <Content Include="Dashboard\assets\vendor\mdi-font\fonts\Material-Design-Iconic-Font.ttf" />
+    <Content Include="Dashboard\assets\vendor\mdi-font\fonts\Material-Design-Iconic-Font.woff" />
+    <Content Include="Dashboard\assets\vendor\mdi-font\fonts\Material-Design-Iconic-Font.woff2" />
     <None Include="packages.config" />
     <Content Include="Main Theme\Resources\css\style.map" />
     <Content Include="Main Theme\Resources\fonts\_flaticon.scss" />
@@ -746,6 +784,7 @@
     <Content Include="Main Theme\Resources\scss\_variables.scss" />
     <Content Include="Main Theme\Resources\scss\style.scss" />
     <Content Include="Main Theme\site.config" />
+    <Content Include="Unauthorized.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -763,6 +802,7 @@
       <Name>Project.DataAccess</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -10,3 +10,5 @@ C:\Users\tnc\Desktop\Proje\WebAppProject\Project.DataAccess\bin\Debug\EntityFram
 C:\Users\tnc\Desktop\Proje\WebAppProject\Project.DataAccess\bin\Debug\EntityFramework.xml
 C:\Users\tnc\Desktop\Proje\WebAppProject\Project.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\tnc\Desktop\Proje\WebAppProject\Project.DataAccess\obj\Debug\Project.DataAccess.csproj.CopyComplete
+C:\Users\tnc\Desktop\Proje\WebAppProject\Project.DataAccess\obj\Debug\Project.DataAccess.Migrations.First.resources
+C:\Users\tnc\Desktop\Proje\WebAppProject\Project.DataAccess\obj\Debug\Project.DataAccess.csproj.GenerateResource.cache

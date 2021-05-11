@@ -9,6 +9,20 @@ namespace Project.Web.Dashboard
 {
     public partial class Notlar : System.Web.UI.Page
     {
+        protected void Page_PreInit(object sender, EventArgs e)
+        {
+            this.MasterPageFile = "~/Dashboard/Main.Master";
+
+            if (Session["role"] == null)
+            {
+                this.MasterPageFile = "~/Unauthorized.Master";
+            }
+
+            else if (Session["role"].Equals(2))
+            {
+                this.MasterPageFile = "~/Unauthorized.Master";
+            }
+        }
         protected void Page_Load(object sender, EventArgs e)
         {
 

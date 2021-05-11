@@ -22,6 +22,46 @@ File: style.css
       Custom css start
 ==========================  **/
 
+.edit-delete {
+    text-underline:#000000
+	text-decoration: #000000
+}
+
+.rounded-corners {
+    border: 1px solid #A1DCF2;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.Grid td, .Grid th {
+    border: 1px solid #A1DCF2
+}
+
+
+:root{ --gv-border-radius: 7px;}
+.rcgv {
+    border-radius: var(--gv-border-radius);
+    border-width: 0 !important;
+}
+.rcgv th:first-child {
+        border-top-left-radius: var(--gv-border-radius);
+    }
+
+.rcgv th:last-child {
+    border-top-right-radius: var(--gv-border-radius);
+}
+
+.rcgv tr:last-child td:first-child {
+    border-bottom-left-radius: var(--gv-border-radius);
+}
+
+.rcgv tr:last-child td:last-child {
+    border-bottom-right-radius: var(--gv-border-radius);
+}
+
+
 body {
 	background-color: #f3f3f3;
 	font-size: 0.875em;
@@ -4016,11 +4056,12 @@ select.form-control:not([size]):not([multiple]) {
 
 .label {
 	border-radius: 2px;
-	color: #fff;
+	color: blue;
 	font-size: 12px;
 	line-height: 1;
 	margin-bottom: 0;
 	text-transform: capitalize;
+	
 }
 
 .label-primary {

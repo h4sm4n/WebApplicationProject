@@ -65,7 +65,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="p-15 p-b-0 breadcrumb-item" style="margin-left: 1300px">
+                    <div class="p-15 p-b-0 breadcrumb-item" style="margin-left: 10px">
                         <form class="form-material">
                             <div class="form-group form-primary">
                                 <input type="text" name="footer-email" class="form-control" style="width: 200px; color: aliceblue ">

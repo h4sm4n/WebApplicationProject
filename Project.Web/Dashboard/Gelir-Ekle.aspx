@@ -1,8 +1,65 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Dashboard/Main.Master" AutoEventWireup="true" CodeBehind="Gelir-Ekle.aspx.cs" Inherits="Project.Web.Dashboard.Gelir_Ekle" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
+
+
+
+
+
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    
+    <form id="formgiris" runat="server" class="offset-4">
+        <div class="clearfix" style="align-items: center ">
+            <h1 class="offset-0 primary-border font-weight-bold" style="width: 37%">Yeni Gelir Girişi</h1>
+            <br/><br/>
+        <div style="width:20%" class="offset-0">
+            <label class="offset-4" style="color: black">Gelir Tipi:  </label> 
+            <br />
+            <asp:TextBox CssClass="pull-right txtbox" style="width: 175px" ID="txttip" runat="server" />
+        </div>
+
+        <br />
+        <br />
+
+        <div style="width:20%" class="offset-0">
+            <label class="offset-4" style="color: black">Fatura No: </label>
+            <br/>
+            <asp:TextBox CssClass="pull-right txtbox" style="width: 175px" ID="txtfaturano" runat="server" TextMode="Number"/>
+        </div>
+
+        <br />
+        <br />
+
+        <div style="width:20%" class="offset-0">
+            <label class="offset-4" style="color: black">Fatura Tarihi: </label>
+            <br/>
+            <asp:TextBox CssClass="pull-right txtbox" style="width: 175px" ID="txtfaturatarih" runat="server" TextMode="DateTimeLocal"/>
+        </div>
+
+        <br />
+        <br />
+
+        <div style="width:20%" class="offset-0">
+            <label class="offset-4" style="color: black"> Muhasebeci:</label>
+            <br/>
+            <asp:TextBox CssClass="pull-right txtbox" style="width: 175px" ID="txtmuhasebeci" runat="server" />
+        </div>
+
+        <br />
+        <br />
+        
+        <div style="width:20%">
+            <asp:Button CssClass=" btn-primary offset-5" Text="Ekle" Width="25%" runat="server" ID="btnekle" OnClick="btnekle_OnClick"/>
+        </div>
+        </div>
+    </form>
 </asp:Content>
+
+
+
+
+
+
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     <p>
         <div class="page-header">

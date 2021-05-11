@@ -1,4 +1,4 @@
-using System;
+    using System;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
 using System.Linq;
@@ -7,9 +7,9 @@ namespace Project.DataAccess
 {
     public partial class Model1 : DbContext
     {
-        public Model1()
-            : base("name=dbweb")
+        public Model1() : base("name=dbweb")
         {
+            Database.SetInitializer<Model1>(new DropCreateDatabaseIfModelChanges<Model1>());
         }
 
         public virtual DbSet<Adresler> Adresler { get; set; }
@@ -24,6 +24,8 @@ namespace Project.DataAccess
         public virtual DbSet<Personeller> Personeller { get; set; }
         public virtual DbSet<Randevular> Randevular { get; set; }
         public virtual DbSet<Sozlesmeler> Sozlesmeler { get; set; }
+        public virtual DbSet<SessionRoles> SessionRoles { get; set; }
+        public virtual DbSet<Trys> Trys { get; set; }
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -265,6 +267,20 @@ namespace Project.DataAccess
             modelBuilder.Entity<Sozlesmeler>()
                 .Property(e => e.SozlesmeImzalar)
                 .IsUnicode(false);
+
+            modelBuilder.Entity<SessionRoles>()
+                .Property(e => e.RoleName)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<SessionRoles>()
+                .Property(e => e.RoleDetay)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<SessionRoles>()
+                .HasMany(e=>e.Kullanicilar)
+                .WithRequired(e => e.SessionRoles)
+                .HasForeignKey(e => e.SessionRoleId)
+                .WillCascadeOnDelete(false);
         }
     }
 }

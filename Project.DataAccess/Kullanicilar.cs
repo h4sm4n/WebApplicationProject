@@ -30,6 +30,10 @@ namespace Project.DataAccess
         [StringLength(10)]
         public string KullaniciTip { get; set; }
 
+        public int SessionRoleId { get; set; }
+
+        public virtual SessionRoles SessionRoles { get; set; }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Musteriler> Musteriler { get; set; }
 

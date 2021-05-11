@@ -13,5 +13,9 @@ namespace Project.Web.Dashboard
         {
 
         }
+
+        protected void btnkaydol_OnClick(object sender, EventArgs e)
+        {
+        }
     }
 }

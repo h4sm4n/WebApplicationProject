@@ -1,8 +1,133 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Dashboard/Main.Master" AutoEventWireup="true" CodeBehind="Gider-Ekle.aspx.cs" Inherits="Project.Web.Dashboard.Gider_Ekle" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
+
+
+
+
+
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <form id="formgider" runat="server" class="offset-4">
+        <div class="clearfix" style="align-items: center ">
+            <h1 class="offset-0 primary-border font-weight-bold" style="width: 37%">Yeni Gider Girişi</h1>
+            <br/><br/>
+            <div style="width:20%" class="offset-0">
+                <label class="offset-4" style="color: black">Ay:  </label> 
+                <br />
+                <asp:TextBox CssClass="pull-right txtbox" style="width: 175px" ID="txtay" runat="server" />
+            </div>
+
+            <br />
+            <br />
+
+            <div style="width:20%" class="offset-0">
+                <label class="offset-4" style="color: black">Yıl: </label>
+                <br/>
+                <asp:TextBox CssClass="pull-right txtbox" style="width: 175px" ID="txtyil" runat="server" TextMode="Number"/>
+            </div>
+
+            <br />
+            <br />
+
+            <div style="width:20%" class="offset-0">
+                <label class="offset-4" style="color: black">Elektrik Faturası: </label>
+                <br/>
+                <asp:TextBox CssClass="pull-right txtbox" style="width: 175px" ID="txtelektrik" runat="server"/>
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ValidationExpression="((\d+)((\.\d{1,2})?))$"
+                                                ControlToValidate="txtelektrik" />
+            </div>
+
+            <br />
+            <br />
+
+            <div style="width:20%" class="offset-0">
+                <label class="offset-4" style="color: black"> Su Faturası:</label>
+                <br/>
+                <asp:TextBox CssClass="pull-right txtbox" style="width: 175px" ID="txtsu" runat="server" />
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ValidationExpression="((\d+)((\.\d{1,2})?))$"
+                                                ControlToValidate="txtsu" />
+            </div>
+
+            <br />
+            <br />
+            
+            <div style="width:20%" class="offset-0">
+                <label class="offset-4" style="color: black">Doğalgaz Faturası:</label>
+                <br/>
+                <asp:TextBox CssClass="pull-right txtbox" style="width: 175px" ID="txtdogalgaz" runat="server" />
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ValidationExpression="((\d+)((\.\d{1,2})?))$"
+                                                ControlToValidate="txtdogalgaz" />
+            </div>
+
+            <br />
+            <br />
+            
+            <div style="width:20%" class="offset-0">
+                <label class="offset-4" style="color: black"> İnternet Faturası:</label>
+                <br/>
+                <asp:TextBox CssClass="pull-right txtbox" style="width: 175px" ID="txtinternet" runat="server" />
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" ValidationExpression="((\d+)((\.\d{1,2})?))$"
+                                                ControlToValidate="txtinternet" />
+            </div>
+
+            <br />
+            <br />
+            
+            <div style="width:20%" class="offset-0">
+                <label class="offset-4" style="color: black"> Maaşlar:</label>
+                <br/>
+                <asp:TextBox CssClass="pull-right txtbox" style="width: 175px" ID="txtmaas" runat="server" />
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator5" runat="server" ValidationExpression="((\d+)((\.\d{1,2})?))$"
+                                                ControlToValidate="txtmaas" />
+            </div>
+
+            <br />
+            <br />
+            
+            <div style="width:20%" class="offset-0">
+                <label class="offset-4" style="color: black"> Malzemeler:</label>
+                <br/>
+                <asp:TextBox CssClass="pull-right txtbox" style="width: 175px" ID="txtmalzeme" runat="server" />
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator6" runat="server" ValidationExpression="((\d+)((\.\d{1,2})?))$"
+                                                ControlToValidate="txtmalzeme" />
+            </div>
+
+            <br />
+            <br />
+            
+            <div style="width:20%" class="offset-0">
+                <label class="offset-4" style="color: black"> Ofis Giderleri:</label>
+                <br/>
+                <asp:TextBox CssClass="pull-right txtbox" style="width: 175px" ID="txtofis" runat="server" />
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator7" runat="server" ValidationExpression="((\d+)((\.\d{1,2})?))$"
+                                                ControlToValidate="txtofis" />
+            </div>
+
+            <br />
+            <br />
+            
+            <div style="width:20%" class="offset-0">
+                <label class="offset-4" style="color: black"> Diğer:</label>
+                <br/>
+                <asp:TextBox CssClass="pull-right txtbox" style="width: 175px" ID="txtdiger" runat="server" />
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator8" runat="server" ValidationExpression="((\d+)((\.\d{1,2})?))$"
+                                                ControlToValidate="txtdiger" />
+            </div>
+
+            <br />
+            <br />
+        
+            <div style="width:20%">
+                <asp:Button CssClass=" btn-primary offset-5" Text="Ekle" Width="25%" runat="server" ID="btnekle" OnClick="btnekle_OnClick"/>
+            </div>
+        </div>
+    </form>
 </asp:Content>
+
+
+
+
+
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     <p>
         <div class="page-header">

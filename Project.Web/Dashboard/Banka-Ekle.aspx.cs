@@ -9,6 +9,21 @@ namespace Project.Web.Dashboard
 {
     public partial class Banka_Ekle : System.Web.UI.Page
     {
+        protected void Page_PreInit(object sender, EventArgs e)
+        {
+            this.MasterPageFile = "~/Dashboard/Main.Master";
+
+            if (Session["role"] == null)
+            {
+                this.MasterPageFile = "~/Unauthorized.Master";
+            }
+
+            else if (Session["role"].Equals(2))
+            {
+                this.MasterPageFile = "~/Unauthorized.Master";
+            }
+        }
+
         protected void Page_Load(object sender, EventArgs e)
         {
             //txtsube.Text = "";
@@ -29,9 +44,9 @@ namespace Project.Web.Dashboard
             if (txtsube.Text.Length >=1 && txtad.Text.Length >=1 && txtiban.Text.Length >=1 && txtdetay.Text.Length >=1 && txthesapno.Text.Length >=1)
             {
                 business1.AddBank(bankname, bankdep,hesapno,ibanno,detay);
-                ClientScript.RegisterStartupScript(this.GetType(), "fnCall", "<script language='javascript'>alert('Kayıt başarılı!');</script>");
-                //ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Kayıt ekleme başarılı.')", true);
-                Response.Redirect("Anasayfa.aspx");
+                ScriptManager.RegisterStartupScript(this,this.GetType(),"redirect",
+                    "alert('Kayıt ekleme başarılı, Bankalar sayfasına yönlendiriliyorsunuz.'); window.location='" + 
+                    Request.ApplicationPath + "Dashboard/Bankalar.aspx';",true);
             }
             else
             {
