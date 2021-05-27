@@ -49,7 +49,7 @@ namespace Project.Web.Dashboard
                     ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Kullanıcı adı ve/veya parola hatalı')", true);
                 }
 
-                else
+                else if (role == 1)
                 {
                     List<Kullanicilar> Credentials = Business.Giris.getCredentials(txtemail.Text, txtsifre.Text);
 
@@ -61,6 +61,19 @@ namespace Project.Web.Dashboard
                     Session["pozisyon"] = Business.Giris.getPozisyonAd(role);
                     //Response.AddHeader("REFRESH", "10;URL=default.aspx");
                     Response.Redirect("Anasayfa.aspx");
+                }
+                else if (role == 2)
+                {
+                    List<Kullanicilar> Credentials = Business.Giris.getCredentials(txtemail.Text, txtsifre.Text);
+
+                    Session["role"] = role;
+                    Session["email"] = Credentials[0].KullaniciAdi;
+                    Session["type"] = Credentials[0].KullaniciTip;
+                    Session["pozid"] = Credentials[0].SessionRoleId;
+
+                    Session["pozisyon"] = Business.Giris.getPozisyonAd(role);
+                    //Response.AddHeader("REFRESH", "10;URL=default.aspx");
+                    Response.Redirect("~/User/Default.aspx");
                 }
             }
             catch (Exception ex)

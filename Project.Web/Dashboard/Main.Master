@@ -281,9 +281,9 @@
                                 </a>
                             </li>
                             <li class="">
-                                <a href="Isler-Done.aspx" class="waves-effect waves-dark">
+                                <a href="Is-Ekle.aspx" class="waves-effect waves-dark">
                                     <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                    <span class="pcoded-mtext">Bitmiş İşleri Göster</span>
+                                    <span class="pcoded-mtext">Yeni İş Girişi</span>
                                     <span class="pcoded-mcaret"></span>
                                 </a>
                             </li>
@@ -291,20 +291,6 @@
                                 <a href="Mail-Send.aspx" class="waves-effect waves-dark">
                                     <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
                                     <span class="pcoded-mtext">Mail Gönder</span>
-                                    <span class="pcoded-mcaret"></span>
-                                </a>
-                            </li>
-                            <li class="">
-                                <a href="Mails-Send.aspx" class="waves-effect waves-dark">
-                                    <span class="pcoded-micon"><i class="ti-layout-sidebar-left"></i></span>
-                                    <span class="pcoded-mtext">Toplu Mail Gönder</span>
-                                    <span class="pcoded-mcaret"></span>
-                                </a>
-                            </li>
-                            <li class="">
-                                <a href="Send-Sms.aspx" class="waves-effect waves-dark">
-                                    <span class="pcoded-micon"><i class="ti-layout-sidebar-left"></i></span>
-                                    <span class="pcoded-mtext">SMS Gönder</span>
                                     <span class="pcoded-mcaret"></span>
                                 </a>
                             </li>

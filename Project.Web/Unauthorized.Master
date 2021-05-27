@@ -19,7 +19,7 @@
     <meta name="keywords" content="bootstrap, bootstrap admin template, admin theme, admin dashboard, dashboard template, admin template, responsive" />
     <meta name="author" content="Codedthemes" />
     <!-- Favicon icon -->
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="Dashboard/assets/images/favicon.ico" type="image/x-icon">
     <!-- Google font-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
     <!-- waves.css -->
@@ -106,7 +106,7 @@
                             <i class="ti-menu"></i>
                         </a>
                         <a href="Giris.aspx">
-                            <img class="img-fluid" src="assets/images/logo.png" alt="Theme-Logo" />
+                            <img class="img-fluid" src="Dashboard/assets/images/logo.png" alt="Theme-Logo" />
                         </a>
                         <a class="mobile-options waves-effect waves-light">
                             <i class="ti-more"></i>
@@ -150,7 +150,7 @@
                                             <h4 class="alert-heading text-center">YETKİSİZ GİRİŞ YAPILDI</h4>
                                             KULLANICINIZIN YETKİ ALANI DIŞINDA BİR SAYFAYA ERİŞMEYE ÇALIŞIYORSUNUZ.
                                             <br />
-                                            LÜTFEN <a href="Dashboard/Giris.aspx" class="alert-link font-italic">ANA SAYFAYA</a> DÖNÜN</div>
+                                            LÜTFEN <a href="~/User/Default.aspx" class="alert-link font-italic">ANA SAYFAYA</a> DÖNÜN</div>
 
                                 </div>
                             </div>
@@ -232,22 +232,22 @@
     <!-- Warning Section Ends -->--%>
     
     <!-- Required Jquery -->
-    <script type="text/javascript" src="assets/js/jquery/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/js/jquery-ui/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="assets/js/popper.js/popper.min.js"></script>
-    <script type="text/javascript" src="assets/js/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="Dashboard/assets/js/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="Dashboard/assets/js/jquery-ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="Dashboard/assets/js/popper.js/popper.min.js"></script>
+    <script type="text/javascript" src="Dashboard/assets/js/bootstrap/js/bootstrap.min.js"></script>
     <!-- waves js -->
-    <script src="assets/pages/waves/js/waves.min.js"></script>
+    <script src="Dashboard/assets/pages/waves/js/waves.min.js"></script>
     <!-- jquery slimscroll js -->
-    <script type="text/javascript" src="assets/js/jquery-slimscroll/jquery.slimscroll.js"></script>
+    <script type="text/javascript" src="Dashboard/assets/js/jquery-slimscroll/jquery.slimscroll.js"></script>
 
     <!-- slimscroll js -->
-    <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="Dashboard/assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
 
     <!-- menu js -->
-    <script src="assets/js/pcoded.min.js"></script>
-    <script src="assets/js/vertical/vertical-layout.min.js"></script>
+    <script src="Dashboard/assets/js/pcoded.min.js"></script>
+    <script src="Dashboard/assets/js/vertical/vertical-layout.min.js"></script>
 
-    <script type="text/javascript" src="assets/js/script.js"></script>
+    <script type="text/javascript" src="Dashboard/assets/js/script.js"></script>
 </body>
 </html>

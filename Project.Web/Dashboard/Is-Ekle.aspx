@@ -1,0 +1,129 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Dashboard/Main.Master" AutoEventWireup="true" CodeBehind="Is-Ekle.aspx.cs" Inherits="Project.Web.Dashboard.Is_Ekle" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+
+
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <form id="formwork" runat="server" class="offset-4">
+        <div class="clearfix" style="align-items: center ">
+            <h1 class="offset-0 primary-border font-weight-bold" style="width: 37%">Yeni İş Girişi</h1>
+            <br/><br/>
+
+            <div style="width:20%" class="offset-0">
+                <label class="offset-4" style="color: black">İş Türü: </label>
+                <br/>
+                <asp:TextBox CssClass="pull-right txtbox" style="width: 175px" ID="txtisturu" runat="server"/>
+            </div>
+
+            <br />
+            <br />
+
+            <div style="width:20%" class="offset-0">
+                <label class="offset-4" style="color: black"> Başlangıç Tarihi</label>
+                <br/>
+                <asp:TextBox CssClass="pull-right txtbox" style="width: 175px" ID="txtbaslangic" runat="server" TextMode="DateTimeLocal" />
+            </div>
+
+            <br />
+            <br />
+            
+            <div style="width:20%" class="offset-0">
+                <label class="offset-4" style="color: black">Bitiş Tarihi:</label>
+                <br/>
+                <asp:TextBox CssClass="pull-right txtbox" style="width: 175px" ID="txtbitis" runat="server" TextMode="DateTimeLocal"/>
+            </div>
+
+            <br />
+            <br />
+            
+            <div style="width:20%" class="offset-0">
+                <label class="offset-4" style="color: black"> Müşteri TC:</label>
+                <br/>
+                <asp:TextBox CssClass="pull-right txtbox" style="width: 175px" ID="txtmusteritc" runat="server" MaxLength="11" TextMode="Number" OnTextChanged="txtmusteritc_OnTextChanged" />
+            </div>
+
+            <br />
+            <br />
+            
+            <div style="width:20%" class="offset-0">
+                <label class="offset-4" style="color: black"> Yetkili Personel TC:</label>
+                <br/>
+                <asp:TextBox CssClass="pull-right txtbox" style="width: 175px" ID="txtpersoneltc" runat="server" MaxLength="11" TextMode="Number"/>
+            </div>
+
+            <br />
+            <br />
+            
+            <div style="width:20%" class="offset-0">
+                <label class="offset-4" style="color: black"> Adres:</label>
+                <br/>
+                <asp:DropDownList ID="drpadres" CssClass="pull-right txtbox" style="width: 175px" runat="server"></asp:DropDownList>
+            </div>
+
+            <br />
+            <br />
+            
+            <div style="width:20%" class="offset-0">
+                <label class="offset-4" style="color: black"> Fiyat:</label>
+                <br/>
+                <asp:TextBox CssClass="pull-right txtbox" style="width: 175px" ID="txtfiyat" runat="server" />
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator7" runat="server" ValidationExpression="((\d+)((\.\d{1,2})?))$"
+                                                ControlToValidate="txtfiyat" />
+            </div>
+            
+            <br />
+            <br />
+
+            <div style="width:20%" class="offset-0">
+                <label class="offset-4" style="color: black">Ödeme Planı: </label>
+                <br/>
+                <asp:TextBox CssClass="pull-right txtbox" style="width: 175px" ID="txtplan" runat="server"/>
+            </div>
+
+            <br />
+            <br />
+
+            <div style="width:20%">
+                <asp:Button CssClass=" btn-primary offset-5" Text="Ekle" Width="25%" runat="server" ID="btnekle" OnClick="btnekle_OnClick"/>
+            </div>
+        </div>
+    </form>
+</asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+    <p>
+        <div class="page-header">
+            <div class="page-block">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <div class="page-header-title">
+                            <h5 class="m-b-10">Yeni İş Tanımı</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="Anasayfa.aspx"> <i class="fa fa-home"></i> </a>
+                            </li>
+                            <li class="breadcrumb-item"><a href="#!">Ana Sayfa</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="p-15 p-b-0 breadcrumb-item" style="margin-left: 1300px">
+                        <form class="form-material">
+                            <div class="form-group form-primary">
+                                <input type="text" name="footer-email" class="form-control" style="width: 200px; color: aliceblue ">
+                                <span class="form-bar"></span>
+                                <label class="float-label">
+                                    <br/>
+                                    <i class="fa fa-search m-r-10"></i>
+                                    Ara
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </p>
+</asp:Content>

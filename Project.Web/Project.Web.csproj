@@ -262,18 +262,16 @@
     <Content Include="Dashboard\Gider-Ekle.aspx" />
     <Content Include="Dashboard\Gider-Gor.aspx" />
     <Content Include="Dashboard\Giris.aspx" />
-    <Content Include="Dashboard\Isler-Done.aspx" />
+    <Content Include="Dashboard\Is-Ekle.aspx" />
     <Content Include="Dashboard\Isler.aspx" />
     <Content Include="Dashboard\Kaydol.aspx" />
     <Content Include="Dashboard\Mail-Send.aspx" />
-    <Content Include="Dashboard\Mails-Send.aspx" />
     <Content Include="Dashboard\Musteriler.aspx" />
     <Content Include="Dashboard\Not-Ekle.aspx" />
     <Content Include="Dashboard\Notlar.aspx" />
     <Content Include="Dashboard\Personel-Ekle.aspx" />
     <Content Include="Dashboard\Personeller.aspx" />
     <Content Include="Dashboard\Randevular.aspx" />
-    <Content Include="Dashboard\Send-Sms.aspx" />
     <Content Include="Main Theme\About.aspx" />
     <Content Include="Main Theme\Contact.aspx" />
     <Content Include="Main Theme\Default.aspx" />
@@ -475,6 +473,196 @@
     <Content Include="Main Theme\Resources\js\vendor\modernizr-3.5.0.min.js" />
     <Content Include="Main Theme\Resources\js\wow.min.js" />
     <Content Include="TODO.txt" />
+    <Content Include="User\assetss\css\animate.css\css\animate.css" />
+    <Content Include="User\assetss\css\bootstrap\css\bootstrap.min.css" />
+    <Content Include="User\assetss\css\chartist\chartist.css" />
+    <Content Include="User\assetss\css\component.css" />
+    <Content Include="User\assetss\css\font-awesome-n.min.css" />
+    <Content Include="User\assetss\css\font-awesome.min.css" />
+    <Content Include="User\assetss\css\ionicons.css" />
+    <Content Include="User\assetss\css\jquery.mCustomScrollbar.css" />
+    <Content Include="User\assetss\css\linearicons.css" />
+    <Content Include="User\assetss\css\login.css" />
+    <Content Include="User\assetss\css\main.css" />
+    <Content Include="User\assetss\css\morris.js\css\morris.css" />
+    <Content Include="User\assetss\css\simple-line-icons.css" />
+    <Content Include="User\assetss\css\style.css" />
+    <Content Include="User\assetss\css\style.min.css" />
+    <Content Include="User\assetss\icon\fa-brands-400.svg" />
+    <Content Include="User\assetss\icon\fa-regular-400.svg" />
+    <Content Include="User\assetss\icon\fa-solid-900.svg" />
+    <Content Include="User\assetss\icon\feather\css\feather.css" />
+    <Content Include="User\assetss\icon\feather\fonts\feather.svg" />
+    <Content Include="User\assetss\icon\font-awesome\css\font-awesome.css" />
+    <Content Include="User\assetss\icon\font-awesome\css\font-awesome.min.css" />
+    <Content Include="User\assetss\icon\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="User\assetss\icon\fontawesome-webfont.svg" />
+    <Content Include="User\assetss\icon\icofont\css\icofont.css" />
+    <Content Include="User\assetss\icon\ionicons.svg" />
+    <Content Include="User\assetss\icon\Linearicons-Free.svg" />
+    <Content Include="User\assetss\icon\Simple-Line-Icons.svg" />
+    <Content Include="User\assetss\icon\themify-icons\fonts\themify.svg" />
+    <Content Include="User\assetss\icon\themify-icons\themify-icons.css" />
+    <Content Include="User\assetss\images\auth\logo-dark.png" />
+    <Content Include="User\assetss\images\auth\Logo-small-bottom.png" />
+    <Content Include="User\assetss\images\auth\logo.png" />
+    <Content Include="User\assetss\images\avatar-1.jpg" />
+    <Content Include="User\assetss\images\avatar-2.jpg" />
+    <Content Include="User\assetss\images\avatar-3.jpg" />
+    <Content Include="User\assetss\images\avatar-4.jpg" />
+    <Content Include="User\assetss\images\avatar-5.jpg" />
+    <Content Include="User\assetss\images\breadcrumb-bg.jpg" />
+    <Content Include="User\assetss\images\browser\chrome.png" />
+    <Content Include="User\assetss\images\browser\firefox.png" />
+    <Content Include="User\assetss\images\browser\ie.png" />
+    <Content Include="User\assetss\images\browser\opera.png" />
+    <Content Include="User\assetss\images\browser\safari.png" />
+    <Content Include="User\assetss\images\favicon.ico" />
+    <Content Include="User\assetss\images\login.jpg" />
+    <Content Include="User\assetss\images\logo-blue.png" />
+    <Content Include="User\assetss\images\logo.png" />
+    <Content Include="User\assetss\images\logo.svg" />
+    <Content Include="User\assetss\images\mega-menu\01.jpg" />
+    <Content Include="User\assetss\images\mega-menu\02.jpg" />
+    <Content Include="User\assetss\images\mega-menu\03.jpg" />
+    <Content Include="User\assetss\images\select-arrow.png" />
+    <Content Include="User\assetss\images\user-bg.jpg" />
+    <Content Include="User\assetss\images\widget\AUSTRALIA.jpg" />
+    <Content Include="User\assetss\images\widget\BRAZIL.jpg" />
+    <Content Include="User\assetss\images\widget\DIGITALPEN.jpg" />
+    <Content Include="User\assetss\images\widget\GERMANY.jpg" />
+    <Content Include="User\assetss\images\widget\IPAD.jpg" />
+    <Content Include="User\assetss\images\widget\PHONE1.jpg" />
+    <Content Include="User\assetss\images\widget\PHONE2.jpg" />
+    <Content Include="User\assetss\images\widget\PHONE3.jpg" />
+    <Content Include="User\assetss\images\widget\PHONE4.jpg" />
+    <Content Include="User\assetss\images\widget\prod1.jpg" />
+    <Content Include="User\assetss\images\widget\prod2.jpg" />
+    <Content Include="User\assetss\images\widget\prod3.jpg" />
+    <Content Include="User\assetss\images\widget\prod4.jpg" />
+    <Content Include="User\assetss\images\widget\TABLET.jpg" />
+    <Content Include="User\assetss\images\widget\UK.jpg" />
+    <Content Include="User\assetss\images\widget\USA.jpg" />
+    <Content Include="User\assetss\images\widget\wather2bottom.png" />
+    <Content Include="User\assetss\images\widget\wather2m.png" />
+    <Content Include="User\assetss\images\widget\wather2star1.png" />
+    <Content Include="User\assetss\images\widget\wather2star2.png" />
+    <Content Include="User\assetss\images\widget\watherbottom.png" />
+    <Content Include="User\assetss\images\widget\wathernature.png" />
+    <Content Include="User\assetss\images\widget\watherstar1.png" />
+    <Content Include="User\assetss\images\widget\watherstar2.png" />
+    <Content Include="User\assetss\images\widget\wsm-3-star-1.png" />
+    <Content Include="User\assetss\images\widget\wsm-3-star-2.png" />
+    <Content Include="User\assetss\js\animation.js" />
+    <Content Include="User\assetss\js\bootstrap-growl.min.js" />
+    <Content Include="User\assetss\js\bootstrap\js\bootstrap.min.js" />
+    <Content Include="User\assetss\js\classie.js" />
+    <Content Include="User\assetss\js\color-json-common-page.js" />
+    <Content Include="User\assetss\js\common-pages.js" />
+    <Content Include="User\assetss\js\common-pages.min.js" />
+    <Content Include="User\assetss\js\counter.js" />
+    <Content Include="User\assetss\js\float\curvedLines.js" />
+    <Content Include="User\assetss\js\float\jquery.flot.categories.js" />
+    <Content Include="User\assetss\js\float\jquery.flot.js" />
+    <Content Include="User\assetss\js\float\jquery.flot.pie.js" />
+    <Content Include="User\assetss\js\float\jquery.flot.tooltip.min.js" />
+    <Content Include="User\assetss\js\global.js" />
+    <Content Include="User\assetss\js\jquery-slimscroll\jquery.slimscroll.js" />
+    <Content Include="User\assetss\js\jquery-ui\jquery-ui.min.js" />
+    <Content Include="User\assetss\js\jquery.easypiechart.min.js" />
+    <Content Include="User\assetss\js\jquery.mCustomScrollbar.concat.min.js" />
+    <Content Include="User\assetss\js\jquery.mousewheel.min.js" />
+    <Content Include="User\assetss\js\jquery.quicksearch.js" />
+    <Content Include="User\assetss\js\jquery\jquery.min.js" />
+    <Content Include="User\assetss\js\modal.js" />
+    <Content Include="User\assetss\js\modalEffects.js" />
+    <Content Include="User\assetss\js\modernizr\css-scrollbars.js" />
+    <Content Include="User\assetss\js\modernizr\modernizr.js" />
+    <Content Include="User\assetss\js\morris.js\morris.js" />
+    <Content Include="User\assetss\js\owl-custom.js" />
+    <Content Include="User\assetss\js\pcoded.min.js" />
+    <Content Include="User\assetss\js\popper.js\popper.min.js" />
+    <Content Include="User\assetss\js\raphael\raphael.min.js" />
+    <Content Include="User\assetss\js\rating.js" />
+    <Content Include="User\assetss\js\script.js" />
+    <Content Include="User\assetss\js\script.min.js" />
+    <Content Include="User\assetss\js\SmoothScroll.js" />
+    <Content Include="User\assetss\js\swiper-custom.js" />
+    <Content Include="User\assetss\js\vertical\horizontal-layout.min.js" />
+    <Content Include="User\assetss\js\vertical\menu\box-layout.js" />
+    <Content Include="User\assetss\js\vertical\menu\menu-compact.js" />
+    <Content Include="User\assetss\js\vertical\menu\menu-header-fixed.js" />
+    <Content Include="User\assetss\js\vertical\menu\menu-hori-fixed.js" />
+    <Content Include="User\assetss\js\vertical\menu\menu-rtl.js" />
+    <Content Include="User\assetss\js\vertical\menu\menu-sidebar-fixed.js" />
+    <Content Include="User\assetss\js\vertical\menu\menu-static.js" />
+    <Content Include="User\assetss\js\vertical\vertical-layout.js" />
+    <Content Include="User\assetss\js\vertical\vertical-layout.min.js" />
+    <Content Include="User\assetss\pages\accordion\accordion.js" />
+    <Content Include="User\assetss\pages\accordion\accordion.min.js" />
+    <Content Include="User\assetss\pages\chart\morris\morris-custom-chart.js" />
+    <Content Include="User\assetss\pages\dashboard\amchart\css\amchart.css" />
+    <Content Include="User\assetss\pages\dashboard\amchart\css\export.css" />
+    <Content Include="User\assetss\pages\dashboard\amchart\js\amcharts.js" />
+    <Content Include="User\assetss\pages\dashboard\amchart\js\custom-amchart.js" />
+    <Content Include="User\assetss\pages\dashboard\amchart\js\export.min.js" />
+    <Content Include="User\assetss\pages\dashboard\amchart\js\images\dragIconRoundBig.svg" />
+    <Content Include="User\assetss\pages\dashboard\amchart\js\images\dragIconRoundBigH.svg" />
+    <Content Include="User\assetss\pages\dashboard\amchart\js\light.js" />
+    <Content Include="User\assetss\pages\dashboard\amchart\js\serial.js" />
+    <Content Include="User\assetss\pages\dashboard\custom-dashboard.js" />
+    <Content Include="User\assetss\pages\dashboard\custom-dashboard.min.js" />
+    <Content Include="User\assetss\pages\google-maps\gmaps.js" />
+    <Content Include="User\assetss\pages\google-maps\google-maps.js" />
+    <Content Include="User\assetss\pages\icon-modal.js" />
+    <Content Include="User\assetss\pages\notification\notification.css" />
+    <Content Include="User\assetss\pages\notification\notification.js" />
+    <Content Include="User\assetss\pages\todo\todo.js" />
+    <Content Include="User\assetss\pages\waves\css\waves.min.css" />
+    <Content Include="User\assetss\pages\waves\js\waves.min.js" />
+    <Content Include="User\assetss\pages\widget\amchart\amcharts.js" />
+    <Content Include="User\assetss\pages\widget\amchart\amcharts.min.js" />
+    <Content Include="User\assetss\pages\widget\amchart\ammap.js" />
+    <Content Include="User\assetss\pages\widget\amchart\ammap.min.js" />
+    <Content Include="User\assetss\pages\widget\amchart\continentsLow.js" />
+    <Content Include="User\assetss\pages\widget\amchart\continentsLow.min.js" />
+    <Content Include="User\assetss\pages\widget\amchart\export.min.js" />
+    <Content Include="User\assetss\pages\widget\amchart\gauge.js" />
+    <Content Include="User\assetss\pages\widget\amchart\gauge.min.js" />
+    <Content Include="User\assetss\pages\widget\amchart\images\dragIconRoundBig.svg" />
+    <Content Include="User\assetss\pages\widget\amchart\images\lens.svg" />
+    <Content Include="User\assetss\pages\widget\amchart\light.js" />
+    <Content Include="User\assetss\pages\widget\amchart\light.min.js" />
+    <Content Include="User\assetss\pages\widget\amchart\pie.js" />
+    <Content Include="User\assetss\pages\widget\amchart\pie.min.js" />
+    <Content Include="User\assetss\pages\widget\amchart\serial.js" />
+    <Content Include="User\assetss\pages\widget\amchart\serial.min.js" />
+    <Content Include="User\assetss\pages\widget\amchart\usaLow.js" />
+    <Content Include="User\assetss\pages\widget\amchart\worldLow.js" />
+    <Content Include="User\assetss\pages\widget\amchart\worldLow.min.js" />
+    <Content Include="User\assetss\pages\widget\excanvas.js" />
+    <Content Include="User\assetss\vendor\datepicker\daterangepicker.css" />
+    <Content Include="User\assetss\vendor\datepicker\daterangepicker.js" />
+    <Content Include="User\assetss\vendor\datepicker\moment.min.js" />
+    <Content Include="User\assetss\vendor\font-awesome-4.7\css\font-awesome.css" />
+    <Content Include="User\assetss\vendor\font-awesome-4.7\css\font-awesome.min.css" />
+    <Content Include="User\assetss\vendor\font-awesome-4.7\fonts\fontawesome-webfont.svg" />
+    <Content Include="User\assetss\vendor\font-awesome-4.7\HELP-US-OUT.txt" />
+    <Content Include="User\assetss\vendor\jquery\jquery.js" />
+    <Content Include="User\assetss\vendor\jquery\jquery.min.js" />
+    <Content Include="User\assetss\vendor\mdi-font\css\material-design-iconic-font.css" />
+    <Content Include="User\assetss\vendor\mdi-font\css\material-design-iconic-font.min.css" />
+    <Content Include="User\assetss\vendor\mdi-font\fonts\Material-Design-Iconic-Font.svg" />
+    <Content Include="User\assetss\vendor\select2\select2.min.css" />
+    <Content Include="User\assetss\vendor\select2\select2.min.js" />
+    <Content Include="User\Banka-Bilgileri.aspx" />
+    <Content Include="User\Bilgilerim-Duzenle.aspx" />
+    <Content Include="User\Bilgilerim.aspx" />
+    <Content Include="User\Default.aspx" />
+    <Content Include="User\Randevu-Olustur.aspx" />
+    <Content Include="User\Randevularim.aspx" />
+    <Content Include="User\Sifre-Degistir.aspx" />
+    <Content Include="User\Soru-Sor.aspx" />
     <Content Include="Web.config" />
     <Content Include="Main Theme\Main.aspx" />
     <Content Include="Main Theme\Services.aspx" />
@@ -529,12 +717,12 @@
     <Compile Include="Dashboard\Giris.aspx.designer.cs">
       <DependentUpon>Giris.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Dashboard\Isler-Done.aspx.cs">
-      <DependentUpon>Isler-Done.aspx</DependentUpon>
+    <Compile Include="Dashboard\Is-Ekle.aspx.cs">
+      <DependentUpon>Is-Ekle.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Dashboard\Isler-Done.aspx.designer.cs">
-      <DependentUpon>Isler-Done.aspx</DependentUpon>
+    <Compile Include="Dashboard\Is-Ekle.aspx.designer.cs">
+      <DependentUpon>Is-Ekle.aspx</DependentUpon>
     </Compile>
     <Compile Include="Dashboard\Isler.aspx.cs">
       <DependentUpon>Isler.aspx</DependentUpon>
@@ -556,13 +744,6 @@
     </Compile>
     <Compile Include="Dashboard\Mail-Send.aspx.designer.cs">
       <DependentUpon>Mail-Send.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Dashboard\Mails-Send.aspx.cs">
-      <DependentUpon>Mails-Send.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Dashboard\Mails-Send.aspx.designer.cs">
-      <DependentUpon>Mails-Send.aspx</DependentUpon>
     </Compile>
     <Compile Include="Dashboard\Main.Master.cs">
       <DependentUpon>Main.Master</DependentUpon>
@@ -620,13 +801,6 @@
     <Compile Include="Dashboard\Randevular.aspx.designer.cs">
       <DependentUpon>Randevular.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Dashboard\Send-Sms.aspx.cs">
-      <DependentUpon>Send-Sms.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Dashboard\Send-Sms.aspx.designer.cs">
-      <DependentUpon>Send-Sms.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Main Theme\About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -669,6 +843,76 @@
     </Compile>
     <Compile Include="Unauthorized.Master.designer.cs">
       <DependentUpon>Unauthorized.Master</DependentUpon>
+    </Compile>
+    <Compile Include="User\Banka-Bilgileri.aspx.cs">
+      <DependentUpon>Banka-Bilgileri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Banka-Bilgileri.aspx.designer.cs">
+      <DependentUpon>Banka-Bilgileri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Bilgilerim-Duzenle.aspx.cs">
+      <DependentUpon>Bilgilerim-Duzenle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Bilgilerim-Duzenle.aspx.designer.cs">
+      <DependentUpon>Bilgilerim-Duzenle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Bilgilerim.aspx.cs">
+      <DependentUpon>Bilgilerim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Bilgilerim.aspx.designer.cs">
+      <DependentUpon>Bilgilerim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Randevu-Olustur.aspx.cs">
+      <DependentUpon>Randevu-Olustur.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Randevu-Olustur.aspx.designer.cs">
+      <DependentUpon>Randevu-Olustur.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Randevularim.aspx.cs">
+      <DependentUpon>Randevularim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Randevularim.aspx.designer.cs">
+      <DependentUpon>Randevularim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Sifre-Degistir.aspx.cs">
+      <DependentUpon>Sifre-Degistir.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Sifre-Degistir.aspx.designer.cs">
+      <DependentUpon>Sifre-Degistir.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Soru-Sor.aspx.cs">
+      <DependentUpon>Soru-Sor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Soru-Sor.aspx.designer.cs">
+      <DependentUpon>Soru-Sor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Unauthorizedd.Master.cs">
+      <DependentUpon>Unauthorizedd.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Unauthorizedd.Master.designer.cs">
+      <DependentUpon>Unauthorizedd.Master</DependentUpon>
+    </Compile>
+    <Compile Include="User\User.Master.cs">
+      <DependentUpon>User.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\User.Master.designer.cs">
+      <DependentUpon>User.Master</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -785,6 +1029,68 @@
     <Content Include="Main Theme\Resources\scss\style.scss" />
     <Content Include="Main Theme\site.config" />
     <Content Include="Unauthorized.Master" />
+    <Content Include="User\User.Master" />
+    <Content Include="User\assetss\css\login.css.map" />
+    <Content Include="User\assetss\icon\CAW.TTF" />
+    <Content Include="User\assetss\icon\fa-brands-400.eot" />
+    <Content Include="User\assetss\icon\fa-brands-400.ttf" />
+    <Content Include="User\assetss\icon\fa-brands-400.woff" />
+    <Content Include="User\assetss\icon\fa-brands-400.woff2" />
+    <Content Include="User\assetss\icon\fa-regular-400.eot" />
+    <Content Include="User\assetss\icon\fa-regular-400.ttf" />
+    <Content Include="User\assetss\icon\fa-regular-400.woff" />
+    <Content Include="User\assetss\icon\fa-regular-400.woff2" />
+    <Content Include="User\assetss\icon\fa-solid-900.eot" />
+    <Content Include="User\assetss\icon\fa-solid-900.ttf" />
+    <Content Include="User\assetss\icon\fa-solid-900.woff" />
+    <Content Include="User\assetss\icon\fa-solid-900.woff2" />
+    <Content Include="User\assetss\icon\feather\fonts\feather.eot" />
+    <Content Include="User\assetss\icon\feather\fonts\feather.ttf" />
+    <Content Include="User\assetss\icon\feather\fonts\feather.woff" />
+    <Content Include="User\assetss\icon\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="User\assetss\icon\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="User\assetss\icon\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="User\assetss\icon\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="User\assetss\icon\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="User\assetss\icon\fontawesome-webfont.eot" />
+    <Content Include="User\assetss\icon\fontawesome-webfont.ttf" />
+    <Content Include="User\assetss\icon\fontawesome-webfont.woff" />
+    <Content Include="User\assetss\icon\fontawesome-webfont.woff2" />
+    <Content Include="User\assetss\icon\FontAwesome.otf" />
+    <Content Include="User\assetss\icon\icofont\fonts\icofont.eot" />
+    <Content Include="User\assetss\icon\icofont\fonts\icofont.ttf" />
+    <Content Include="User\assetss\icon\icofont\fonts\icofont.woff" />
+    <Content Include="User\assetss\icon\ionicons.eot" />
+    <Content Include="User\assetss\icon\ionicons.ttf" />
+    <Content Include="User\assetss\icon\ionicons.woff" />
+    <Content Include="User\assetss\icon\Linearicons-Free.eot" />
+    <Content Include="User\assetss\icon\Linearicons-Free.ttf" />
+    <Content Include="User\assetss\icon\Linearicons-Free.woff" />
+    <Content Include="User\assetss\icon\Linearicons-Free.woff2" />
+    <Content Include="User\assetss\icon\SEGOEUI.ttf" />
+    <Content Include="User\assetss\icon\SEGOEUIB.TTF" />
+    <Content Include="User\assetss\icon\segoeuii.ttf" />
+    <Content Include="User\assetss\icon\SEGOEUIZ.TTF" />
+    <Content Include="User\assetss\icon\Simple-Line-Icons.eot" />
+    <Content Include="User\assetss\icon\Simple-Line-Icons.ttf" />
+    <Content Include="User\assetss\icon\Simple-Line-Icons.woff" />
+    <Content Include="User\assetss\icon\Simple-Line-Icons.woff2" />
+    <Content Include="User\assetss\icon\themify-icons\fonts\themify.eot" />
+    <Content Include="User\assetss\icon\themify-icons\fonts\themify.ttf" />
+    <Content Include="User\assetss\icon\themify-icons\fonts\themify.woff" />
+    <Content Include="User\assetss\images\auth\Thumbs.db" />
+    <Content Include="User\assetss\images\Thumbs.db" />
+    <Content Include="User\assetss\scss\login.scss" />
+    <Content Include="User\assetss\vendor\font-awesome-4.7\fonts\fontawesome-webfont.eot" />
+    <Content Include="User\assetss\vendor\font-awesome-4.7\fonts\fontawesome-webfont.ttf" />
+    <Content Include="User\assetss\vendor\font-awesome-4.7\fonts\fontawesome-webfont.woff" />
+    <Content Include="User\assetss\vendor\font-awesome-4.7\fonts\fontawesome-webfont.woff2" />
+    <Content Include="User\assetss\vendor\font-awesome-4.7\fonts\FontAwesome.otf" />
+    <Content Include="User\assetss\vendor\mdi-font\fonts\Material-Design-Iconic-Font.eot" />
+    <Content Include="User\assetss\vendor\mdi-font\fonts\Material-Design-Iconic-Font.ttf" />
+    <Content Include="User\assetss\vendor\mdi-font\fonts\Material-Design-Iconic-Font.woff" />
+    <Content Include="User\assetss\vendor\mdi-font\fonts\Material-Design-Iconic-Font.woff2" />
+    <Content Include="User\Unauthorizedd.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

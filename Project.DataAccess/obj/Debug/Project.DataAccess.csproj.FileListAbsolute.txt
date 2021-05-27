@@ -1,6 +1,5 @@
 C:\Users\tnc\Desktop\Proje\WebAppProject\Project.DataAccess\bin\Debug\Project.DataAccess.dll
 C:\Users\tnc\Desktop\Proje\WebAppProject\Project.DataAccess\bin\Debug\Project.DataAccess.pdb
-C:\Users\tnc\Desktop\Proje\WebAppProject\Project.DataAccess\obj\Debug\Project.DataAccess.csprojAssemblyReference.cache
 C:\Users\tnc\Desktop\Proje\WebAppProject\Project.DataAccess\obj\Debug\Project.DataAccess.csproj.CoreCompileInputs.cache
 C:\Users\tnc\Desktop\Proje\WebAppProject\Project.DataAccess\obj\Debug\Project.DataAccess.dll
 C:\Users\tnc\Desktop\Proje\WebAppProject\Project.DataAccess\obj\Debug\Project.DataAccess.pdb
