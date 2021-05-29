@@ -27,5 +27,26 @@ namespace Project.Web.Dashboard
         {
 
         }
+
+        protected void btnekle_OnClick(object sender, EventArgs e)
+        {
+            var business1 = new Business.Business();
+            string notdetay = txtnot.Text;
+            string alarmtarihi = txtalarm.Text;
+            string tur = drptur.Text;
+            if (txtalarm.Text.Length >= 1 && drptur.Text.Length >= 1 && txtnot.Text.Length >= 1)
+            {
+                business1.AddNote(notdetay,tur,alarmtarihi);
+                ScriptManager.RegisterStartupScript(this,this.GetType(),"redirect",
+                    "alert('Not ekleme başarılı, Notlar sayfasına yönlendiriliyorsunuz.'); window.location='" + 
+                    Request.ApplicationPath + "Dashboard/Notlar.aspx';",true);
+            }
+            else
+            {
+                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Lütfen tüm alanları doldurun')", true);
+
+            }
+            
+        }
     }
 }

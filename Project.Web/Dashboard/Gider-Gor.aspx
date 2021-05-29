@@ -6,7 +6,7 @@
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <form id="form1" runat="server">
+     <form id="forrm1" runat="server">
         <asp:ScriptManager ID="scriptmanager1" runat="server" />
         <div class="clearfix">
             <asp:UpdatePanel ID="updatepanelgelirler" runat="server">
@@ -23,12 +23,12 @@
                                                 <asp:Label ID="Label1" runat="server" Text='<%# Eval("Id") %>'></asp:Label>
                                             </EditItemTemplate>
                                             <ItemTemplate>
-                                                <asp:Label ID="Label1" runat="server" Text='<%# Bind("Id") %>'></asp:Label>
+                                                <asp:Label ID="Label1" Width="75px" runat="server" Text='<%# Bind("Id") %>'></asp:Label>
                                             </ItemTemplate>
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Ay" SortExpression="Ay" HeaderStyle-HorizontalAlign="Center">
                                             <EditItemTemplate>
-                                                <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("Ay") %>'></asp:TextBox>
+                                                <asp:TextBox ID="TextBox1" Width="75px" runat="server" MaxLength="8" Text='<%# Bind("Ay") %>'></asp:TextBox>
                                                 <asp:requiredfieldvalidator id="reqKullaniciAdi1" runat="server" controltovalidate="TextBox1" errormessage="Lütfen boş alan bırakmayınız." setfocusonerror="true" display="Dynamic"></asp:requiredfieldvalidator>
                                             </EditItemTemplate>
                                             <ItemTemplate>
@@ -37,7 +37,7 @@
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Yil" SortExpression="Yil" HeaderStyle-HorizontalAlign="Center">
                                             <EditItemTemplate>
-                                                <asp:TextBox ID="TextBox2" runat="server" Text='<%# Bind("Yil") %>'></asp:TextBox>
+                                                <asp:TextBox ID="TextBox2" Width="75px" TextMode="Number" MaxLength="4" runat="server" Text='<%# Bind("Yil") %>'></asp:TextBox>
                                                 <asp:requiredfieldvalidator id="reqKullaniciAdi2" runat="server" controltovalidate="TextBox2" errormessage="Lütfen boş alan bırakmayınız." setfocusonerror="true" display="Dynamic"></asp:requiredfieldvalidator>
                                             </EditItemTemplate>
                                             <ItemTemplate>
@@ -46,7 +46,9 @@
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Elektrik" SortExpression="Elektrik" HeaderStyle-HorizontalAlign="Center">
                                             <EditItemTemplate>
-                                                <asp:TextBox ID="TextBox3" runat="server" Text='<%# Bind("Elektrik") %>'></asp:TextBox>
+                                                <asp:TextBox ID="TextBox3" Width="75px" runat="server" Text='<%# Bind("Elektrik") %>'></asp:TextBox>
+                                                <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ValidationExpression="((\d+)((\.\d{1,2})?))$"
+                                                                                ControlToValidate="TextBox3" />
                                                 <asp:requiredfieldvalidator id="reqKullaniciAdi3" runat="server" controltovalidate="TextBox3" errormessage="Lütfen boş alan bırakmayınız." setfocusonerror="true" display="Dynamic"></asp:requiredfieldvalidator>
                                             </EditItemTemplate>
                                             <ItemTemplate>
@@ -55,7 +57,9 @@
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Su" SortExpression="Su" HeaderStyle-HorizontalAlign="Center">
                                             <EditItemTemplate>
-                                                <asp:TextBox ID="TextBox4" runat="server" Text='<%# Bind("Su") %>'></asp:TextBox>
+                                                <asp:TextBox ID="TextBox4" Width="75px" runat="server" Text='<%# Bind("Su") %>'></asp:TextBox>
+                                                <asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" ValidationExpression="((\d+)((\.\d{1,2})?))$"
+                                                                                ControlToValidate="TextBox4" />
                                                 <asp:requiredfieldvalidator id="reqKullaniciAdi4" runat="server" controltovalidate="TextBox4" errormessage="Lütfen boş alan bırakmayınız." setfocusonerror="true" display="Dynamic"></asp:requiredfieldvalidator>
                                             </EditItemTemplate>
                                             <ItemTemplate>
@@ -64,7 +68,9 @@
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Dogalgaz" SortExpression="Dogalgaz" HeaderStyle-HorizontalAlign="Center">
                                             <EditItemTemplate>
-                                                <asp:TextBox ID="TextBox5" runat="server" Text='<%# Bind("Dogalgaz") %>'></asp:TextBox>
+                                                <asp:TextBox ID="TextBox5" Width="75px" runat="server" Text='<%# Bind("Dogalgaz") %>'></asp:TextBox>
+                                                <asp:RegularExpressionValidator ID="RegularExpressionValidator5" runat="server" ValidationExpression="((\d+)((\.\d{1,2})?))$"
+                                                                                ControlToValidate="TextBox5" />
                                                 <asp:requiredfieldvalidator id="reqKullaniciAdi5" runat="server" controltovalidate="TextBox5" errormessage="Lütfen boş alan bırakmayınız." setfocusonerror="true" display="Dynamic"></asp:requiredfieldvalidator>
                                             </EditItemTemplate>
                                             <ItemTemplate>
@@ -73,7 +79,9 @@
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Internet" SortExpression="Internet" HeaderStyle-HorizontalAlign="Center">
                                             <EditItemTemplate>
-                                                <asp:TextBox ID="TextBox6" runat="server" Text='<%# Bind("Internet") %>'></asp:TextBox>
+                                                <asp:TextBox ID="TextBox6" Width="75px" runat="server" Text='<%# Bind("Internet") %>'></asp:TextBox>
+                                                <asp:RegularExpressionValidator ID="RegularExpressionValidator6" runat="server" ValidationExpression="((\d+)((\.\d{1,2})?))$"
+                                                                                ControlToValidate="TextBox6" />
                                                 <asp:requiredfieldvalidator id="reqKullaniciAdi6" runat="server" controltovalidate="TextBox6" errormessage="Lütfen boş alan bırakmayınız." setfocusonerror="true" display="Dynamic"></asp:requiredfieldvalidator>
                                             </EditItemTemplate>
                                             <ItemTemplate>
@@ -82,7 +90,9 @@
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Maaslar" SortExpression="Maaslar" HeaderStyle-HorizontalAlign="Center">
                                             <EditItemTemplate>
-                                                <asp:TextBox ID="TextBox7" runat="server" Text='<%# Bind("Maaslar") %>'></asp:TextBox>
+                                                <asp:TextBox ID="TextBox7" Width="75px" runat="server" Text='<%# Bind("Maaslar") %>'></asp:TextBox>
+                                                <asp:RegularExpressionValidator ID="RegularExpressionValidator7" runat="server" ValidationExpression="((\d+)((\.\d{1,2})?))$"
+                                                                                ControlToValidate="TextBox7" />
                                                 <asp:requiredfieldvalidator id="reqKullaniciAdi7" runat="server" controltovalidate="TextBox7" errormessage="Lütfen boş alan bırakmayınız." setfocusonerror="true" display="Dynamic"></asp:requiredfieldvalidator>
                                             </EditItemTemplate>
                                             <ItemTemplate>
@@ -91,7 +101,9 @@
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Malzeme" SortExpression="Malzeme" HeaderStyle-HorizontalAlign="Center">
                                             <EditItemTemplate>
-                                                <asp:TextBox ID="TextBox8" runat="server" Text='<%# Bind("Malzeme") %>'></asp:TextBox>
+                                                <asp:TextBox ID="TextBox8" Width="75px" runat="server" Text='<%# Bind("Malzeme") %>'></asp:TextBox>
+                                                <asp:RegularExpressionValidator ID="RegularExpressionValidator8" runat="server" ValidationExpression="((\d+)((\.\d{1,2})?))$"
+                                                                                ControlToValidate="TextBox8" />
                                                 <asp:requiredfieldvalidator id="reqKullaniciAdi8" runat="server" controltovalidate="TextBox8" errormessage="Lütfen boş alan bırakmayınız." setfocusonerror="true" display="Dynamic"></asp:requiredfieldvalidator>
                                             </EditItemTemplate>
                                             <ItemTemplate>
@@ -100,7 +112,9 @@
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Ofis" SortExpression="Ofis" HeaderStyle-HorizontalAlign="Center">
                                             <EditItemTemplate>
-                                                <asp:TextBox ID="TextBox9" runat="server" Text='<%# Bind("Ofis") %>'></asp:TextBox>
+                                                <asp:TextBox ID="TextBox9" Width="75px" runat="server" Text='<%# Bind("Ofis") %>'></asp:TextBox>
+                                                <asp:RegularExpressionValidator ID="RegularExpressionValidator9" runat="server" ValidationExpression="((\d+)((\.\d{1,2})?))$"
+                                                                                ControlToValidate="TextBox9" />
                                                 <asp:requiredfieldvalidator id="reqKullaniciAdi9" runat="server" controltovalidate="TextBox9" errormessage="Lütfen boş alan bırakmayınız." setfocusonerror="true" display="Dynamic"></asp:requiredfieldvalidator>
                                             </EditItemTemplate>
                                             <ItemTemplate>
@@ -109,7 +123,9 @@
                                         </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Diger" SortExpression="Diger" HeaderStyle-HorizontalAlign="Center">
                                             <EditItemTemplate>
-                                                <asp:TextBox ID="TextBox10" runat="server" Text='<%# Bind("Diger") %>'></asp:TextBox>
+                                                <asp:TextBox ID="TextBox10" Width="75px" runat="server" Text='<%# Bind("Diger") %>'></asp:TextBox>
+                                                <asp:RegularExpressionValidator ID="RegularExpressionValidator10" runat="server" ValidationExpression="((\d+)((\.\d{1,2})?))$"
+                                                                                ControlToValidate="TextBox10" />
                                                 <asp:requiredfieldvalidator id="reqKullaniciAdi10" runat="server" controltovalidate="TextBox10" errormessage="Lütfen boş alan bırakmayınız." setfocusonerror="true" display="Dynamic"></asp:requiredfieldvalidator>
                                             </EditItemTemplate>
                                             <ItemTemplate>
@@ -118,16 +134,16 @@
                                         </asp:TemplateField>
                                         <asp:TemplateField ShowHeader="True" HeaderText="Düzenle" ItemStyle-HorizontalAlign="Center" HeaderStyle-HorizontalAlign="Center">
                                             <EditItemTemplate>
-                                                <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="True" CommandName="Update" Text="Güncelleştir"></asp:LinkButton>
-                                                &nbsp;<asp:LinkButton ID="LinkButton2" runat="server" CausesValidation="False" CommandName="Cancel" Text="İptal"></asp:LinkButton>
+                                                <asp:Button ID="LinkButton1" runat="server" CausesValidation="True" CommandName="Update" Text="Güncelleştir"></asp:Button>
+                                                &nbsp;<asp:Button ID="LinkButton2" runat="server" CausesValidation="False" CommandName="Cancel" Text="İptal"></asp:Button>
                                             </EditItemTemplate>
                                             <ItemTemplate>
-                                                <asp:LinkButton ID="LinkButton3" runat="server" CausesValidation="False" CommandName="Edit" Text="Düzenle"></asp:LinkButton>
+                                                <asp:Button ID="LinkButton3" runat="server" CausesValidation="False" CommandName="Edit" Text="Düzenle"></asp:Button>
                                             </ItemTemplate>
                                         </asp:TemplateField>
                                         <asp:TemplateField ShowHeader="True" HeaderText="Kaydı Sil" ItemStyle-HorizontalAlign="Center" HeaderStyle-HorizontalAlign="Center">
                                             <ItemTemplate>
-                                                <asp:LinkButton ID="LinkButton4" runat="server" CausesValidation="False" CommandName="Delete" Text="Sil" CommandArgument='<%# Bind("Id") %>' OnClientClick="return confirm('Kaydı silmek istediğinize emin misiniz?')"></asp:LinkButton>
+                                                <asp:Button ID="LinkButton4" runat="server" CausesValidation="False" CommandName="Delete" Text="Sil" CommandArgument='<%# Bind("Id") %>' OnClientClick="return confirm('Kaydı silmek istediğinize emin misiniz?')"></asp:Button>
                                             </ItemTemplate>
                                         </asp:TemplateField>
                                     </Columns>

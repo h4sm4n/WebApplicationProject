@@ -8,14 +8,16 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     
-    <form id="formgiris" runat="server" class="offset-4">
+    <form id="forrmgiris" runat="server" class="offset-4">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+
         <div class="clearfix" style="align-items: center ">
             <h1 class="offset-0 primary-border font-weight-bold" style="width: 37%">Yeni Gelir Girişi</h1>
             <br/><br/>
         <div style="width:20%" class="offset-0">
             <label class="offset-4" style="color: black">Gelir Tipi:  </label> 
             <br />
-            <asp:TextBox CssClass="pull-right txtbox" style="width: 175px" ID="txttip" runat="server" />
+            <asp:TextBox CssClass="pull-right txtbox" style="width: 175px" ID="txttip" MaxLength="49" runat="server" />
         </div>
 
         <br />
@@ -24,7 +26,7 @@
         <div style="width:20%" class="offset-0">
             <label class="offset-4" style="color: black">Fatura No: </label>
             <br/>
-            <asp:TextBox CssClass="pull-right txtbox" style="width: 175px" ID="txtfaturano" runat="server" TextMode="Number"/>
+            <asp:TextBox CssClass="pull-right txtbox" style="width: 175px" ID="txtfaturano" MaxLength="49" runat="server" TextMode="Number"/>
         </div>
 
         <br />
@@ -33,7 +35,7 @@
         <div style="width:20%" class="offset-0">
             <label class="offset-4" style="color: black">Fatura Tarihi: </label>
             <br/>
-            <asp:TextBox CssClass="pull-right txtbox" style="width: 175px" ID="txtfaturatarih" runat="server" TextMode="DateTimeLocal"/>
+            <asp:TextBox CssClass="pull-right txtbox" style="width: 175px" ID="txtfaturatarih" MaxLength="15" runat="server" TextMode="DateTimeLocal"/>
         </div>
 
         <br />
@@ -42,7 +44,7 @@
         <div style="width:20%" class="offset-0">
             <label class="offset-4" style="color: black"> Muhasebeci:</label>
             <br/>
-            <asp:TextBox CssClass="pull-right txtbox" style="width: 175px" ID="txtmuhasebeci" runat="server" />
+            <asp:TextBox CssClass="pull-right txtbox" style="width: 175px" ID="txtmuhasebeci" MaxLength="49" runat="server" />
         </div>
 
         <br />

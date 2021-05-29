@@ -4,8 +4,11 @@
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <form id="formwork" runat="server" class="offset-4">
-        <div class="clearfix" style="align-items: center ">
+    <form id="formworrk" runat="server" class="offset-4">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <asp:UpdatePanel runat="server">
+            <ContentTemplate>
+                <div class="clearfix" style="align-items: center ">
             <h1 class="offset-0 primary-border font-weight-bold" style="width: 37%">Yeni İş Girişi</h1>
             <br/><br/>
 
@@ -41,24 +44,27 @@
                 <br/>
                 <asp:TextBox CssClass="pull-right txtbox" style="width: 175px" ID="txtmusteritc" runat="server" MaxLength="11" TextMode="Number" OnTextChanged="txtmusteritc_OnTextChanged" />
             </div>
+            <div style="width:22%">
+                <asp:Button CssClass=" btn-primary offset-5" Text="Onayla" Width="25%" runat="server" ID="Button1" OnClick="Button1_OnClick"/>
+            </div>
 
             <br />
-            <br />
-            
-            <div style="width:20%" class="offset-0">
+                    <div style="width:20%" class="offset-0">
+                        <label class="offset-4" style="color: black"> Adres:</label>
+                        <br/>
+                        <asp:DropDownList ID="drpadres" CssClass="pull-right txtbox" style="width: 175px" runat="server"></asp:DropDownList>
+                    </div>
+                    
+                    <br />
+                    <br />
+
+                    <div style="width:20%" class="offset-0">
                 <label class="offset-4" style="color: black"> Yetkili Personel TC:</label>
                 <br/>
                 <asp:TextBox CssClass="pull-right txtbox" style="width: 175px" ID="txtpersoneltc" runat="server" MaxLength="11" TextMode="Number"/>
             </div>
 
-            <br />
-            <br />
             
-            <div style="width:20%" class="offset-0">
-                <label class="offset-4" style="color: black"> Adres:</label>
-                <br/>
-                <asp:DropDownList ID="drpadres" CssClass="pull-right txtbox" style="width: 175px" runat="server"></asp:DropDownList>
-            </div>
 
             <br />
             <br />
@@ -77,16 +83,17 @@
             <div style="width:20%" class="offset-0">
                 <label class="offset-4" style="color: black">Ödeme Planı: </label>
                 <br/>
-                <asp:TextBox CssClass="pull-right txtbox" style="width: 175px" ID="txtplan" runat="server"/>
+                <asp:TextBox CssClass="pull-right txtbox" MaxLength="15" style="width: 175px" ID="txtplan" runat="server"/>
             </div>
-
-            <br />
+                <br />
             <br />
 
             <div style="width:20%">
                 <asp:Button CssClass=" btn-primary offset-5" Text="Ekle" Width="25%" runat="server" ID="btnekle" OnClick="btnekle_OnClick"/>
             </div>
         </div>
+            </ContentTemplate>
+        </asp:UpdatePanel>
     </form>
 </asp:Content>
 

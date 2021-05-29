@@ -8,28 +8,30 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1 class="offset-3 primary-border font-weight-bold" style="width: 35%">Yeni Banka Bilgisi Girişi</h1>
     <br/><br/>
-        <form id="form1" runat="server" class="offset-4">
+        <form id="forrm1" runat="server" class="offset-4">
+            <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+
             <div style="width:11%" class="offset-1">
-                Banka Adı <asp:TextBox ID="txtad" CssClass="pull-right txtbox" runat="server"></asp:TextBox>
+                Banka Adı <asp:TextBox ID="txtad" MaxLength="49" CssClass="pull-right txtbox" runat="server"></asp:TextBox>
             </div>
             <br/><br/>
             <div style="width: 11%" class="offset-1">
-                Şube Adı <asp:TextBox ID="txtsube" CssClass="pull-right txtbox" runat="server"></asp:TextBox>
+                Şube Adı <asp:TextBox ID="txtsube" MaxLength="49" CssClass="pull-right txtbox" runat="server"></asp:TextBox>
             </div>
             <br>
             <br>
             <div style="width: 11%" class="offset-1">
-                Hesap No <asp:TextBox ID="txthesapno" CssClass="pull-right txtbox" runat="server"></asp:TextBox>
+                Hesap No <asp:TextBox ID="txthesapno" MaxLength="15" CssClass="pull-right txtbox" TextMode="Number" runat="server"></asp:TextBox>
             </div>
             <br>
             <br>
             <div style="width: 11%" class="offset-1">
-                Iban No <asp:TextBox ID="txtiban" CssClass="pull-right txtbox" style="" runat="server">TR</asp:TextBox>
+                Iban No <asp:TextBox ID="txtiban" MaxLength="26" CssClass="pull-right txtbox" style="" runat="server">TR</asp:TextBox>
             </div>
             <br>
             <br>
             <div style="width: 11%" class="offset-1">
-                Detay <asp:TextBox ID="txtdetay" CssClass="pull-right txtbox" runat="server" TextMode="MultiLine" Height="59px" Width="160px"></asp:TextBox>
+                Detay <asp:TextBox ID="txtdetay" MaxLength="49" CssClass="pull-right txtbox" runat="server" TextMode="MultiLine" Height="59px" Width="160px"></asp:TextBox>
             </div>
             <br />
             <br />

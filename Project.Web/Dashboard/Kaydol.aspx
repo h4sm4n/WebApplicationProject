@@ -20,6 +20,8 @@
                 <div class="card-body">
                     <h2 class="title">Kayıt Formu</h2>
                     <form id="form1" runat="server">
+                        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">

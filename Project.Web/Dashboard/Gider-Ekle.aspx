@@ -7,14 +7,16 @@
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <form id="formgider" runat="server" class="offset-4">
+    <form id="foormgider" runat="server" class="offset-4">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+
         <div class="clearfix" style="align-items: center ">
             <h1 class="offset-0 primary-border font-weight-bold" style="width: 37%">Yeni Gider Girişi</h1>
             <br/><br/>
             <div style="width:20%" class="offset-0">
-                <label class="offset-4" style="color: black">Ay:  </label> 
+                <label class="offset-4" style="color: black">Ay:</label> 
                 <br />
-                <asp:TextBox CssClass="pull-right txtbox" style="width: 175px" ID="txtay" runat="server" />
+                <asp:TextBox CssClass="pull-right txtbox" style="width: 175px" ID="txtay" MaxLength="8" runat="server" />
             </div>
 
             <br />
@@ -23,7 +25,9 @@
             <div style="width:20%" class="offset-0">
                 <label class="offset-4" style="color: black">Yıl: </label>
                 <br/>
-                <asp:TextBox CssClass="pull-right txtbox" style="width: 175px" ID="txtyil" runat="server" TextMode="Number"/>
+                <asp:TextBox CssClass="pull-right txtbox" style="width: 175px" ID="txtyil" MaxLength="4" runat="server" />
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator9" runat="server" ValidationExpression="((\d+))$"
+                                                ControlToValidate="txtyil" />
             </div>
 
             <br />

@@ -35,7 +35,7 @@ namespace Project.Web.Dashboard
             string faturatarih = txtfaturatarih.Text;
             string muhasebeci = txtmuhasebeci.Text;
 
-            if (txttip.Text.Length >= 1 || txttip.Text.Length >= 1 || txttip.Text.Length >= 1 || txttip.Text.Length >= 1)
+            if (txttip.Text.Length >= 1 && txttip.Text.Length >= 1 && txttip.Text.Length >= 1 && txttip.Text.Length >= 1)
             {
                 business1.AddIncome(tip,faturano,faturatarih,muhasebeci);
                 ScriptManager.RegisterStartupScript(this,this.GetType(),"redirect",

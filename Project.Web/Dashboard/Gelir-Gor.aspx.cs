@@ -34,9 +34,6 @@ namespace Project.Web.Dashboard
             if (e.CommandName == "Delete")
             {
                 int id = Convert.ToInt32(e.CommandArgument);
-           
-                // delete from tblcountry where countryid="+id+";
-               
             }
         }
     }

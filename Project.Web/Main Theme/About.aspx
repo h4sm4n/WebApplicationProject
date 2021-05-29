@@ -89,7 +89,7 @@
                                 </div>
                                 <!-- Header-btn -->
                                 <div class="header-right-btn d-none d-lg-block ml-20">
-                                    <a href="../Dashboard/Anasayfa.aspx" target="_blank" class="btn header-btn">Online İşlemler</a>
+                                    <a href="../Dashboard/Giris.aspx" target="_blank" class="btn header-btn">Online İşlemler</a>
                                 </div>
                             </div>
                         </div> 

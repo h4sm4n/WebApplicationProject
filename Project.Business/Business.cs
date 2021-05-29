@@ -75,21 +75,21 @@ namespace Project.Business
             }
         }
 
-        public void AddOutcome(string month, int year, decimal elektricity, decimal water, decimal gas, decimal internet, decimal employeecharges, decimal tools, decimal office, decimal others)
+        public void AddOutcome(string month, string year, string elektricity, string water, string gas, string internet, string employeecharges, string tools, string office, string others)
         {
             try
             {
                 Giderler gider = new Giderler();
                 gider.Ay = month;
-                gider.Yil = year;
-                gider.Elektrik = elektricity;
-                gider.Su = water;
-                gider.Dogalgaz = gas;
-                gider.Internet = internet;
-                gider.Maaslar = employeecharges;
-                gider.Malzeme = tools;
-                gider.Ofis = office;
-                gider.Diger = others;
+                gider.Yil = Convert.ToInt32(year);
+                gider.Elektrik = Convert.ToDecimal(elektricity);
+                gider.Su = Convert.ToDecimal(water);
+                gider.Dogalgaz = Convert.ToDecimal(gas);
+                gider.Internet = Convert.ToDecimal(internet);
+                gider.Maaslar = Convert.ToDecimal(employeecharges);
+                gider.Malzeme = Convert.ToDecimal(tools);
+                gider.Ofis = Convert.ToDecimal(office);
+                gider.Diger = Convert.ToDecimal(others);
                 db.Giderler.Add(gider);
                 db.SaveChanges();
             }
@@ -109,19 +109,19 @@ namespace Project.Business
             }
         }
 
-        public void AddWork(string type, DateTime start, DateTime end, int employeeid, int customerid, int adressid, decimal price, string plan)
+        public void AddWork(string type, string start, string end, int employeeid, int customerid, int adressid, string price, string plan)
         {
             try
             {
                 Isler work = new Isler();
                 work.IsTuru = type;
-                work.BaslangicTarihi = start;
-                work.BitisTarihi = end;
+                work.BaslangicTarihi = Convert.ToDateTime(start);
+                work.BitisTarihi = Convert.ToDateTime(end);
                 work.Durum = "Aktif";
                 work.AdresId = adressid;
                 work.YetkiliPersonelId = employeeid;
                 work.MusteriId = customerid;
-                work.Fiyat = price;
+                work.Fiyat = Convert.ToDecimal(price);
                 work.OdemePlani = plan;
                 db.Isler.Add(work);
                 db.SaveChanges();
@@ -140,6 +140,74 @@ namespace Project.Business
                 }
                 throw;
             }
+        }
+
+        public void AddNote(string note, string type, string alarm)
+        {
+            try
+            {
+                Notlar notes = new Notlar();
+                notes.Olusturulma = DateTime.Now;
+                notes.NotDetay = note;
+                notes.Alarm = Convert.ToDateTime(alarm);
+                notes.NotTuru = type;
+                db.Notlar.Add(notes);
+                db.SaveChanges();
+            }
+            catch (DbEntityValidationException e)
+            {
+                foreach (var eve in e.EntityValidationErrors)
+                {
+                    Console.WriteLine("Entity of type \"{0}\" in state \"{1}\" has the following validation errors:",
+                        eve.Entry.Entity.GetType().Name, eve.Entry.State);
+                    foreach (var ve in eve.ValidationErrors)
+                    {
+                        Console.WriteLine("- Property: \"{0}\", Error: \"{1}\"",
+                            ve.PropertyName, ve.ErrorMessage);
+                    }
+                }
+                throw;
+            }
+        }
+
+        public void AddEmployee(string name, string surname, int depid, string idnumber, string mail, string salary, string phone)
+
+        {
+            try
+            {
+                Personeller employee = new Personeller();
+                employee.PersonelAdi = name;
+                employee.PersonelSoyadi = surname;
+                employee.DepartmanId = depid;
+                employee.GirisTarihi = DateTime.Now;
+                employee.PersBankaId = 3;
+                employee.KullaniciId = 4;
+                employee.PersonelTc = idnumber;
+                employee.PersonelMail = mail;
+                employee.PersonelMaas = Convert.ToDecimal(salary);
+                employee.AdresId = 2;
+                employee.PersonelTelefon = phone;
+                db.SaveChanges();
+            }
+            catch (DbEntityValidationException e)
+            {
+                foreach (var eve in e.EntityValidationErrors)
+                {
+                    Console.WriteLine("Entity of type \"{0}\" in state \"{1}\" has the following validation errors:",
+                        eve.Entry.Entity.GetType().Name, eve.Entry.State);
+                    foreach (var ve in eve.ValidationErrors)
+                    {
+                        Console.WriteLine("- Property: \"{0}\", Error: \"{1}\"",
+                            ve.PropertyName, ve.ErrorMessage);
+                    }
+                }
+                throw;
+            }
+        }
+
+        public void AddAppointment()
+        {
+
         }
 
         public static List<string> GetCustomers()
@@ -179,7 +247,7 @@ namespace Project.Business
             using (db)
             {
                 List<int> sorgu = (from x in db.Musteriler
-                    where x.MusteriTc.Contains(musteri)
+                    where x.MusteriTc == musteri
                     select x.AdresId).ToList();
 
 
@@ -187,10 +255,10 @@ namespace Project.Business
 
                 foreach (var item in sorgu )
                 {
-                    var sorgu2 = from a in db.Adresler
+                    var sorgu2 = (from a in db.Adresler
                         where a.Id.Equals(item)
-                        select a.AdresDetay;
-                    liste.Add(sorgu2.FirstOrDefault());
+                        select a.AdresDetay).FirstOrDefault();
+                    liste.Add(sorgu2);
                 }
 
                 return liste;
@@ -203,12 +271,11 @@ namespace Project.Business
             Model1 db = new Model1();
             using (db)
             {
-                var sorgu = from a in db.Musteriler
-                    where a.MusteriTc.Contains(tc)
-                    select a.Id;
+                var sorgu = (from a in db.Musteriler
+                    where a.MusteriTc == tc
+                    select a.Id).FirstOrDefault();
 
-                int result = Convert.ToInt32(sorgu);
-
+                int result = sorgu;
                 return result;
             }
         }
@@ -218,11 +285,11 @@ namespace Project.Business
             Model1 db = new Model1();
             using (db)
             {
-                var sorgu = from a in db.Personeller
-                    where a.PersonelTc.Contains(tc)
-                    select a.Id;
+                var sorgu = (from a in db.Personeller
+                    where a.PersonelTc == tc
+                    select a.Id).FirstOrDefault();
 
-                int result = Convert.ToInt32(sorgu);
+                int result = sorgu;
 
                 return result;
             }
@@ -233,13 +300,38 @@ namespace Project.Business
             Model1 db = new Model1();
             using (db)
             {
-                var sorgu = from a in db.Adresler
-                    where a.AdresDetay.Contains(adres)
-                    select a.Id;
+                var sorgu = (from a in db.Adresler
+                    where a.AdresDetay == adres
+                    select a.Id).FirstOrDefault();
 
-                int result = Convert.ToInt32(sorgu);
+                int result = sorgu;
 
                 return result;
+            }
+        }
+
+        public static int GetUserIdByCustomersMail(string mail)
+        {
+            Model1 model = new Model1();
+            using (model)
+            {
+                var sorgu = (from x in model.Musteriler
+                    where x.MusteriMail == mail
+                    select x.KullaniciId).FirstOrDefault();
+
+                return sorgu;
+            }
+        }
+
+        public void UpdateCustomers(int id, string password)
+        {
+            Model1 model = new Model1();
+            using (model)
+            {
+                var x = db.Kullanicilar.Find(id);
+
+                x.KullaniciSifre = password;
+                db.SaveChanges();
             }
         }
     }

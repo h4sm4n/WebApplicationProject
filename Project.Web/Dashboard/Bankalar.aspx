@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <form id="form1" runat="server" style="width: 80%">
+    <form id="formm1" runat="server" style="width: 80%">
     <asp:ScriptManager ID="scriptmanager1" runat="server" />
     <div class="clearfix">
     <asp:UpdatePanel ID="updatepanelbankalar" runat="server">
@@ -22,7 +22,7 @@
             </asp:TemplateField>
             <asp:TemplateField HeaderText="Banka Adı" SortExpression="BankaAdi">
                 <EditItemTemplate>
-                    <asp:TextBox ID="text2" runat="server" Text='<%# Bind("BankaAdi") %>' Font-Size="Small"></asp:TextBox>
+                    <asp:TextBox ID="text2" runat="server" MaxLength="49" Text='<%# Bind("BankaAdi") %>' Font-Size="Small"></asp:TextBox>
                     <asp:requiredfieldvalidator id="reqKullaniciAdi1" runat="server" controltovalidate="text2" errormessage="Lütfen boş alan bırakmayınız." setfocusonerror="true" display="Dynamic"></asp:requiredfieldvalidator>
                 </EditItemTemplate>
                 <ItemTemplate>
@@ -31,7 +31,7 @@
             </asp:TemplateField>
             <asp:TemplateField HeaderText="Şube" SortExpression="BankaSube">
                 <EditItemTemplate>
-                    <asp:TextBox ID="text3" runat="server" Text='<%# Bind("BankaSube") %>' Font-Size="Small"></asp:TextBox>
+                    <asp:TextBox ID="text3" runat="server" MaxLength="49" Text='<%# Bind("BankaSube") %>' Font-Size="Small"></asp:TextBox>
                     <asp:requiredfieldvalidator id="reqKullaniciAdi2" runat="server" controltovalidate="text3" errormessage="Lütfen boş alan bırakmayınız." setfocusonerror="true" display="Dynamic"></asp:requiredfieldvalidator>
                 </EditItemTemplate>
                 <ItemTemplate>
@@ -40,7 +40,7 @@
             </asp:TemplateField>
             <asp:TemplateField HeaderText="Hesap No" SortExpression="HesapNo">
                 <EditItemTemplate>
-                    <asp:TextBox ID="text4" runat="server" Text='<%# Bind("HesapNo") %>' Font-Size="Small"></asp:TextBox>
+                    <asp:TextBox ID="text4" runat="server" MaxLength="15" TextMode="Number" Text='<%# Bind("HesapNo") %>' Font-Size="Small"></asp:TextBox>
                     <asp:requiredfieldvalidator id="reqKullaniciAdi3" runat="server" controltovalidate="text4" errormessage="Lütfen boş alan bırakmayınız." setfocusonerror="true" display="Dynamic"></asp:requiredfieldvalidator>
                 </EditItemTemplate>
                 <ItemTemplate>
@@ -49,25 +49,25 @@
             </asp:TemplateField>
             <asp:TemplateField HeaderText="Iban" SortExpression="Iban">
                 <EditItemTemplate>
-                    <asp:TextBox ID="text5" runat="server" Text='<%# Bind("Iban") %>' Font-Size="Small"></asp:TextBox>
+                    <asp:TextBox ID="text5" runat="server" MaxLength="26" Text='<%# Bind("Iban") %>' Font-Size="Small"></asp:TextBox>
                     <asp:requiredfieldvalidator id="reqKullaniciAdi4" runat="server" controltovalidate="text5" errormessage="Lütfen boş alan bırakmayınız." setfocusonerror="true" display="Dynamic"></asp:requiredfieldvalidator>
                 </EditItemTemplate>
                 <ItemTemplate>
                     <asp:Label ID="Label3" runat="server" Text='<%# Bind("Iban") %>'></asp:Label>
                 </ItemTemplate>
             </asp:TemplateField>
-            <asp:TemplateField HeaderText="Banka Tip" SortExpression="BankaTip">
+            <asp:TemplateField HeaderText="Banka Tip"  SortExpression="BankaTip">
                 <EditItemTemplate>
-                    <asp:TextBox ID="text6" runat="server" Text='<%# Bind("BankaTip") %>' Font-Size="Small"></asp:TextBox>
+                    <asp:TextBox ID="text6" runat="server" MaxLength="15" Text='<%# Bind("BankaTip") %>' Font-Size="Small"></asp:TextBox>
                     <asp:requiredfieldvalidator id="reqKullaniciAdi5" runat="server" controltovalidate="text6" errormessage="Lütfen boş alan bırakmayınız." setfocusonerror="true" display="Dynamic"></asp:requiredfieldvalidator>
                 </EditItemTemplate>
                 <ItemTemplate>
                     <asp:Label ID="Label2" runat="server" Text='<%# Bind("BankaTip") %>'></asp:Label>
                 </ItemTemplate>
             </asp:TemplateField>
-            <asp:TemplateField HeaderText="Banka Detay" SortExpression="BankaDetay">
+            <asp:TemplateField HeaderText="Banka Detay"  SortExpression="BankaDetay">
                 <EditItemTemplate>
-                    <asp:TextBox ID="text7" runat="server" Text='<%# Bind("BankaDetay") %>' Font-Size="Small"></asp:TextBox>
+                    <asp:TextBox ID="text7" MaxLength="49" runat="server" Text='<%# Bind("BankaDetay") %>' Font-Size="Small"></asp:TextBox>
                     <asp:requiredfieldvalidator id="reqKullaniciAdi6" runat="server" controltovalidate="text7" errormessage="Lütfen boş alan bırakmayınız." setfocusonerror="true" display="Dynamic"></asp:requiredfieldvalidator>
                 </EditItemTemplate>
                 <ItemTemplate>
@@ -76,22 +76,22 @@
             </asp:TemplateField>
             <asp:TemplateField HeaderText="Güncelle" HeaderStyle-Width="80px">
                 <EditItemTemplate>
-                    <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="True" CommandName="Update" Text="Güncelle"></asp:LinkButton>
+                    <asp:Button ID="LinkButton1" runat="server" CausesValidation="True" CommandName="Update" Text="Güncelle"></asp:Button>
                     <br />
-                    <asp:LinkButton ID="LinkButton2" runat="server" CausesValidation="False" CommandName="Cancel" Text="İptal"></asp:LinkButton>
+                    <asp:Button ID="LinkButton2" runat="server" CausesValidation="False" CommandName="Cancel" Text="İptal"></asp:Button>
                 </EditItemTemplate>
                 <ItemTemplate>
-                    <asp:LinkButton ID="LinkButton11" runat="server" CausesValidation="False" CommandName="Edit" Text="Düzenle"></asp:LinkButton>
+                    <asp:Button ID="LinkButton11" runat="server" CausesValidation="False" CommandName="Edit" Text="Düzenle"></asp:Button>
                 </ItemTemplate>
-                <ControlStyle BackColor="#FFFFCC" BorderColor="Black" CssClass="edit-delete" ForeColor="Black" />
+                <ControlStyle BackColor="#FFFFCC" CssClass="btn" ForeColor="Black" />
                 <HeaderStyle HorizontalAlign="Center" />
                 <ItemStyle CssClass="edit-delete" ForeColor="Black" HorizontalAlign="Center" />
             </asp:TemplateField>
             <asp:TemplateField HeaderText="Kaydı Sil" HeaderStyle-HorizontalAlign="Center">
                 <ItemTemplate>
-                    <asp:LinkButton ID="LinkButton3" runat="server" CausesValidation="False" CommandName="Delete" Text="Sil"  CssClass="btn-black" CommandArgument='<%# Bind("Id") %>' OnClientClick="return confirm('Kaydı silmek istediğinize emin misiniz?')"></asp:LinkButton>
+                    <asp:Button ID="LinkButton3" runat="server" CausesValidation="False" CommandName="Delete" Text="Sil"  CssClass="btn" CommandArgument='<%# Bind("Id") %>' OnClientClick="return confirm('Kaydı silmek istediğinize emin misiniz?')"></asp:Button>
                 </ItemTemplate>
-                <ControlStyle BackColor="#FFFFCC" BorderColor="Black" />
+                <ControlStyle BackColor="#FFFFCC" CssClass="btn" />
                 <HeaderStyle HorizontalAlign="Center" />
                 <ItemStyle ForeColor="Black" />
             </asp:TemplateField>

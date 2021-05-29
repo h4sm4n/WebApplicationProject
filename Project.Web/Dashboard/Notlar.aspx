@@ -1,8 +1,116 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Dashboard/Main.Master" AutoEventWireup="true" CodeBehind="Notlar.aspx.cs" Inherits="Project.Web.Dashboard.Notlar" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="scriptmanager1" runat="server"/>
+        <div class="clearfix">
+            <asp:UpdatePanel ID="updatepanelgelirler" runat="server">
+                <ContentTemplate>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="table-responsive" style="overflow: visible">
+                                <asp:GridView runat="server" ID="gridnotlar" Width="80%" CssClass="table table-bordered table-hover table-active" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" CellPadding="4" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource1">
+                                    
+                                    <Columns>
+                                        <asp:TemplateField HeaderText="Id" InsertVisible="False" SortExpression="Id">
+                                            <EditItemTemplate>
+                                                <asp:Label ID="Label1" runat="server" Text='<%# Eval("Id") %>'></asp:Label>
+                                            </EditItemTemplate>
+                                            <ItemTemplate>
+                                                <asp:Label ID="Label1" runat="server" Text='<%# Bind("Id") %>'></asp:Label>
+                                            </ItemTemplate>
+                                        </asp:TemplateField>
+                                        <asp:TemplateField HeaderText="NotTuru" SortExpression="NotTuru">
+                                            <EditItemTemplate>
+                                                <asp:TextBox ID="TextBox1" MaxLength="15" runat="server" Text='<%# Bind("NotTuru") %>'></asp:TextBox>
+                                                <asp:requiredfieldvalidator id="reqKullaniciAdi1" runat="server" controltovalidate="TextBox1" errormessage="Lütfen boş alan bırakmayınız." setfocusonerror="true" display="Dynamic"></asp:requiredfieldvalidator>
+                                            </EditItemTemplate>
+                                            <ItemTemplate>
+                                                <asp:Label ID="Label2" runat="server" Text='<%# Bind("NotTuru") %>'></asp:Label>
+                                            </ItemTemplate>
+                                        </asp:TemplateField>
+                                        <asp:TemplateField HeaderText="NotDetay" SortExpression="NotDetay">
+                                            <EditItemTemplate>
+                                                <asp:TextBox ID="TextBox2" MaxLength="50" TextMode="MultiLine" runat="server" Text='<%# Bind("NotDetay") %>'></asp:TextBox>
+                                                <asp:requiredfieldvalidator id="reqKullaniciAdi2" runat="server" controltovalidate="TextBox2" errormessage="Lütfen boş alan bırakmayınız." setfocusonerror="true" display="Dynamic"></asp:requiredfieldvalidator>
+                                            </EditItemTemplate>
+                                            <ItemTemplate>
+                                                <asp:Label ID="Label3" runat="server" Text='<%# Bind("NotDetay") %>'></asp:Label>
+                                            </ItemTemplate>
+                                        </asp:TemplateField>
+                                        <asp:TemplateField HeaderText="Olusturulma" SortExpression="Olusturulma">
+                                            <EditItemTemplate>
+                                                <asp:Label ID="TextBox3" runat="server" Text='<%# Bind("Olusturulma") %>'></asp:Label>
+                                            </EditItemTemplate>
+                                            <ItemTemplate>
+                                                <asp:Label ID="Label4" runat="server" Text='<%# Bind("Olusturulma") %>'></asp:Label>
+                                            </ItemTemplate>
+                                        </asp:TemplateField>
+                                        <asp:TemplateField HeaderText="Alarm" SortExpression="Alarm">
+                                            <EditItemTemplate>
+                                                <asp:TextBox ID="TextBox4" runat="server" TextMode="DateTimeLocal" Text='<%# Bind("Alarm") %>'></asp:TextBox>
+                                                <asp:requiredfieldvalidator id="reqKullaniciAdi4" runat="server" controltovalidate="TextBox4" errormessage="Lütfen boş alan bırakmayınız." setfocusonerror="true" display="Dynamic"></asp:requiredfieldvalidator>
+                                            </EditItemTemplate>
+                                            <ItemTemplate>
+                                                <asp:Label ID="Label5" runat="server" Text='<%# Bind("Alarm") %>'></asp:Label>
+                                            </ItemTemplate>
+                                        </asp:TemplateField>
+                                        <asp:TemplateField ShowHeader="True" HeaderText="Düzenle">
+                                            <EditItemTemplate>
+                                                <asp:Button ID="btnguncelle" runat="server" CausesValidation="True" CommandName="Update" Text="Güncelleştir"></asp:Button>
+                                                <br/>
+                                                &nbsp;<asp:Button ID="btniptal" runat="server" CausesValidation="False" CommandName="Cancel" Text="İptal"></asp:Button>
+                                            </EditItemTemplate>
+                                            <ItemTemplate>
+                                                <asp:Button ID="btnduzenle" runat="server" CausesValidation="False" CommandName="Edit" Text="Düzenle"></asp:Button>
+                                            </ItemTemplate>
+                                        </asp:TemplateField>
+                                        <asp:TemplateField ShowHeader="True" HeaderText="Sil">
+                                            <ItemTemplate>
+                                                <asp:Button ID="btnsil" runat="server" CausesValidation="False" CommandName="Delete" Text="Sil"></asp:Button>
+                                            </ItemTemplate>
+                                        </asp:TemplateField>
+                                    </Columns>
+                                    <FooterStyle BackColor="#99CCCC" ForeColor="#003399" />
+                                    <HeaderStyle BackColor="#003399" Font-Bold="True" ForeColor="#CCCCFF" />
+                                    <PagerStyle BackColor="#99CCCC" ForeColor="#003399" HorizontalAlign="Left" />
+                                    <RowStyle BackColor="White" ForeColor="#003399" />
+                                    <SelectedRowStyle BackColor="#009999" Font-Bold="True" ForeColor="#CCFF99" />
+                                    <SortedAscendingCellStyle BackColor="#EDF6F6" />
+                                    <SortedAscendingHeaderStyle BackColor="#0D4AC4" />
+                                    <SortedDescendingCellStyle BackColor="#D6DFDF" />
+                                    <SortedDescendingHeaderStyle BackColor="#002876" />
+                                    
+                                </asp:GridView>
+                            </div>
+                        </div>
+                    </div>
+                </ContentTemplate>
+            </asp:UpdatePanel>
+        </div>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:dbweb %>" DeleteCommand="DELETE FROM [Notlar] WHERE [Id] = @Id" InsertCommand="INSERT INTO [Notlar] ([NotTuru], [NotDetay], [Olusturulma], [Alarm]) VALUES (@NotTuru, @NotDetay, @Olusturulma, @Alarm)" SelectCommand="SELECT * FROM [Notlar]" UpdateCommand="UPDATE [Notlar] SET [NotTuru] = @NotTuru, [NotDetay] = @NotDetay, [Olusturulma] = @Olusturulma, [Alarm] = @Alarm WHERE [Id] = @Id">
+            <DeleteParameters>
+                <asp:Parameter Name="Id" Type="Int32" />
+            </DeleteParameters>
+            <InsertParameters>
+                <asp:Parameter Name="NotTuru" Type="String" />
+                <asp:Parameter Name="NotDetay" Type="String" />
+                <asp:Parameter DbType="Date" Name="Olusturulma" />
+                <asp:Parameter Name="Alarm" Type="DateTime" />
+            </InsertParameters>
+            <UpdateParameters>
+                <asp:Parameter Name="NotTuru" Type="String" />
+                <asp:Parameter Name="NotDetay" Type="String" />
+                <asp:Parameter DbType="Date" Name="Olusturulma" />
+                <asp:Parameter Name="Alarm" Type="DateTime" />
+                <asp:Parameter Name="Id" Type="Int32" />
+            </UpdateParameters>
+        </asp:SqlDataSource>
+    </form>
 </asp:Content>
+
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     <p>
         <div class="page-header">

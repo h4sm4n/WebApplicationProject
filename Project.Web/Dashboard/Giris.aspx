@@ -23,7 +23,7 @@
                     </div>
                         <div class="login-wrapper my-auto">
                             <h1 class="login-title">Giriş</h1>
-                            <form id="form1" runat="server">
+                            <form id="formm1" runat="server">
                                 <div class="form-group">
                                     <label for="email">Email</label>
                                     <asp:TextBox id="txtemail" CssClass="form-control" placeholder="email@example.com" runat="server"/>
@@ -35,7 +35,7 @@
                                 </div>
                                 <asp:Button id="btnlogin" CssClass="btn btn-block login-btn" Text="Giriş Yap" OnClick="btnlogin_OnClick" runat="server"/>
                             </form>
-                            <a href="#!" class="forgot-password-link">Şifremi unuttum.</a>
+                            <a href="Sifremi-Unuttum.aspx" class="forgot-password-link">Şifremi unuttum.</a>
                             <p class="login-wrapper-footer-text">Hesabınız yok mu? <a href="Kaydol.aspx" class="text-reset">Buradan kaydolun.</a></p>
                         </div>
                     </div>

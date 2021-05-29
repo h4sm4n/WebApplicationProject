@@ -15,13 +15,13 @@ namespace Project.Web.Dashboard
     {
 
         /// <summary>
-        /// form1 denetimi.
+        /// foorm1 denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik üretilmiş alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.HtmlControls.HtmlForm foorm1;
 
         /// <summary>
         /// scriptmanager1 denetimi.

@@ -15,13 +15,22 @@ namespace Project.Web.Dashboard
     {
 
         /// <summary>
-        /// formwork denetimi.
+        /// formworrk denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik üretilmiş alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm formwork;
+        protected global::System.Web.UI.HtmlControls.HtmlForm formworrk;
+
+        /// <summary>
+        /// ScriptManager1 denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik üretilmiş alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+        /// </remarks>
+        protected global::System.Web.UI.ScriptManager ScriptManager1;
 
         /// <summary>
         /// txtisturu denetimi.
@@ -60,13 +69,13 @@ namespace Project.Web.Dashboard
         protected global::System.Web.UI.WebControls.TextBox txtmusteritc;
 
         /// <summary>
-        /// txtpersoneltc denetimi.
+        /// Button1 denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik üretilmiş alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtpersoneltc;
+        protected global::System.Web.UI.WebControls.Button Button1;
 
         /// <summary>
         /// drpadres denetimi.
@@ -76,6 +85,15 @@ namespace Project.Web.Dashboard
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList drpadres;
+
+        /// <summary>
+        /// txtpersoneltc denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik üretilmiş alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtpersoneltc;
 
         /// <summary>
         /// txtfiyat denetimi.

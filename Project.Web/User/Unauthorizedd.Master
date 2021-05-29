@@ -42,7 +42,7 @@
     
 </head>
 <body>
-    <!-- Pre-loader start -->
+ <%--   <!-- Pre-loader start -->
     <div class="theme-loader">
         <div class="loader-track">
             <div class="preloader-wrapper">
@@ -95,7 +95,7 @@
             </div>
         </div>
     </div>
-    <!-- Pre-loader end -->
+    <!-- Pre-loader end -->--%>
     <div id="pcoded" class="pcoded">
         <div class="pcoded-overlay-box"></div>
         <div class="pcoded-container navbar-wrapper">

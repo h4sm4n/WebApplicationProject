@@ -33,17 +33,17 @@ namespace Project.Web.Dashboard
         {
             var business1 = new Project.Business.Business();
             string ay = txtay.Text;
-            int yil = Convert.ToInt32(txtyil.Text);
-            decimal elektrik = Convert.ToDecimal(txtelektrik.Text);
-            decimal su = Convert.ToDecimal(txtsu.Text);
-            decimal gaz = Convert.ToDecimal(txtdogalgaz.Text);
-            decimal internet = Convert.ToDecimal(txtinternet.Text);
-            decimal maas = Convert.ToDecimal(txtmaas.Text);
-            decimal malzeme = Convert.ToDecimal(txtmalzeme.Text);
-            decimal ofis = Convert.ToDecimal(txtofis.Text);
-            decimal diger = Convert.ToDecimal(txtdiger.Text);
+            string yil = txtyil.Text;
+            string elektrik = txtelektrik.Text;
+            string su = (txtsu.Text);
+            string gaz = (txtdogalgaz.Text);
+            string internet = (txtinternet.Text);
+            string maas = txtmaas.Text;
+            string malzeme = txtmalzeme.Text;
+            string ofis = txtofis.Text;
+            string diger = txtdiger.Text;
 
-            if (txtay.Text.Length >= 1 || txtyil.Text.Length >= 1 || txtelektrik.Text.Length >= 1 || txtsu.Text.Length >= 1 || txtdogalgaz.Text.Length >= 1 || txtinternet.Text.Length >= 1 || txtmaas.Text.Length >= 1 || txtmalzeme.Text.Length >= 1 || txtofis.Text.Length >= 1 || txtdiger.Text.Length >= 1 )
+            if (txtay.Text.Length >= 1 && txtyil.Text.Length >= 1 && txtelektrik.Text.Length >= 1 && txtsu.Text.Length >= 1 && txtdogalgaz.Text.Length >= 1 && txtinternet.Text.Length >= 1 && txtmaas.Text.Length >= 1 && txtmalzeme.Text.Length >= 1 && txtofis.Text.Length >= 1 && txtdiger.Text.Length >= 1 )
             {
                 business1.AddOutcome(ay,yil,elektrik,su,gaz,internet,maas,malzeme,ofis,diger);
                 ScriptManager.RegisterStartupScript(this,this.GetType(),"redirect",

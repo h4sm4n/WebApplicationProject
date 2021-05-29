@@ -42,7 +42,7 @@
     
 </head>
 <body>
-    <!-- Pre-loader start -->
+<%--    <!-- Pre-loader start -->
     <div class="theme-loader">
         <div class="loader-track">
             <div class="preloader-wrapper">
@@ -95,7 +95,7 @@
             </div>
         </div>
     </div>
-    <!-- Pre-loader end -->
+    <!-- Pre-loader end -->--%>
     <div id="pcoded" class="pcoded">
         <div class="pcoded-overlay-box"></div>
         <div class="pcoded-container navbar-wrapper">
@@ -147,12 +147,14 @@
                                 </ul>
                             </li>
                             <li class="user-profile header-notification">
-                                <a href="#!" class="waves-effect waves-light">
-                                    <img src="assets/images/avatar-4.jpg" class="img-radius" alt="User-Profile-Image">
-                                    <%--<span><script>string bilgi = session["email"].toString();</script> <script>this.text=bilgi</script></span>--%>
-                                    <span><%= Session["email"].ToString() %></span>
-                                    <i class="ti-angle-down"></i>
-                                </a>
+                                <form id="formum">
+                                    <a href="#!" class="waves-effect waves-light">
+                                        <img src="assets/images/avatar-4.jpg" class="img-radius" alt="User-Profile-Image">
+                                        <%--<span><script>string bilgi = session["email"].toString();</script> <script>this.text=bilgi</script></span>--%>
+                                        <span><%= Session["email"].ToString() %></span>
+                                        <i class="ti-angle-down"></i>
+                                    </a>
+                                </form>
                                 <ul class="show-notification profile-notification">
                                     <li class="waves-effect waves-light">
                                         <a href="#!">
@@ -276,7 +278,7 @@
                             <li class="">
                                 <a href="Isler.aspx" class="waves-effect waves-dark">
                                     <span class="pcoded-micon"><i class="ti-map-alt"></i></span>
-                                    <span class="pcoded-mtext">Devam Eden İşleri Göster</span>
+                                    <span class="pcoded-mtext">İşleri Göster</span>
                                     <span class="pcoded-mcaret"></span>
                                 </a>
                             </li>

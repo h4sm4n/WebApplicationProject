@@ -3,7 +3,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <p>
-        test deneme 1 1 1 1 1
+        <h2 class="m-b-0" style="background-color: turquoise">Online İşlemlere Hoşgeldiniz</h2>
+        <br/>
+        <h4 class="m-b-0" style="background-color: gold">Sol Menü Aracılığıyla istediğiniz işlemi yapabilirsiniz. Bizi tercih ettiğiniz için teşekkür ederiz.</h4>
     </p>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">

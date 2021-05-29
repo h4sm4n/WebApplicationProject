@@ -23,7 +23,7 @@ File: style.css
 ==========================  **/
 
 .edit-delete {
-    text-underline:#000000
+    text-underline: #000000;
 	text-decoration: #000000
 }
 
@@ -5116,6 +5116,11 @@ table tbody .border-bottom-info td {
 	padding: 15px 0;
 	-webkit-transform: translateY(20px);
 	transform: translateY(20px);
+}
+#form_container {
+    padding: 15px 15px;
+    margin-top: 15px;
+    background: rgba(255,255,255,0.75);
 }
 
 .header-navbar .navbar-wrapper .navbar-container .header-notification .show-notification a,

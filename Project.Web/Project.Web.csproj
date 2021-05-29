@@ -272,6 +272,7 @@
     <Content Include="Dashboard\Personel-Ekle.aspx" />
     <Content Include="Dashboard\Personeller.aspx" />
     <Content Include="Dashboard\Randevular.aspx" />
+    <Content Include="Dashboard\Sifremi-Unuttum.aspx" />
     <Content Include="Main Theme\About.aspx" />
     <Content Include="Main Theme\Contact.aspx" />
     <Content Include="Main Theme\Default.aspx" />
@@ -800,6 +801,13 @@
     </Compile>
     <Compile Include="Dashboard\Randevular.aspx.designer.cs">
       <DependentUpon>Randevular.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\Sifremi-Unuttum.aspx.cs">
+      <DependentUpon>Sifremi-Unuttum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Sifremi-Unuttum.aspx.designer.cs">
+      <DependentUpon>Sifremi-Unuttum.aspx</DependentUpon>
     </Compile>
     <Compile Include="Main Theme\About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>

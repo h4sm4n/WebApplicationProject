@@ -9,7 +9,7 @@
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <form id="form1" runat="server">
+    <form id="foorm1" runat="server">
         <asp:ScriptManager ID="scriptmanager1" runat="server" />
         <div class="clearfix">
         <asp:UpdatePanel ID="updatepanelgelirler" runat="server">
@@ -31,7 +31,7 @@
                                     </asp:TemplateField>
                                     <asp:TemplateField HeaderText="GelirTipi" SortExpression="GelirTipi">
                                         <EditItemTemplate>
-                                            <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("GelirTipi") %>'></asp:TextBox>
+                                            <asp:TextBox ID="TextBox1" runat="server" MaxLength="49" Text='<%# Bind("GelirTipi") %>'></asp:TextBox>
                                             <asp:requiredfieldvalidator id="reqKullaniciAdi1" runat="server" controltovalidate="TextBox1" errormessage="Lütfen boş alan bırakmayınız." setfocusonerror="true" display="Dynamic"></asp:requiredfieldvalidator>
                                         </EditItemTemplate>
                                         <ItemTemplate>
@@ -40,7 +40,7 @@
                                     </asp:TemplateField>
                                     <asp:TemplateField HeaderText="FaturaNo" SortExpression="FaturaNo">
                                         <EditItemTemplate>
-                                            <asp:TextBox ID="TextBox2" runat="server" Text='<%# Bind("FaturaNo") %>'></asp:TextBox>
+                                            <asp:TextBox ID="TextBox2" TextMode="Number" runat="server" Text='<%# Bind("FaturaNo") %>'></asp:TextBox>
                                             <asp:requiredfieldvalidator id="reqKullaniciAdi2" runat="server" controltovalidate="TextBox2" errormessage="Lütfen boş alan bırakmayınız." setfocusonerror="true" display="Dynamic"></asp:requiredfieldvalidator>
                                         </EditItemTemplate>
                                         <ItemTemplate>
@@ -49,7 +49,7 @@
                                     </asp:TemplateField>
                                     <asp:TemplateField HeaderText="Ay" SortExpression="Ay">
                                         <EditItemTemplate>
-                                            <asp:TextBox ID="TextBox3" runat="server" Text='<%# Bind("Ay") %>'></asp:TextBox>
+                                            <input id="TextBox3" runat="server" type="number" min="1" max="12" value='<%# Bind("Ay") %>'/>
                                             <asp:requiredfieldvalidator id="reqKullaniciAdi3" runat="server" controltovalidate="TextBox3" errormessage="Lütfen boş alan bırakmayınız." setfocusonerror="true" display="Dynamic"></asp:requiredfieldvalidator>
                                         </EditItemTemplate>
                                         <ItemTemplate>
@@ -58,7 +58,7 @@
                                     </asp:TemplateField>
                                     <asp:TemplateField HeaderText="Yil" SortExpression="Yil">
                                         <EditItemTemplate>
-                                            <asp:TextBox ID="TextBox4" runat="server" Text='<%# Bind("Yil") %>'></asp:TextBox>
+                                            <input id="TextBox4" type="number" min="2017" max="2023" runat="server" value='<%# Bind("Yil") %>'/>
                                             <asp:requiredfieldvalidator id="reqKullaniciAdi4" runat="server" controltovalidate="TextBox4" errormessage="Lütfen boş alan bırakmayınız." setfocusonerror="true" display="Dynamic"></asp:requiredfieldvalidator>
                                         </EditItemTemplate>
                                         <ItemTemplate>
@@ -67,8 +67,8 @@
                                     </asp:TemplateField>
                                     <asp:TemplateField HeaderText="FaturaTarih" SortExpression="FaturaTarih">
                                         <EditItemTemplate>
-                                            <asp:TextBox ID="TextBox5" runat="server" TextMode="DateTime" Text='<%# Bind("FaturaTarih") %>' ReadOnly="True"></asp:TextBox>
-                                            <asp:requiredfieldvalidator id="reqKullaniciAdi5" runat="server" controltovalidate="TextBox5" errormessage="Lütfen boş alan bırakmayınız." setfocusonerror="true" display="Dynamic"></asp:requiredfieldvalidator>
+                                            <asp:TextBox ID="TextBox5" runat="server" TextMode="DateTimeLocal" Text='<%# Bind("FaturaTarih") %>' ReadOnly="True"></asp:TextBox>
+<%--                                            <asp:requiredfieldvalidator id="reqKullaniciAdi5" runat="server" controltovalidate="TextBox5" errormessage="Lütfen boş alan bırakmayınız." setfocusonerror="true" display="Dynamic"></asp:requiredfieldvalidator>--%>
                                         </EditItemTemplate>
                                         <ItemTemplate>
                                             <asp:Label ID="Label6" runat="server" Text='<%# Bind("FaturaTarih") %>'></asp:Label>
@@ -76,7 +76,7 @@
                                     </asp:TemplateField>
                                     <asp:TemplateField HeaderText="Muhasebeci" SortExpression="Muhasebeci">
                                         <EditItemTemplate>
-                                            <asp:TextBox ID="TextBox6" runat="server" Text='<%# Bind("Muhasebeci") %>'></asp:TextBox>
+                                            <asp:TextBox ID="TextBox6" runat="server" MaxLength="49" Text='<%# Bind("Muhasebeci") %>'></asp:TextBox>
                                             <asp:requiredfieldvalidator id="reqKullaniciAdi6" runat="server" controltovalidate="TextBox6" errormessage="Lütfen boş alan bırakmayınız." setfocusonerror="true" display="Dynamic"></asp:requiredfieldvalidator>
                                         </EditItemTemplate>
                                         <ItemTemplate>
@@ -85,16 +85,16 @@
                                     </asp:TemplateField>
                                     <asp:TemplateField ShowHeader="True" HeaderText="Düzenle">
                                         <EditItemTemplate>
-                                            <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="True" CommandName="Update" Text="Güncelleştir"></asp:LinkButton>
-                                            &nbsp;<asp:LinkButton ID="LinkButton2" runat="server" CausesValidation="False" CommandName="Cancel" Text="İptal"></asp:LinkButton>
+                                            <asp:Button ID="LinkButton1" runat="server" CausesValidation="True" CommandName="Update" Text="Güncelleştir"></asp:Button>
+                                            &nbsp;<asp:Button ID="LinkButton2" runat="server" CausesValidation="False" CommandName="Cancel" Text="İptal"></asp:Button>
                                         </EditItemTemplate>
                                         <ItemTemplate>
-                                            <asp:LinkButton ID="LinkButton3" runat="server" CausesValidation="False" CommandName="Edit" Text="Düzenle"></asp:LinkButton>
+                                            <asp:Button ID="LinkButton3" runat="server" CausesValidation="False" CommandName="Edit" Text="Düzenle"></asp:Button>
                                         </ItemTemplate>
                                     </asp:TemplateField>
                                     <asp:TemplateField ShowHeader="True" HeaderText="Kaydı Sil">
                                         <ItemTemplate>
-                                            <asp:LinkButton ID="LinkButton4" runat="server" CausesValidation="False" CommandName="Delete" Text="Sil" CommandArgument='<%# Bind("Id") %>' OnClientClick="return confirm('Kaydı silmek istediğinize emin misiniz?')"></asp:LinkButton>
+                                            <asp:Button ID="LinkButton4" runat="server" CausesValidation="False" CommandName="Delete" Text="Sil" CommandArgument='<%# Bind("Id") %>' OnClientClick="return confirm('Kaydı silmek istediğinize emin misiniz?')"></asp:Button>
                                         </ItemTemplate>
                                     </asp:TemplateField>
                                 </Columns>
