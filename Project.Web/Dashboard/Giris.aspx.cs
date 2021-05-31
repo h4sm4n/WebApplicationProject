@@ -27,7 +27,7 @@ namespace Project.Web.Dashboard
                 }
             }
 
-            catch (Exception ex)
+            catch
             {
                 ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('hata')", true);
             }
@@ -57,6 +57,7 @@ namespace Project.Web.Dashboard
                     Session["email"] = Credentials[0].KullaniciAdi;
                     Session["type"] = Credentials[0].KullaniciTip;
                     Session["pozid"] = Credentials[0].SessionRoleId;
+                    Session["id"] = Credentials[0].Id;
 
                     Session["pozisyon"] = Business.Giris.getPozisyonAd(role);
                     //Response.AddHeader("REFRESH", "10;URL=default.aspx");
@@ -70,13 +71,14 @@ namespace Project.Web.Dashboard
                     Session["email"] = Credentials[0].KullaniciAdi;
                     Session["type"] = Credentials[0].KullaniciTip;
                     Session["pozid"] = Credentials[0].SessionRoleId;
+                    Session["id"] = Credentials[0].Id;
 
                     Session["pozisyon"] = Business.Giris.getPozisyonAd(role);
                     //Response.AddHeader("REFRESH", "10;URL=default.aspx");
                     Response.Redirect("~/User/Default.aspx");
                 }
             }
-            catch (Exception ex)
+            catch
             {
                 ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('exception')", true);
             }

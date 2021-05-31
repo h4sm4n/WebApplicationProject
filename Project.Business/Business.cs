@@ -187,6 +187,7 @@ namespace Project.Business
                 employee.PersonelMaas = Convert.ToDecimal(salary);
                 employee.AdresId = 2;
                 employee.PersonelTelefon = phone;
+                db.Personeller.Add(employee);
                 db.SaveChanges();
             }
             catch (DbEntityValidationException e)
@@ -205,9 +206,36 @@ namespace Project.Business
             }
         }
 
-        public void AddAppointment()
+        public void AddAppointment(int userid, string adress, string date, string time, string detail, string type)
         {
-
+            int adresid = GetAdressId(adress);
+            int customerid = GetCustomerIdByUserId(userid);
+            try
+            {
+                Randevular appointment = new Randevular();
+                appointment.MusteriId = customerid;
+                appointment.AdresId = adresid;
+                appointment.Tarih = Convert.ToDateTime(date);
+                appointment.Saat = TimeSpan.Parse(time);
+                appointment.Detay = detail;
+                appointment.IsTuru = type;
+                db.Randevular.Add(appointment);
+                db.SaveChanges();
+            }
+            catch (DbEntityValidationException e)
+            {
+                foreach (var eve in e.EntityValidationErrors)
+                {
+                    Console.WriteLine("Entity of type \"{0}\" in state \"{1}\" has the following validation errors:",
+                        eve.Entry.Entity.GetType().Name, eve.Entry.State);
+                    foreach (var ve in eve.ValidationErrors)
+                    {
+                        Console.WriteLine("- Property: \"{0}\", Error: \"{1}\"",
+                            ve.PropertyName, ve.ErrorMessage);
+                    }
+                }
+                throw;
+            }
         }
 
         public static List<string> GetCustomers()
@@ -266,6 +294,20 @@ namespace Project.Business
 
         }
 
+        public static int GetAdressIdByCustomers(string musteri)
+        {
+            Model1 db = new Model1();
+            using (db)
+            {
+                var sorgu = (from x in db.Musteriler
+                    where x.MusteriTc == musteri
+                    select x.AdresId).FirstOrDefault();
+
+                return sorgu;
+            }
+
+        }
+
         public static int GetCustomerId(string tc)
         {
             Model1 db = new Model1();
@@ -273,6 +315,20 @@ namespace Project.Business
             {
                 var sorgu = (from a in db.Musteriler
                     where a.MusteriTc == tc
+                    select a.Id).FirstOrDefault();
+
+                int result = sorgu;
+                return result;
+            }
+        }
+
+        public static int GetCustomerIdByUserId(int userid)
+        {
+            Model1 db = new Model1();
+            using (db)
+            {
+                var sorgu = (from a in db.Musteriler
+                    where a.KullaniciId == userid
                     select a.Id).FirstOrDefault();
 
                 int result = sorgu;
@@ -323,16 +379,87 @@ namespace Project.Business
             }
         }
 
+        public static int GetUserIdByCustomersTC(string tc)
+        {
+            Model1 model = new Model1();
+            using (model)
+            {
+                var sorgu = (from x in model.Musteriler
+                    where x.MusteriTc == tc
+                    select x.KullaniciId).FirstOrDefault();
+
+                return sorgu;
+            }
+        }
+
+
         public void UpdateCustomers(int id, string password)
         {
             Model1 model = new Model1();
             using (model)
             {
-                var x = db.Kullanicilar.Find(id);
+                var x = model.Kullanicilar.Find(id);
 
                 x.KullaniciSifre = password;
-                db.SaveChanges();
+                model.SaveChanges();
             }
         }
+
+        public void UpdateMusteriler(int id,string tel,string name,string surname,string email)
+        {
+            Model1 model = new Model1();
+            using (model)
+            {
+                
+                var x = model.Musteriler.Find(id);
+
+                x.MusteriTelefon = tel;
+                x.MusteriAd = name;
+                x.MusteriSoyad = surname;
+                x.MusteriMail = email;
+                model.SaveChanges();
+            }
+        }
+
+        public void UpdateAdresses(int id,string detail,string city,string county)
+        {
+            Model1 model = new Model1();
+            using (model)
+            {
+                var a = model.Adresler.Find(id);
+                a.AdresDetay = detail;
+                a.Ilce = county;
+                a.Sehir = city;
+                model.SaveChanges();
+            }
+        }
+
+        public static string GetUserPasswordByUserId(int id)
+        {
+            Model1 model = new Model1();
+            using (model)
+            {
+                var sorgu = (from x in model.Kullanicilar
+                    where x.Id == id
+                    select x.KullaniciSifre).FirstOrDefault();
+
+                return sorgu;
+            }
+        }
+
+        public static string GetCustomerTcByCustomerId(int id)
+        {
+            Model1 db = new Model1();
+            using (db)
+            {
+                var sorgu = (from a in db.Musteriler
+                    where a.KullaniciId == id
+                    select a.MusteriTc).FirstOrDefault();
+
+                string result = sorgu;
+                return result;
+            }
+        }
+
     }
 }

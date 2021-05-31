@@ -1,0 +1,14 @@
+C:\Users\tnc\Desktop\Proje\WebAppProject\Project.DataAccess\bin\Release\Project.DataAccess.dll.config
+C:\Users\tnc\Desktop\Proje\WebAppProject\Project.DataAccess\bin\Release\Project.DataAccess.dll
+C:\Users\tnc\Desktop\Proje\WebAppProject\Project.DataAccess\bin\Release\Project.DataAccess.pdb
+C:\Users\tnc\Desktop\Proje\WebAppProject\Project.DataAccess\bin\Release\EntityFramework.dll
+C:\Users\tnc\Desktop\Proje\WebAppProject\Project.DataAccess\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\tnc\Desktop\Proje\WebAppProject\Project.DataAccess\bin\Release\EntityFramework.xml
+C:\Users\tnc\Desktop\Proje\WebAppProject\Project.DataAccess\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\tnc\Desktop\Proje\WebAppProject\Project.DataAccess\obj\Release\Project.DataAccess.csprojAssemblyReference.cache
+C:\Users\tnc\Desktop\Proje\WebAppProject\Project.DataAccess\obj\Release\Project.DataAccess.Migrations.First.resources
+C:\Users\tnc\Desktop\Proje\WebAppProject\Project.DataAccess\obj\Release\Project.DataAccess.csproj.GenerateResource.cache
+C:\Users\tnc\Desktop\Proje\WebAppProject\Project.DataAccess\obj\Release\Project.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\tnc\Desktop\Proje\WebAppProject\Project.DataAccess\obj\Release\Project.DataAccess.csproj.CopyComplete
+C:\Users\tnc\Desktop\Proje\WebAppProject\Project.DataAccess\obj\Release\Project.DataAccess.dll
+C:\Users\tnc\Desktop\Proje\WebAppProject\Project.DataAccess\obj\Release\Project.DataAccess.pdb

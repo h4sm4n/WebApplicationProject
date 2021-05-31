@@ -4055,11 +4055,11 @@ select.form-control:not([size]):not([multiple]) {
 /*======= Label-color css starts  ======= */
 
 .label {
-	border-radius: 2px;
-	color: blue;
+	border-radius: 1px;
+	color: black;
 	font-size: 12px;
 	line-height: 1;
-	margin-bottom: 0;
+	margin-bottom: 1px;
 	text-transform: capitalize;
 	
 }

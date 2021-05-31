@@ -11,7 +11,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="table-responsive" style="overflow: visible">
-                                <asp:GridView runat="server" ID="gridnotlar" Width="80%" CssClass="table table-bordered table-hover table-active" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" CellPadding="4" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource1">
+                                <asp:GridView runat="server" ID="gridnotlar" Width="80%" CssClass="table table-bordered table-hover table-active" OnRowCommand="gridnotlar_OnRowCommand" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" CellPadding="4" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource1">
                                     
                                     <Columns>
                                         <asp:TemplateField HeaderText="Id" InsertVisible="False" SortExpression="Id">
@@ -103,7 +103,7 @@
                                         </asp:TemplateField>
                                         <asp:TemplateField ShowHeader="True" HeaderText="Sil">
                                             <ItemTemplate>
-                                                <asp:Button ID="btnSil" runat="server" CausesValidation="False" CommandName="Delete" Text="Sil"></asp:Button>
+                                                <asp:Button ID="btnSil" runat="server" CausesValidation="False" CommandName="Delete" Text="Sil" CommandArgument='<%# Bind("Id") %>' OnClientClick="return confirm('Kaydı silmek istediğinize emin misiniz?')"></asp:Button>
                                             </ItemTemplate>
                                         </asp:TemplateField>
                                     </Columns>

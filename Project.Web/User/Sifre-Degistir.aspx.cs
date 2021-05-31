@@ -27,5 +27,29 @@ namespace Project.Web.User
         {
 
         }
+
+        protected void btnyolla_OnClick(object sender, EventArgs e)
+        {
+            var business1 = new Business.Business();
+            string sifre = Business.Business.GetUserPasswordByUserId(Convert.ToInt32(Session["id"]));
+            if (txtsifre.Text != sifre || txtsifre.Text == null || txtsifre.Text == "")
+            {
+                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Hatalı Giriş')", true);
+            }
+            else
+            {
+                if (txtyeni.Text != txtyeni2.Text || txtyeni.Text == "" || txtyeni2.Text == "")
+                {
+                    ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Hatalı Giriş')", true);
+                }
+                else
+                {
+                    business1.UpdateCustomers(Convert.ToInt32(Session["id"]), txtyeni.Text);
+                    ScriptManager.RegisterStartupScript(this,this.GetType(),"redirect",
+                        "alert('Şifre değiştirme işlemi başarılı, Giriş sayfasına yönlendiriliyorsunuz.'); window.location='" + 
+                        Request.ApplicationPath + "Dashboard/Giris.aspx';",true);
+                }
+            }
+        }
     }
 }

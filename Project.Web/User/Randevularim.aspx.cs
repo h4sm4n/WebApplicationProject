@@ -9,6 +9,7 @@ namespace Project.Web.User
 {
     public partial class Randevularim : System.Web.UI.Page
     {
+        
         protected void Page_PreInit(object sender, EventArgs e)
         {
             this.MasterPageFile = "~/User/User.Master";
@@ -23,9 +24,27 @@ namespace Project.Web.User
                 this.MasterPageFile = "Unauthorizedd.Master";
             }
         }
-        protected void Page_Load(object sender, EventArgs e)
+        public void Page_Load(object sender, EventArgs e)
         {
+            
+        }
 
+        protected void datasource1_OnSelecting(object sender, SqlDataSourceSelectingEventArgs e)
+        {
+            int parameter = Business.Business.GetCustomerIdByUserId(Convert.ToInt32(Session["id"]));
+            string cmd = "SELECT * FROM [Randevular] WHERE ([MusteriId] =" + parameter + ";";
+            e.Command.Parameters[0].Value = parameter;
+        }
+
+        protected void gridbanka_OnRowCommand(object sender, GridViewCommandEventArgs e)
+        {
+            if (e.CommandName == "Delete")
+            {
+                int id = Convert.ToInt32(e.CommandArgument);
+           
+                // delete from tblcountry where countryid="+id+";
+               
+            }
         }
     }
 }

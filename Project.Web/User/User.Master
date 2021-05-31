@@ -196,9 +196,9 @@
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
-                                <li class="">
+                                <li class=" ">
                                     <a href="Bilgilerim-Duzenle.aspx" class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class="ti-direction-alt"></i></span>
+                                        <span class="pcoded-micon"><i class="ti-user"></i></span>
                                         <span class="pcoded-mtext">Bilgilerimi Düzenle</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
@@ -327,6 +327,6 @@
     <script src="assetss/js/pcoded.min.js"></script>
     <script src="assetss/js/vertical/vertical-layout.min.js"></script>
 
-    <script type="text/javascript" src="assetss/js/script.js"></script>
+    <script type="text/javascript" src="assetss/js/scriptt.js"></script>
 </body>
 </html>

@@ -186,6 +186,7 @@
     <Content Include="Dashboard\assets\js\rating.js" />
     <Content Include="Dashboard\assets\js\script.js" />
     <Content Include="Dashboard\assets\js\script.min.js" />
+    <Content Include="Dashboard\assets\js\scriptt.js" />
     <Content Include="Dashboard\assets\js\SmoothScroll.js" />
     <Content Include="Dashboard\assets\js\swiper-custom.js" />
     <Content Include="Dashboard\assets\js\vertical\horizontal-layout.min.js" />
@@ -587,6 +588,7 @@
     <Content Include="User\assetss\js\rating.js" />
     <Content Include="User\assetss\js\script.js" />
     <Content Include="User\assetss\js\script.min.js" />
+    <Content Include="User\assetss\js\scriptt.js" />
     <Content Include="User\assetss\js\SmoothScroll.js" />
     <Content Include="User\assetss\js\swiper-custom.js" />
     <Content Include="User\assetss\js\vertical\horizontal-layout.min.js" />
